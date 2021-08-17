@@ -80,7 +80,6 @@ body {
 }
 .header__navUser__botom {
   height: 2.5rem;
-  border: 3px solid #585f66;
   border-radius: 3rem;
   padding: 0rem 1rem;
   transition: all 0.5s;
@@ -99,7 +98,7 @@ body {
 }
 .header__navUser__botom--text:hover {
   font-size: 1.5rem;
-  color: #585f66;
+  color: whitesmoke;
 }
 
 .header__navMenu {
