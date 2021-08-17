@@ -79,13 +79,13 @@ body {
   font-weight: bold;
 }
 .header__navUser__botom {
-  height: 2.5rem;
+  height: 2.7rem;
   border-radius: 3rem;
   padding: 0rem 1rem;
   transition: all 0.5s;
 }
 .header__navUser__botom:hover {
-  height: 2.5rem;
+  height: 2.7rem;
   border: 3px solid whitesmoke;
   border-radius: 3rem;
   padding: 0rem 1rem;
