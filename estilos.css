@@ -1398,16 +1398,16 @@ legend {
 .body__randomTemplateAyu {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 12rem 405rem 5rem;
+  grid-template-rows: auto auto auto;
   grid-template-areas: "randomHeader" "mainAyuda" "randomFooter";
-  background-image: linear-gradient(#80b1e5, whitesmoke);
+
+  background-color: whitesmoke;
 }
 .mainAyuda {
   grid-area: mainAyuda;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 0rem 2rem 2rem;
 }
 .mainAyuda__contTitle {
   font-size: 4rem;
@@ -1419,7 +1419,6 @@ legend {
 }
 .mainAyuda__cuestion {
   width: 29rem;
-  border: 0.2rem solid black;
   border-radius: 1rem;
   padding: 0rem 2rem;
   background-color: whitesmoke;
@@ -1428,8 +1427,9 @@ legend {
   font-size: 3rem;
 }
 .mainAyuda__cuestion__subTitle {
-  font-size: 3.5rem;
+  font-size: 2rem;
   margin-top: 1rem;
+  background-color: whitesmoke;
 }
 .mainAyuda__cuestion__text {
   font-size: 2rem;
@@ -1440,15 +1440,6 @@ legend {
 
 /* TABLET························································································································ */
 @media (min-width: 768px) {
-  .body__randomTemplateAyu {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 11rem 200rem 4rem;
-    grid-template-areas: "randomHeader" "mainAyuda" "randomFooter";
-    background-image: linear-gradient(#80b1e5, whitesmoke);
-    margin-bottom: 0rem;
-    margin-top: 0rem;
-  }
   .mainAyuda__contTitle {
     font-size: 4rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -1463,22 +1454,25 @@ legend {
     padding: 0rem 2rem;
     background-color: whitesmoke;
   }
+  .mainAyuda__cuestion__subTitle {
+    font-size: 2.7rem;
+  }
 }
 
 /* DESKTOP ······················································································································· */
 @media (min-width: 1024px) {
-  .body__randomTemplateAyu {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 11rem 135rem 6rem;
-    grid-template-areas: "randomHeader" "mainAyuda" "randomFooter";
-    background-image: linear-gradient(#80b1e5, whitesmoke);
-  }
   .mainAyuda__cuestion {
     width: 100rem;
     border: 0.2rem solid black;
     padding: 0rem 2rem;
     background-color: whitesmoke;
+  }
+  .mainAyuda__cuestion__subTitle {
+    font-size: 3.4rem;
+  }
+  .mainAyuda__cuestion__text {
+    font-size: 2.5rem;
+    line-height: 3rem;
   }
 }
 
