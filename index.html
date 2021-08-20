@@ -47,7 +47,11 @@
         <!-- Button trigger modal -->
         <button
           type="button"
-          class="btn btn-primary"
+          class="
+            btn btn-primary
+            bg-success
+            header__navUser__botom header__navUser__botom--text
+          "
           data-bs-toggle="modal"
           data-bs-target="#staticBackdrop"
         >
@@ -65,20 +69,26 @@
           aria-hidden="true"
         >
           <div class="modal-dialog mainRegistro__formulario">
-            <div class="modal-content">
+            <div class="modal-content formularioRegistro">
               <div class="modal-header">
-                <h5 class="modal-title" id="staticBackdropLabel">
+                <h5
+                  class="modal-title mainIngreso__form--text"
+                  id="staticBackdropLabel"
+                >
                   Creá tu cuenta
                 </h5>
                 <button
                   type="button"
-                  class="btn-close"
+                  class="
+                    btn-close
+                    header__navUser__botom header__navUser__botom--text
+                  "
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
               </div>
               <div class="modal-body">
-                <form action="" class="mainRegistro__formulario">
+                <form action="">
                   <div>
                     <label for="nombreYApellido">Nombre y Apellido:</label>
                     <input
@@ -178,47 +188,33 @@
                       rows="10"
                     ></textarea>
                   </div>
-                  <br />
-                  <div>
-                    <input
-                      class="mainRegistro__submit"
-                      type="submit"
-                      value="Registrarme"
-                    />
-                    <input
-                      class="mainRegistro__reset"
-                      type="reset"
-                      value="Limpiar"
-                    />
-                  </div>
                 </form>
               </div>
               <div class="modal-footer">
                 <button
-                  type="button"
-                  class="btn btn-secondary"
+                  type="reset"
+                  class="
+                    btn btn-outline-danger
+                    mainIngreso__form__botomSubmit--text
+                  "
                   data-bs-dismiss="modal"
                 >
-                  Close
+                  Salir
                 </button>
-                <button type="button" class="btn btn-primary">
-                  Understood
+                <button
+                  type="submit"
+                  class="
+                    btn btn-outline-success
+                    mainIngreso__form__botomSubmit--text
+                  "
+                >
+                  Registrarme
                 </button>
               </div>
             </div>
           </div>
         </div>
-        <button
-          type="button"
-          class="
-            btn btn-success
-            header__navUser__botom header__navUser__botom--margin
-          "
-        >
-          <a href="registroUsuario.html" class="header__navUser__botom--text"
-            >Creá tu cuenta</a
-          >
-        </button>
+
         <!-- Button trigger modal -->
         <button
           type="button"

@@ -486,16 +486,15 @@ ul li:hover ol {
 /* FORMULARIO "REGISTRO"***************************************************************************** */
 
 .mainRegistro__formulario {
-  width: 30rem;
-  height: max-content;
   padding: 1rem;
   font-size: 1.9rem;
-  border-style: double;
+  background-color: whitesmoke;
+  border: 0.3rem double rgb(15, 119, 15);
   border-radius: 1.5rem;
-  border-color: teal;
-  background-color: #f5f5f5;
 }
-
+.formularioRegistro {
+  background-color: whitesmoke;
+}
 #nombreYApellido {
   height: 1.5rem;
   width: 12rem;
@@ -539,20 +538,7 @@ ul li:hover ol {
   width: 17rem;
   font-size: 1.5rem;
 }
-.mainRegistro__submit {
-  font-size: 2rem;
-  padding: 0.5rem;
-}
-.mainRegistro__submit:hover {
-  background-image: radial-gradient(whitesmoke, rgb(159, 228, 159));
-}
-.mainRegistro__reset {
-  font-size: 2rem;
-  padding: 0.5rem;
-}
-.mainRegistro__reset:hover {
-  background-image: radial-gradient(whitesmoke, rgb(221, 168, 168));
-}
+
 .mainRegistro__formulario__tituloComentario {
   font-size: 1.7rem;
 }
@@ -571,20 +557,10 @@ ul li:hover ol {
     display: inline-block;
   }
   .mainRegistro__formulario {
-    width: 38rem;
-    height: max-content;
     padding: 1rem;
     margin-top: 2rem;
     font-size: 1.9rem;
-    border-style: double;
     border-radius: 1.5rem;
-    border-color: teal;
-    background-color: #f5f5f5;
-  }
-  .mainRegistro__formulario__titulo {
-    font-size: 4rem;
-    color: teal;
-    text-align: right;
   }
   .anchoComentario {
     width: 30rem;
@@ -594,21 +570,12 @@ ul li:hover ol {
 /* DESKTOP ······················································································································· */
 @media (min-width: 1024px) {
   .mainRegistro__formulario {
-    width: 45rem;
-    height: max-content;
     padding: 1rem;
     margin-top: 2rem;
     font-size: 1.9rem;
-    border-style: double;
     border-radius: 1.5rem;
-    border-color: teal;
-    background-color: #f5f5f5;
   }
-  .mainRegistro__formulario__titulo {
-    font-size: 5rem;
-    color: teal;
-    text-align: right;
-  }
+
   #nombreYApellido:focus {
     height: 2rem;
     width: 26.5rem;
@@ -658,7 +625,7 @@ ul li:hover ol {
 .mainIngreso__form__fieldset {
   border-radius: 1.5rem;
   background-color: whitesmoke;
-  border: 0.3rem solid rgb(15, 119, 15);
+  border: 0.3rem double rgb(15, 119, 15);
 }
 #usuarioIng {
   width: 15rem;
