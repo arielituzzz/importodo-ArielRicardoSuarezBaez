@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ImporTodo.Com-Informacion Importante</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="estilos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -37,92 +43,198 @@
       </div>
     </header>
     <main class="randomMain mainInfo">
-      <div class="mainInfo__Title">
-        <h3>Informacion de Interes</h3>
-      </div>
       <section class="mainInfo__cuestion--container">
-        <div class="mainInfo__cuestion1">
-          <h4 class="mainInfo__cuestion__subTitle">
-            Puntos de Entrega y Retiro
-          </h4>
-          <p class="mainInfo__cuestion__text">
-            Al momento de realizar tu compra, poder elegir la sucursal de
-            <strong>Correo Argentino</strong> que este mas cerca de tu
-            domicilio, o bien, si optaste por recibirlo en tu domicilio, podes
-            seguir navegando por nuestro sitio mientras te llega en los
-            <em>plazos establecidos</em>.
-          </p>
+        <div>
+          <h3 class="mainInfo__Title">Informacion de Interes</h3>
         </div>
-        <div class="mainInfo__cuestion2">
-          <h4 class="mainInfo__cuestion__subTitle">Seguro de Compra</h4>
-          <p class="mainInfo__cuestion__text">
-            Todas las operaciones que realices en nuestro sitio estan protegidas
-            100%, para que solo tengas que preocuparte por saber caul sera tu
-            proxima compra!. Cualquier inconveniente que tengas, no dudes en
-            ponerte en contacto con nuestro <em>SOPORTE TECNICO 24HS</em> para
-            que te brinden una rapida solucion.
-          </p>
-        </div>
-        <div class="mainInfo__cuestion3">
-          <h4 class="mainInfo__cuestion__subTitle">Reserva de Producto</h4>
-          <p class="mainInfo__cuestion__text">
-            Estas buscando un producto y aun no te decidis? No te preocupes!
-            Podes hacer la reserva y la misma quedara en el
-            <em>CARRITO DE COMPRA</em>. Contaras con 24hs para que el producto
-            siga siendo solo tuyo.
-          </p>
-        </div>
-        <div class="mainInfo__cuestion4">
-          <h4 class="mainInfo__cuestion__subTitle">Mercaderia Prohibida</h4>
-          <p class="mainInfo__cuestion__text">
-            - Alimentos de cualquier tipo, bebidas alcohólicas. - Productos de
-            uso médico - Animales vivos o muertos, restos humanos, pieles no
-            tratadas, plantas naturales. - Armas de Fuego o sus componentes,
-            cuchillos, navajas, municiones. - Artículos o productos usados. -
-            Cualquier artículo o productos que pueda causar daños humanos. -
-            Cuero de animales exóticos o en extinción. - Dispositivo celular:
-            Samsung Galaxy Note 7. - Drogas, narcóticos o estupefacientes
-            prohibidas por ley: cocaína, marihuana, opio, morfina; los
-            estupefacientes, narcóticos y los medicamentos psicotrópicos y
-            psicofármacos en general. cigarros, cigarrillos, incluso los
-            electrónicos. - Explosivos, productos tóxicos, corrosivos,
-            oxidantes, cerillos. - Gases comprimidos, artículos flamables,
-            pintura en aerosol, gas lacrimógeno, spray de cabello, desodorantes
-            bajo la misma presentación. - Hielo Seco. - Pedrería (piedras
-            preciosas, diamantes, esmeraldas, etc.) - Líquidos y polvos en
-            general (a excepción de perfumes. No se podrán incluir más de 3 en
-            una misma orden) - Material falsificado “piratería”. - Material
-            biológico / Material radioactivo - Patinetas eléctricas - Pilas Tipo
-            A. - Audífonos de uso médico - Valores al Portador (cheques,
-            acciones, bonos, papel moneda,moendas metálicas,etc) - Platino, oro
-            o plata, manufacturados o no. - Alhajas y otros objetos preciosos,
-            incluso perlas naturales, de cultivo o sintéticas. - Líquidos
-            inflamables, Materiales oxidantes, Sólidos inflamables - Venenos:
-            líquido, sólido o gas. - Asbestos (amianto). - Pinturas, barnices y
-            sustancias similares como polvos secos colorantes y no colorantes. -
-            Cualquier mercadería que requiera intervención de CHAS. - Cualquier
-            mercadería que requiera de intervención INAL. - Cualquier elemento
-            que requiera aprobación de SENASA o certificado de Fauna y Flora.
-            (Flores, miel, nácar, flores o pieles). - Medicamentos, partes de
-            muebles para medicina, productos de limpieza para uso doméstico,
-            insecticidas.
-          </p>
-        </div>
-        <div class="mainInfo__cuestion5">
-          <h4 class="mainInfo__cuestion__subTitle">Cantidades Maximas</h4>
-          <p class="mainInfo__cuestion__text">
-            El maximo POR ENVIO es de 5Kg. y hasta 8Un. del mismo producto.
-          </p>
-        </div>
-        <div class="mainInfo__cuestion6">
-          <h4 class="mainInfo__cuestion__subTitle">Programa de Recompenzas</h4>
-          <p class="mainInfo__cuestion__text">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
-            delectus aperiam, nesciunt repudiandae molestiae eaque libero
-            laudantium quidem distinctio. Nulla et, velit amet voluptatibus
-            eveniet aperiam ducimus dolor! Expedita fuga inventore at similique
-            reprehenderit aperiam sit facilis culpa repudiandae nobis.
-          </p>
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+          <div class="accordion-item mainAyuda__cuestion">
+            <h4 class="accordion-header" id="panelsStayOpen-headingOne">
+              <button
+                class="accordion-button collapsed mainAyuda__cuestion__subTitle"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseOne"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseOne"
+              >
+                Puntos de Entrega y Retiro
+              </button>
+            </h4>
+            <div
+              id="panelsStayOpen-collapseOne"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingOne"
+            >
+              <p class="accordion-body mainAyuda__cuestion__text">
+                Al momento de realizar tu compra, poder elegir la sucursal de
+                <strong>Correo Argentino</strong> que este mas cerca de tu
+                domicilio, o bien, si optaste por recibirlo en tu domicilio,
+                podes seguir navegando por nuestro sitio mientras te llega en
+                los <em>plazos establecidos</em>.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item mainAyuda__cuestion">
+            <h4 class="accordion-header" id="panelsStayOpen-headingTwo">
+              <button
+                class="accordion-button collapsed mainAyuda__cuestion__subTitle"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseTwo"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseTwo"
+              >
+                Seguro de Compra
+              </button>
+            </h4>
+            <div
+              id="panelsStayOpen-collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingTwo"
+            >
+              <p class="accordion-body mainAyuda__cuestion__text">
+                Todas las operaciones que realices en nuestro sitio estan
+                protegidas 100%, para que solo tengas que preocuparte por saber
+                caul sera tu proxima compra!. Cualquier inconveniente que
+                tengas, no dudes en ponerte en contacto con nuestro
+                <em>SOPORTE TECNICO 24HS</em> para que te brinden una rapida
+                solucion.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item mainAyuda__cuestion">
+            <h4 class="accordion-header" id="panelsStayOpen-headingThree">
+              <button
+                class="accordion-button collapsed mainAyuda__cuestion__subTitle"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseThree"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseThree"
+              >
+                Reserva de Producto
+              </button>
+            </h4>
+            <div
+              id="panelsStayOpen-collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingThree"
+            >
+              <p class="accordion-body mainAyuda__cuestion__text">
+                Estas buscando un producto y aun no te decidis? No te preocupes!
+                Podes hacer la reserva y la misma quedara en el
+                <em>CARRITO DE COMPRA</em>. Contaras con 24hs para que el
+                producto siga siendo solo tuyo.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item mainAyuda__cuestion">
+            <h4 class="accordion-header" id="panelsStayOpen-headingFour">
+              <button
+                class="accordion-button collapsed mainAyuda__cuestion__subTitle"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseFour"
+                aria-expanded="true"
+                aria-controls="panelsStayOpen-collapseFour"
+              >
+                Mercaderia Prohibida
+              </button>
+            </h4>
+            <div
+              id="panelsStayOpen-collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingFour"
+            >
+              <p class="accordion-body mainAyuda__cuestion__text">
+                - Alimentos de cualquier tipo, bebidas alcohólicas. - Productos
+                de uso médico - Animales vivos o muertos, restos humanos, pieles
+                no tratadas, plantas naturales. - Armas de Fuego o sus
+                componentes, cuchillos, navajas, municiones. - Artículos o
+                productos usados. - Cualquier artículo o productos que pueda
+                causar daños humanos. - Cuero de animales exóticos o en
+                extinción. - Dispositivo celular: Samsung Galaxy Note 7. -
+                Drogas, narcóticos o estupefacientes prohibidas por ley:
+                cocaína, marihuana, opio, morfina; los estupefacientes,
+                narcóticos y los medicamentos psicotrópicos y psicofármacos en
+                general. cigarros, cigarrillos, incluso los electrónicos. -
+                Explosivos, productos tóxicos, corrosivos, oxidantes, cerillos.
+                - Gases comprimidos, artículos flamables, pintura en aerosol,
+                gas lacrimógeno, spray de cabello, desodorantes bajo la misma
+                presentación. - Hielo Seco. - Pedrería (piedras preciosas,
+                diamantes, esmeraldas, etc.) - Líquidos y polvos en general (a
+                excepción de perfumes. No se podrán incluir más de 3 en una
+                misma orden) - Material falsificado “piratería”. - Material
+                biológico / Material radioactivo - Patinetas eléctricas - Pilas
+                Tipo A. - Audífonos de uso médico - Valores al Portador
+                (cheques, acciones, bonos, papel moneda,moendas metálicas,etc) -
+                Platino, oro o plata, manufacturados o no. - Alhajas y otros
+                objetos preciosos, incluso perlas naturales, de cultivo o
+                sintéticas. - Líquidos inflamables, Materiales oxidantes,
+                Sólidos inflamables - Venenos: líquido, sólido o gas. - Asbestos
+                (amianto). - Pinturas, barnices y sustancias similares como
+                polvos secos colorantes y no colorantes. - Cualquier mercadería
+                que requiera intervención de CHAS. - Cualquier mercadería que
+                requiera de intervención INAL. - Cualquier elemento que requiera
+                aprobación de SENASA o certificado de Fauna y Flora. (Flores,
+                miel, nácar, flores o pieles). - Medicamentos, partes de muebles
+                para medicina, productos de limpieza para uso doméstico,
+                insecticidas.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item mainAyuda__cuestion">
+            <h4 class="accordion-header" id="panelsStayOpen-headingFive">
+              <button
+                class="accordion-button collapsed mainAyuda__cuestion__subTitle"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseFive"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseFive"
+              >
+                Cantidades Maximas
+              </button>
+            </h4>
+            <div
+              id="panelsStayOpen-collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingFive"
+            >
+              <p class="accordion-body mainAyuda__cuestion__text">
+                El maximo POR ENVIO es de 5Kg. y hasta 8Un. del mismo producto.
+              </p>
+            </div>
+          </div>
+          <div class="accordion-item mainAyuda__cuestion">
+            <h4 class="accordion-header" id="panelsStayOpen-headingSix">
+              <button
+                class="accordion-button collapsed mainAyuda__cuestion__subTitle"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapseSix"
+                aria-expanded="false"
+                aria-controls="panelsStayOpen-collapseSix"
+              >
+                Programa de Recompenzas
+              </button>
+            </h4>
+            <div
+              id="panelsStayOpen-collapseSix"
+              class="accordion-collapse collapse"
+              aria-labelledby="panelsStayOpen-headingSix"
+            >
+              <p class="accordion-body mainAyuda__cuestion__text">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut
+                delectus aperiam, nesciunt repudiandae molestiae eaque libero
+                laudantium quidem distinctio. Nulla et, velit amet voluptatibus
+                eveniet aperiam ducimus dolor! Expedita fuga inventore at
+                similique reprehenderit aperiam sit facilis culpa repudiandae
+                nobis.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -132,5 +244,10 @@
         <strong>TODOS LOS DERECHOS RESERVADOS - "IMPORTODO.COM"</strong>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
