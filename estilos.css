@@ -487,7 +487,7 @@ ul li:hover ol {
 
 .mainRegistro__formulario {
   padding: 1rem;
-  font-size: 1.9rem;
+  font-size: 1.6rem;
   background-color: whitesmoke;
   border: 0.3rem double rgb(15, 119, 15);
   border-radius: 1.5rem;
@@ -496,57 +496,51 @@ ul li:hover ol {
   background-color: whitesmoke;
 }
 #nombreYApellido {
-  height: 1.5rem;
-  width: 12rem;
+  height: 2.2rem;
+  width: 14rem;
   transition: all 1s;
 }
 #nombreYApellido:focus {
-  height: 2rem;
-  width: 17rem;
-  font-size: 1.5rem;
+  height: 2.7rem;
+  width: 30rem;
+  font-size: 1.9rem;
 }
 
 #password {
-  height: 1.5rem;
-  width: 12rem;
+  height: 2.2rem;
+  width: 15rem;
   transition: all 1s;
 }
 #password:focus {
-  height: 2rem;
-  width: 17rem;
-  font-size: 1.5rem;
+  height: 2.7rem;
+  width: 20rem;
+  font-size: 1.9rem;
 }
 
 #rePassword {
-  height: 1.5rem;
-  width: 12rem;
+  height: 2.2rem;
+  width: 15rem;
   transition: all 1s;
 }
 #rePassword:focus {
-  height: 2rem;
-  width: 16rem;
-  font-size: 1.5rem;
+  height: 2.7rem;
+  width: 20rem;
+  font-size: 1.9rem;
 }
 
 #email {
-  height: 1.5rem;
-  width: 12rem;
+  height: 2.2rem;
+  width: 18.5rem;
   transition: all 1s;
 }
 #email:focus {
-  height: 2rem;
-  width: 17rem;
-  font-size: 1.5rem;
+  height: 2.7rem;
+  width: 23.5rem;
+  font-size: 1.9rem;
 }
 
-.mainRegistro__formulario__tituloComentario {
-  font-size: 1.7rem;
-}
 .anchoComentario {
-  width: 30rem;
-}
-.anchoElement {
-  display: block;
+  width: 32rem;
 }
 
 /* MEDIA QUERIS········································································································ */
@@ -562,8 +556,51 @@ ul li:hover ol {
     font-size: 1.9rem;
     border-radius: 1.5rem;
   }
+  #nombreYApellido {
+    height: 2.5rem;
+    width: 17rem;
+    transition: all 1s;
+  }
+  #nombreYApellido:focus {
+    height: 2.7rem;
+    width: 27rem;
+    font-size: 2.1rem;
+  }
+
+  #password {
+    height: 2.5rem;
+    width: 18rem;
+    transition: all 1s;
+  }
+  #password:focus {
+    height: 2.7rem;
+    width: 22rem;
+    font-size: 2.1rem;
+  }
+
+  #rePassword {
+    height: 2.5rem;
+    width: 18rem;
+    transition: all 1s;
+  }
+  #rePassword:focus {
+    height: 2.7rem;
+    width: 22rem;
+    font-size: 2.1rem;
+  }
+
+  #email {
+    height: 2.5rem;
+    width: 22rem;
+    transition: all 1s;
+  }
+  #email:focus {
+    height: 2.7rem;
+    width: 26rem;
+    font-size: 2.1rem;
+  }
   .anchoComentario {
-    width: 30rem;
+    width: 45rem;
   }
 }
 
@@ -577,27 +614,27 @@ ul li:hover ol {
   }
 
   #nombreYApellido:focus {
-    height: 2rem;
+    /* height: 2.7rem; */
     width: 26.5rem;
-    font-size: 1.7rem;
+    font-size: 2.1rem;
   }
   #password:focus {
-    height: 2rem;
+    /* height: 2rem; */
     width: 23rem;
-    font-size: 1.7rem;
+    font-size: 2.1rem;
   }
   #rePassword:focus {
-    height: 2rem;
+    /* height: 2rem; */
     width: 23rem;
-    font-size: 1.7rem;
+    font-size: 2.1rem;
   }
   #email:focus {
-    height: 2rem;
+    /* height: 2rem; */
     width: 26rem;
-    font-size: 1.7rem;
+    font-size: 2.1rem;
   }
   .anchoComentario {
-    width: 44rem;
+    width: 45rem;
   }
 }
 
@@ -621,6 +658,9 @@ ul li:hover ol {
 }
 .mainIngreso__form--text {
   font-size: 2rem;
+}
+.form__title {
+  font-size: 3rem;
 }
 .mainIngreso__form__fieldset {
   border-radius: 1.5rem;
