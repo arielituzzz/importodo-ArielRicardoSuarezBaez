@@ -1671,8 +1671,11 @@ ul li:hover ol {
     width: 60rem;
   }
   .sectionBanner {
-    height: 25rem;
     margin-top: 2rem;
+  }
+  .sectionBanner__image {
+    height: 35rem;
+    width: 71rem;
   }
 
   .main__sectionProdDest {
@@ -1760,7 +1763,11 @@ ul li:hover ol {
   /* DESKTOP ······················································································································· */
   @media (min-width: 1024px) {
     .sectionBanner {
-      height: 35rem;
+      height: 40rem;
+    }
+    .sectionBanner__image {
+      height: 40rem;
+      width: 113rem;
     }
   }
 
