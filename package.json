@@ -1,0 +1,23 @@
+{
+  "name": "importodo-arielricardosuarezbaez",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arielituzzz/importodo-ArielRicardoSuarezBaez.git"
+  },
+  "author": "Ariel Ricardo Suarez Baez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arielituzzz/importodo-ArielRicardoSuarezBaez/issues"
+  },
+  "homepage": "https://github.com/arielituzzz/importodo-ArielRicardoSuarezBaez#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.12"
+  }
+}
