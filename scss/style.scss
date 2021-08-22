@@ -1,0 +1,50 @@
+@import "pages/index/index.scss";
+@import "pages/index/component/carrousel.scss";
+@import "pages/index/component/formIngr.scss";
+@import "pages/index/component/formReg.scss";
+@import "pages/index/categorias/tecnologia.scss";
+@import "pages/index/categorias/motos.scss";
+@import "pages/index/categorias/moda.scss";
+@import "pages/index/categorias/gastronomia.scss";
+@import "pages/index/categorias/electrodomesticos.scss";
+@import "pages/index/categorias/decoracion.scss";
+@import "pages/index/categorias/construccion.scss";
+@import "pages/ofertas.scss";
+@import "pages/informacion.scss";
+@import "pages/ayuda.scss";
+@import "pages/en_construccion.scss";
+@import "pages/alternativos";
+
+/* RESET'S */
+* {
+  margin: 0%;
+  padding: 0%;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Lora", serif;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  background-color: rgb(227, 231, 233);
+  text-decoration: none;
+}
+
+/* GENERALES************************************************************************************ */
+
+.bordes {
+  border: 0.1rem solid black;
+}
+
+/* EDICION DE IMAGENES************************************************************************** */
+.logChico {
+  width: 10rem;
+  vertical-align: middle;
+}
+.imgChat {
+  width: 3rem;
+  border-color: teal;
+  border-style: outset;
+}

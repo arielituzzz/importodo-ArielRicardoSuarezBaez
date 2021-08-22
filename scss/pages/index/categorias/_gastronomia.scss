@@ -1,0 +1,59 @@
+/* PAGINA "Productos Gastronomia"************************************************************************************************************************ */
+.body__randomTemplateGas {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 16rem 331rem 4rem;
+  grid-template-areas: "randomHeader" "randomMain" "randomFooter";
+  row-gap: 2rem;
+}
+.mainGas__section {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3rem 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  flex-wrap: wrap;
+  grid-template-areas: "ofertaTitle" "producto1" "producto2" "producto3" "producto4" "producto5" "producto6" "producto7" "producto8" "producto9" "producto10" "producto11" "producto12";
+  gap: 2rem;
+  padding: 2rem 2rem;
+}
+
+/* MEDIA QUERIS········································································································ */
+
+/* TABLET························································································································ */
+@media (min-width: 768px) {
+  .body__randomTemplateGas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 12rem 163rem 4rem;
+    grid-template-areas: "randomHeader" "randomMain" "randomFooter";
+    row-gap: 2rem;
+  }
+  .mainGas__section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 4rem 1fr 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    grid-template-areas: "ofertaTitle ofertaTitle ofertaTitle" "producto1 producto2 producto3" "producto4 producto5 producto6" "producto7 producto8 producto9" "producto10 producto11 producto12" "producto13 producto14 producto15";
+    gap: 2rem;
+    padding: 1rem 2rem;
+  }
+}
+
+/* DESKTOP ······················································································································· */
+@media (min-width: 1024px) {
+  .body__randomTemplateGas {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 12rem 121rem 4rem;
+    grid-template-areas: "randomHeader randomHeader" "randomMain randomMain" "randomFooter randomFooter";
+    row-gap: 2rem;
+  }
+  .mainGas__section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 6rem 1fr 1fr 1fr 1fr;
+    flex-wrap: wrap;
+    grid-template-areas: "ofertaTitle ofertaTitle ofertaTitle ofertaTitle" "producto1 producto2 producto3 producto4" "producto5 producto6 producto7 producto8" "producto9 producto10 producto11 producto12" "producto13 producto14 producto15 producto16";
+    gap: 2rem;
+    padding: 1rem 2rem;
+  }
+}

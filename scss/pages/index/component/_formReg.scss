@@ -1,0 +1,153 @@
+/* FORMULARIO "REGISTRO"***************************************************************************** */
+
+.mainRegistro__formulario {
+  padding: 1rem;
+  font-size: 1.6rem;
+  background-color: whitesmoke;
+  border: 0.3rem double rgb(15, 119, 15);
+  border-radius: 1.5rem;
+}
+.formularioRegistro {
+  background-color: whitesmoke;
+}
+#nombreYApellido {
+  height: 2.2rem;
+  width: 14rem;
+  transition: all 1s;
+}
+#nombreYApellido:focus {
+  height: 2.7rem;
+  width: 30rem;
+  font-size: 1.9rem;
+}
+
+#password {
+  height: 2.2rem;
+  width: 15rem;
+  transition: all 1s;
+}
+#password:focus {
+  height: 2.7rem;
+  width: 20rem;
+  font-size: 1.9rem;
+}
+
+#rePassword {
+  height: 2.2rem;
+  width: 15rem;
+  transition: all 1s;
+}
+#rePassword:focus {
+  height: 2.7rem;
+  width: 20rem;
+  font-size: 1.9rem;
+}
+
+#email {
+  height: 2.2rem;
+  width: 18.5rem;
+  transition: all 1s;
+}
+#email:focus {
+  height: 2.7rem;
+  width: 23.5rem;
+  font-size: 1.9rem;
+}
+
+.cuadroComentario {
+  width: 32rem;
+  height: 15rem;
+}
+
+/* MEDIA QUERIS········································································································ */
+
+/* TABLET························································································································ */
+@media (min-width: 768px) {
+  .anchoElement {
+    display: inline-block;
+  }
+  .mainRegistro__formulario {
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 1.9rem;
+    border-radius: 1.5rem;
+  }
+  #nombreYApellido {
+    height: 2.5rem;
+    width: 17rem;
+    transition: all 1s;
+  }
+  #nombreYApellido:focus {
+    height: 2.7rem;
+    width: 27rem;
+    font-size: 2.1rem;
+  }
+
+  #password {
+    height: 2.5rem;
+    width: 18rem;
+    transition: all 1s;
+  }
+  #password:focus {
+    height: 2.7rem;
+    width: 22rem;
+    font-size: 2.1rem;
+  }
+
+  #rePassword {
+    height: 2.5rem;
+    width: 18rem;
+    transition: all 1s;
+  }
+  #rePassword:focus {
+    height: 2.7rem;
+    width: 22rem;
+    font-size: 2.1rem;
+  }
+
+  #email {
+    height: 2.5rem;
+    width: 22rem;
+    transition: all 1s;
+  }
+  #email:focus {
+    height: 2.7rem;
+    width: 26rem;
+    font-size: 2.1rem;
+  }
+  .cuadroComentario {
+    width: 45rem;
+    height: 20rem;
+  }
+}
+
+/* DESKTOP ······················································································································· */
+@media (min-width: 1024px) {
+  .mainRegistro__formulario {
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 1.9rem;
+    border-radius: 1.5rem;
+  }
+
+  #nombreYApellido:focus {
+    /* height: 2.7rem; */
+    width: 26.5rem;
+    font-size: 2.1rem;
+  }
+  #password:focus {
+    /* height: 2rem; */
+    width: 23rem;
+    font-size: 2.1rem;
+  }
+  #rePassword:focus {
+    /* height: 2rem; */
+    width: 23rem;
+    font-size: 2.1rem;
+  }
+  #email:focus {
+    /* height: 2rem; */
+    width: 26rem;
+    font-size: 2.1rem;
+  }
+}
