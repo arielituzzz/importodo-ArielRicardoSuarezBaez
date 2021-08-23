@@ -1,21 +1,21 @@
 /* PAGINA "EN CONSTRUCCION"********************************************************************************************************************** */
 .bodyConstruccion {
   background-image: linear-gradient(#80b1e5, whitesmoke);
-}
-.mainConstruccion {
-  padding-bottom: 25rem;
-}
-.mainConstruccion__div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.mainConstruccion__div__text {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif;
-  font-size: 5rem;
-  text-align: center;
-}
-.mainConstruccion__div__image {
-  width: 40rem;
+  .mainConstruccion {
+    padding-bottom: 25rem;
+    &__div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__text {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 5rem;
+        text-align: center;
+      }
+      &__image {
+        width: 40rem;
+      }
+    }
+  }
 }

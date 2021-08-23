@@ -12,32 +12,32 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.mainAyuda__contTitle {
-  font-size: 4rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  text-align: center;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
-}
-.mainAyuda__cuestion {
-  width: 29rem;
-  border-radius: 1rem;
-  padding: 0rem 2rem;
-  background-color: whitesmoke;
-}
-.mainAyuda__cuestion__title {
-  font-size: 3rem;
-}
-.mainAyuda__cuestion__subTitle {
-  font-size: 2rem;
-  margin-top: 1rem;
-  background-color: whitesmoke;
-}
-.mainAyuda__cuestion__text {
-  font-size: 2rem;
-  line-height: 3rem;
+  &__contTitle {
+    font-size: 4rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-align: center;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+  }
+  &__cuestion {
+    width: 29rem;
+    border-radius: 1rem;
+    padding: 0rem 2rem;
+    background-color: whitesmoke;
+    &__title {
+      font-size: 3rem;
+    }
+    &__subTitle {
+      font-size: 2rem;
+      margin-top: 1rem;
+      background-color: whitesmoke;
+    }
+    &__text {
+      font-size: 2rem;
+      line-height: 3rem;
+    }
+  }
 }
 
 /* MEDIA QUERIS········································································································ */
@@ -56,10 +56,9 @@
     width: 60rem;
     border: 0.2rem solid black;
     padding: 0rem 2rem;
-    background-color: whitesmoke;
-  }
-  .mainAyuda__cuestion__subTitle {
-    font-size: 2.7rem;
+    &__subTitle {
+      font-size: 2.7rem;
+    }
   }
 }
 
@@ -70,12 +69,12 @@
     border: 0.2rem solid black;
     padding: 0rem 2rem;
     background-color: whitesmoke;
-  }
-  .mainAyuda__cuestion__subTitle {
-    font-size: 3.4rem;
-  }
-  .mainAyuda__cuestion__text {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
+    &__subTitle {
+      font-size: 3.4rem;
+    }
+    &__text {
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+    }
   }
 }
