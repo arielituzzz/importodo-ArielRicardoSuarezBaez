@@ -1,169 +1,139 @@
 /* PAGINA "OFERTAS"**************************************************************************** */
-.body__randomTemplateOf {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "randomHeader randomHeader" "randomMain randomMain" "randomFooter randomFooter";
-  row-gap: 2rem;
 
-  .mainOfertas {
-    margin: 1rem;
-    border: 0.3rem solid#585F66;
-    border-radius: 1rem;
-    background-color: white;
-    &__section {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: 4rem 1fr 1fr 1fr 1fr 1fr 1fr;
-      flex-wrap: wrap;
-      grid-template-areas: "ofertaTitle ofertaTitle" "producto1 producto2" "producto3 producto4" "producto5 producto6" "producto7 producto8" "producto9 producto10" "producto11 producto12";
-      row-gap: 2rem;
-      column-gap: 1rem;
-      padding: 1rem;
-      &__title {
-        grid-area: ofertaTitle;
-        font-size: 3rem;
-      }
-      &__article {
-        display: flex;
-        justify-items: center;
-        align-items: center;
-        flex-wrap: wrap;
-        border: 0.2rem solid grey;
-        border-radius: 3rem;
-        transition: 0.3s;
-        padding: 1rem;
-        text-align: center;
-        &--text {
-          font-size: 1.9rem;
-          text-decoration: none;
-          color: #0089b3;
-        }
-        &--imgPaquete {
-          width: 12rem;
-        }
-      }
-      &__article:hover {
-        transform: scale(1.1, 1.1);
-      }
-      .producto1 {
-        grid-area: producto1;
-      }
-      .producto2 {
-        grid-area: producto2;
-      }
-      .producto3 {
-        grid-area: producto3;
-      }
-      .producto4 {
-        grid-area: producto4;
-      }
-      .producto5 {
-        grid-area: producto5;
-      }
-      .producto6 {
-        grid-area: producto6;
-      }
-      .producto7 {
-        grid-area: producto7;
-      }
-      .producto8 {
-        grid-area: producto8;
-      }
-      .producto9 {
-        grid-area: producto9;
-      }
-      .producto10 {
-        grid-area: producto10;
-      }
-      .producto11 {
-        grid-area: producto11;
-      }
-      .producto12 {
-        grid-area: producto12;
-      }
-      .producto13 {
-        grid-area: producto13;
-        display: none;
-      }
-      .producto14 {
-        grid-area: producto14;
-        display: none;
-      }
-      .producto15 {
-        grid-area: producto15;
-        display: none;
-      }
-      .producto16 {
-        grid-area: producto16;
-        display: none;
-      }
+.mainOfertas {
+  margin: 1rem;
+  border: 0.3rem solid#585F66;
+  border-radius: 1rem;
+  background-color: white;
+  &__section {
+    border: 1rem solid #585f66;
+    &__title {
+      grid-area: ofertaTitle;
+      font-size: 3rem;
     }
-  }
-}
-/* MEDIA QUERIS········································································································ */
-
-/* TABLET························································································································ */
-@media (min-width: 768px) {
-  .body__randomTemplateOf {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 12rem 167rem 4rem;
-    grid-template-areas: "randomHeader randomHeader" "randomMain randomMain" "randomFooter randomFooter";
-
-    .mainOfertas__section {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: 5rem 1fr 1fr 1fr 1fr;
-      flex-wrap: wrap;
-      grid-template-areas: "ofertaTitle ofertaTitle ofertaTitle ofertaTitle" "producto1 producto2 producto3 producto4" "producto5 producto6 producto7 producto8" "producto9 producto10 producto11 producto12" "producto13 producto14 producto15 producto16";
-      row-gap: 2rem;
-      column-gap: 1rem;
-      padding: 1rem 2rem;
-      &__title {
-        grid-area: ofertaTitle;
-        font-size: 4rem;
-      }
-      .producto13 {
-        grid-area: producto13;
-        display: flex;
-      }
-      .producto14 {
-        grid-area: producto14;
-        display: flex;
-      }
-      .producto15 {
-        grid-area: producto15;
-        display: flex;
-      }
-      .producto16 {
-        grid-area: producto16;
-        display: flex;
-      }
+    //   &__article {
+    //     display: flex;
+    //     justify-items: center;
+    //     align-items: center;
+    //     flex-wrap: wrap;
+    //     border: 0.2rem solid grey;
+    //     border-radius: 3rem;
+    //     transition: 0.3s;
+    //     padding: 1rem;
+    //     text-align: center;
+    //     &--text {
+    //       font-size: 1.9rem;
+    //       text-decoration: none;
+    //       color: #0089b3;
+    //     }
+    &--imgPaquete {
+      width: 7rem;
+      height: 10rem;
     }
+    //   }
+    //   &__article:hover {
+    //     transform: scale(1.1, 1.1);
+    //   }
+    //   .producto1 {
+    //     grid-area: producto1;
+    //   }
+    //   .producto2 {
+    //     grid-area: producto2;
+    //   }
+    //   .producto3 {
+    //     grid-area: producto3;
+    //   }
+    //   .producto4 {
+    //     grid-area: producto4;
+    //   }
+    //   .producto5 {
+    //     grid-area: producto5;
+    //   }
+    //   .producto6 {
+    //     grid-area: producto6;
+    //   }
+    //   .producto7 {
+    //     grid-area: producto7;
+    //   }
+    //   .producto8 {
+    //     grid-area: producto8;
+    //   }
+    //   .producto9 {
+    //     grid-area: producto9;
+    //   }
+    //   .producto10 {
+    //     grid-area: producto10;
+    //   }
+    //   .producto11 {
+    //     grid-area: producto11;
+    //   }
+    //   .producto12 {
+    //     grid-area: producto12;
+    //   }
+    //   .producto13 {
+    //     grid-area: producto13;
+    //     display: none;
+    //   }
+    //   .producto14 {
+    //     grid-area: producto14;
+    //     display: none;
+    //   }
+    //   .producto15 {
+    //     grid-area: producto15;
+    //     display: none;
+    //   }
+    //   .producto16 {
+    //     grid-area: producto16;
+    //     display: none;
+    //   }
+    // }
   }
-}
-/* DESKTOP ······················································································································· */
-@media (min-width: 1024px) {
-  .body__randomTemplateOf {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 12rem 158rem 4rem;
-    grid-template-areas: "randomHeader randomHeader" "randomMain randomMain" "randomFooter randomFooter";
 
-    .mainOfertas__section {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: 6rem 1fr 1fr 1fr 1fr;
-      flex-wrap: wrap;
-      grid-template-areas: "ofertaTitle ofertaTitle ofertaTitle ofertaTitle" "producto1 producto2 producto3 producto4" "producto5 producto6 producto7 producto8" "producto9 producto10 producto11 producto12" "producto13 producto14 producto15 producto16";
-      row-gap: 2rem;
-      column-gap: 2rem;
-      padding: 1rem 2rem;
-      &__title {
-        grid-area: ofertaTitle;
-        font-size: 5rem;
-      }
+  /* MEDIA QUERIS········································································································ */
+
+  /* TABLET························································································································ */
+  // @media (min-width: 768px) {
+  //   .mainOfertas__section {
+  //     display: grid;
+  //     grid-template-columns: repeat(4, 1fr);
+  //     grid-template-rows: 5rem 1fr 1fr 1fr 1fr;
+  //     flex-wrap: wrap;
+  //     grid-template-areas: "ofertaTitle ofertaTitle ofertaTitle ofertaTitle" "producto1 producto2 producto3 producto4" "producto5 producto6 producto7 producto8" "producto9 producto10 producto11 producto12" "producto13 producto14 producto15 producto16";
+  //     row-gap: 2rem;
+  //     column-gap: 1rem;
+  //     padding: 1rem 2rem;
+  //     &__title {
+  //       grid-area: ofertaTitle;
+  //       font-size: 4rem;
+  //     }
+  //     .producto13 {
+  //       grid-area: producto13;
+  //       display: flex;
+  //     }
+  //     .producto14 {
+  //       grid-area: producto14;
+  //       display: flex;
+  //     }
+  //     .producto15 {
+  //       grid-area: producto15;
+  //       display: flex;
+  //     }
+  //     .producto16 {
+  //       grid-area: producto16;
+  //       display: flex;
+  //     }
+  &--imgPaquete {
+    width: 10rem;
+    height: 13rem;
+  }
+  //   }
+  // }
+
+  /* DESKTOP ······················································································································· */
+  @media (min-width: 1024px) {
+    .mainOfertas__section--imgPaquete {
+      width: 13rem;
+      height: 16rem;
     }
   }
 }

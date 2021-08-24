@@ -11,9 +11,8 @@
   grid-template-rows: auto auto auto auto;
   grid-template-areas: ". . . . . header__purchase header__purchase header__purchase" "header__title header__title header__title header__title header__title header__title header__title header__title" "header__navUser header__navUser header__navUser header__navUser header__navUser header__navUser header__navUser header__navUser" "header__navMenu header__navMenu header__navMenu header__navMenu header__navMenu header__navMenu header__navMenu header__navMenu";
   background-color: #80b1e5;
-  padding: 0rem 2rem;
+  padding: 0rem 2rem 1rem;
 }
-
 .header__purchase {
   display: flex;
   grid-area: header__purchase;
@@ -91,7 +90,7 @@
   color: whitesmoke;
 }
 
-.header__navMenu {
+.main__navMenu {
   display: flex;
   grid-area: header__navMenu;
   justify-self: space-between;
@@ -100,8 +99,9 @@
   border-radius: 1rem;
   background-color: whitesmoke;
   color: black;
+  margin: 1rem 0rem;
 }
-.header__navMenu--botom {
+.main__navMenu--botom {
   padding: 0.2rem 0.8rem;
   font-size: 2.3rem;
   text-decoration: none;
@@ -110,13 +110,13 @@
   background-color: whitesmoke;
   color: black;
 }
-.header__navMenu--botom:hover {
+.main__navMenu--botom:hover {
   border-top: 0.2rem solid #003b4d;
   border-bottom: 0.2rem solid #003b4d;
   border-radius: 1rem;
   height: 3rem;
 }
-.header__navmenu--botomfx {
+.main__navmenu--botomfx {
   border-top: 0.2rem solid #003b4d;
   border-bottom: 0.2rem solid #003b4d;
   border-radius: 1rem;
@@ -124,17 +124,17 @@
   text-decoration: none;
   color: black;
 }
-.header__navMenu--botomFx:hover {
+.main__navMenu--botomFx:hover {
   border-top: 0.2rem solid #003b4d;
   border-bottom: 0.1rem;
   border-radius: 1rem;
   height: 3rem;
   background-image: linear-gradient(whitesmoke, #b9d3ee);
 }
-.header__navMenu__listaProceso {
+.main__navMenu__listaProceso {
   display: none;
 }
-.header__navMenu__listaProceso__item {
+.main__navMenu__listaProceso__item {
   width: 59rem;
 }
 .header__navUser__botom--textList {
@@ -184,47 +184,47 @@ ul li:hover ol {
   display: block;
   z-index: 999;
 }
-.header__navMenu__ofertas {
+.main__navMenu__ofertas {
   transition: all 0.3s;
   height: 4rem;
   color: black;
 }
-.header__navMenu__ofertas:hover {
+.main__navMenu__ofertas:hover {
   border-top: 0.2rem solid #003b4d;
   border-bottom: 0.2rem solid #003b4d;
   border-radius: 1rem;
   height: 3rem;
 }
-.header__navMenu__info {
+.main__navMenu__info {
   transition: all 0.3s;
   height: 4rem;
   color: black;
   display: none;
 }
-.header__navMenu__info:hover {
+.main__navMenu__info:hover {
   border-top: 0.2rem solid #003b4d;
   border-bottom: 0.2rem solid #003b4d;
   border-radius: 1rem;
   height: 3rem;
 }
-.header__navMenu__nosotros {
+.main__navMenu__nosotros {
   transition: all 0.3s;
   height: 4rem;
   color: black;
   display: none;
 }
-.header__navMenu__nosotros:hover {
+.main__navMenu__nosotros:hover {
   border-top: 0.2rem solid #003b4d;
   border-bottom: 0.2rem solid #003b4d;
   border-radius: 1rem;
   height: 3rem;
 }
-.header__navMenu__ayuda {
+.main__navMenu__ayuda {
   transition: all 0.3s;
   height: 4rem;
   color: black;
 }
-.header__navMenu__ayuda:hover {
+.main__navMenu__ayuda:hover {
   border-top: 0.2rem solid #003b4d;
   border-bottom: 0.2rem solid #003b4d;
   border-radius: 1rem;
@@ -241,7 +241,7 @@ ul li:hover ol {
   background-size: cover;
   background-position: top;
   padding: 0.5rem 2rem;
-  margin: 2rem 0rem 2rem;
+  margin: 1rem 0rem 1rem;
   border-radius: 1rem;
 }
 .sectionPagos__nav {
@@ -613,7 +613,7 @@ ul li:hover ol {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto;
-    grid-template-areas: "header__purchase header__purchase header__purchase" "header__title header__title header__navUser" "header__navMenu header__navMenu header__navMenu";
+    grid-template-areas: "header__title header__title header__purchase" "header__title header__title header__navUser";
     background-color: #80b1e5;
     padding: 0rem 2rem;
     align-items: center;
