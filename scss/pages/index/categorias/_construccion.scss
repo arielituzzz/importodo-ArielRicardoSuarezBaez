@@ -2,7 +2,7 @@
 .body__randomTemplateCons {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 16rem 441rem 4rem;
+  grid-template-rows: auto auto auto;
   grid-template-areas: "randomHeader" "randomMain" "randomFooter";
   row-gap: 2rem;
 }
