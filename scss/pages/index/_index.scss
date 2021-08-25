@@ -131,9 +131,7 @@
   height: 3rem;
   background-image: linear-gradient(whitesmoke, #b9d3ee);
 }
-.main__navMenu__listaProceso {
-  display: none;
-}
+
 .main__navMenu__listaProceso__item {
   width: 59rem;
 }
@@ -199,7 +197,6 @@ ul li:hover ol {
   transition: all 0.3s;
   height: 4rem;
   color: black;
-  display: none;
 }
 .main__navMenu__info:hover {
   border-top: 0.2rem solid #003b4d;
@@ -211,7 +208,6 @@ ul li:hover ol {
   transition: all 0.3s;
   height: 4rem;
   color: black;
-  display: none;
 }
 .main__navMenu__nosotros:hover {
   border-top: 0.2rem solid #003b4d;
@@ -234,7 +230,6 @@ ul li:hover ol {
   grid-area: main;
 }
 .sectionPagos {
-  display: none;
   position: relative;
   background-image: url(imagenes/clouds-and-blue-sky-with-copy-space-background-free-photo.jpg);
   background-repeat: no-repeat;
@@ -300,58 +295,6 @@ ul li:hover ol {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-.prod1 {
-  grid-area: prod1;
-  justify-self: center;
-}
-.prod2 {
-  grid-area: prod2;
-  justify-self: center;
-}
-.prod3 {
-  grid-area: prod3;
-  justify-self: center;
-}
-.prod4 {
-  grid-area: prod4;
-  justify-self: center;
-}
-.prod5 {
-  grid-area: prod5;
-  justify-self: center;
-}
-.prod6 {
-  grid-area: prod6;
-  justify-self: center;
-}
-.prod7 {
-  grid-area: prod7;
-  justify-self: center;
-}
-.prod8 {
-  grid-area: prod8;
-  justify-self: center;
-}
-.prod9 {
-  display: none;
-  grid-area: prod9;
-  justify-self: center;
-}
-.prod10 {
-  display: none;
-  grid-area: prod10;
-  justify-self: center;
-}
-.prod11 {
-  display: none;
-  grid-area: prod11;
-  justify-self: center;
-}
-.prod12 {
-  display: none;
-  grid-area: prod12;
-  justify-self: center;
-}
 .main__sectionProdDest__article--text {
   font-size: 1.5rem;
   text-decoration: none;
@@ -403,15 +346,7 @@ ul li:hover ol {
   width: 10rem;
   height: 13rem;
 }
-.promo4 {
-  display: none;
-}
-.promo5 {
-  display: none;
-}
-.promo6 {
-  display: none;
-}
+
 .footer {
   grid-area: footer;
   display: grid;
@@ -489,7 +424,7 @@ ul li:hover ol {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto auto;
-    grid-template-areas: "header__purchase header__purchase" "header__title header__navUser" "header__navMenu header__navMenu";
+    grid-template-areas: "header__title header__purchase" "header__title header__navUser" "header__navMenu header__navMenu";
     background-color: #80b1e5;
     padding: 0rem 2rem;
     align-items: center;
@@ -498,26 +433,26 @@ ul li:hover ol {
     display: flex;
     grid-area: header__title;
     font-size: 1.7rem;
-    justify-content: center;
+    justify-self: flex-start;
   }
-  .header__navMenu {
+  .main__navMenu {
     display: flex;
     grid-area: header__navMenu;
     justify-content: space-around;
     align-self: center;
   }
-  .header__navMenu--botom {
+  .main__navMenu--botom {
     padding: 0.2rem 0.8rem;
     font-size: 2.3rem;
     color: black;
     text-decoration: none;
   }
 
-  .header__navMenu__listaProceso {
+  .main__navMenu__listaProceso {
     display: inline-block;
     font-size: 2rem;
   }
-  .header__navMenu__listaProceso__item {
+  .main__navMenu__listaProceso__item {
     font-size: 1.5rem;
     width: 60rem;
   }
@@ -615,7 +550,7 @@ ul li:hover ol {
     grid-template-rows: auto auto auto;
     grid-template-areas: "header__title header__title header__purchase" "header__title header__title header__navUser";
     background-color: #80b1e5;
-    padding: 0rem 2rem;
+    padding: 0rem 2rem 1rem;
     align-items: center;
   }
   .header__title {
@@ -635,13 +570,10 @@ ul li:hover ol {
   .header__navUser__botom--margin {
     margin-right: 4rem;
   }
-  .header__navMenu {
+  .main__navMenu {
     margin-top: 2rem;
   }
-  .header__navMenu__listaProceso {
-    display: inline-block;
-  }
-  .header__navMenu__info {
+  .main__navMenu__info {
     display: inline-block;
   }
   .sectionPagos {
