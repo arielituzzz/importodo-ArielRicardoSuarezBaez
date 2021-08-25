@@ -1,26 +1,51 @@
-/* PAGINA "Productos Decoracion"************************************************************************************************************************ */
+/* TEMPLATES **************************************************************************** */
+
 .mainTemplate {
   border: 0.3rem solid#585F66;
   border-radius: 1rem;
   background-color: white;
-  .mainTemplate__title {
+  &__title {
     font-size: 3rem;
   }
 
-  .mainTemplate__article--imgPaquete {
+  &__article--imgPaquete {
     width: 8rem;
     height: 11rem;
   }
-  .mainTemplate__article--text {
+  &__article--text {
     text-align: center;
   }
 }
+
 /* MEDIA QUERIS········································································································ */
 
 /* TABLET························································································································ */
 @media (min-width: 768px) {
+  .mainTemplate {
+    border: 0.3rem solid#585F66;
+    border-radius: 1rem;
+    background-color: white;
+    &__title {
+      font-size: 4rem;
+    }
+    &__article--imgPaquete {
+      width: 11rem;
+      height: 14rem;
+    }
+  }
 }
-
 /* DESKTOP ······················································································································· */
 @media (min-width: 1024px) {
+  .mainTemplate {
+    border: 0.3rem solid#585F66;
+    border-radius: 1rem;
+    background-color: white;
+    &__title {
+      font-size: 5rem;
+    }
+    &__article--imgPaquete {
+      width: 14rem;
+      height: 17rem;
+    }
+  }
 }
