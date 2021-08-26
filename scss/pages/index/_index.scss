@@ -12,30 +12,30 @@
   grid-template-areas: ". . . . . header__purchase header__purchase header__purchase" "header__title header__title header__title header__title header__title header__title header__title header__title" "header__navUser header__navUser header__navUser header__navUser header__navUser header__navUser header__navUser header__navUser" "header__navMenu header__navMenu header__navMenu header__navMenu header__navMenu header__navMenu header__navMenu header__navMenu";
   background-color: #80b1e5;
   padding: 0rem 2rem 1rem;
-}
-.header__purchase {
-  display: flex;
-  grid-area: header__purchase;
-  justify-self: flex-end;
-  padding-top: 1rem;
-}
-.header__purchase--text {
-  text-decoration: none;
-  font-size: 1.9rem;
-  color: black;
-  font-weight: bold;
-  transition: all 0.5s;
-}
-.header__purchase--text:hover {
-  text-decoration: none;
-  font-size: 2rem;
-  font-weight: bold;
-  border-bottom: 0.2rem solid black;
-  border-radius: 1rem;
-}
-.header__purchase--carrito {
-  width: 3rem;
-  vertical-align: middle;
+  .header__purchase {
+    display: flex;
+    grid-area: header__purchase;
+    justify-self: flex-end;
+    padding-top: 1rem;
+    .header__purchase--text {
+      text-decoration: none;
+      font-size: 1.9rem;
+      color: black;
+      font-weight: bold;
+      transition: all 0.5s;
+    }
+    .header__purchase--text:hover {
+      text-decoration: none;
+      font-size: 2rem;
+      font-weight: bold;
+      border-bottom: 0.2rem solid black;
+      border-radius: 1rem;
+    }
+    .header__purchase--carrito {
+      width: 3rem;
+      vertical-align: middle;
+    }
+  }
 }
 
 .header__title {
@@ -43,19 +43,19 @@
   grid-area: header__title;
   font-size: 1.5rem;
   justify-content: center;
-}
-.header__title--text {
-  text-decoration: none;
-}
+  .header__title--text {
+    text-decoration: none;
+  }
 
-.header__title--text1 {
-  color: whitesmoke;
-  font-family: serif;
-}
-.header__title--text2 {
-  color: rgb(204, 16, 16);
-  font-style: italic;
-  font-weight: bold;
+  .header__title--text1 {
+    color: whitesmoke;
+    font-family: serif;
+  }
+  .header__title--text2 {
+    color: rgb(204, 16, 16);
+    font-style: italic;
+    font-weight: bold;
+  }
 }
 
 .header__navUser {
@@ -66,78 +66,85 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
+  .header__navUser__botom {
+    height: 2.7rem;
+    border-radius: 3rem;
+    padding: 0rem 1rem;
+    transition: all 0.5s;
+  }
+  .header__navUser__botom:hover {
+    height: 2.7rem;
+    border: 3px solid whitesmoke;
+    border-radius: 3rem;
+    padding: 0rem 1rem;
+  }
+  .header__navUser__botom--text {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    transition: all 0.5s;
+  }
+  .header__navUser__botom--text:hover {
+    font-size: 1.5rem;
+    color: whitesmoke;
+  }
 }
-.header__navUser__botom {
-  height: 2.7rem;
-  border-radius: 3rem;
-  padding: 0rem 1rem;
-  transition: all 0.5s;
-}
-.header__navUser__botom:hover {
-  height: 2.7rem;
-  border: 3px solid whitesmoke;
-  border-radius: 3rem;
-  padding: 0rem 1rem;
-}
-.header__navUser__botom--text {
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: whitesmoke;
-  transition: all 0.5s;
-}
-.header__navUser__botom--text:hover {
-  font-size: 1.5rem;
-  color: whitesmoke;
+.main {
+  grid-area: main;
+  &__navMenu {
+    display: flex;
+    grid-area: header__navMenu;
+    justify-self: space-between;
+    align-items: center;
+    border: 0.2rem solid black;
+    border-radius: 1rem;
+    background-color: whitesmoke;
+    color: black;
+    margin: 1rem 0rem;
+    &--botom {
+      padding: 0.2rem 0.8rem;
+      font-size: 2.3rem;
+      text-decoration: none;
+      transition: all 0.3s;
+      height: 4rem;
+      background-color: whitesmoke;
+      color: black;
+    }
+    &--botom:hover {
+      border-top: 0.2rem solid #003b4d;
+      border-bottom: 0.2rem solid #003b4d;
+      border-radius: 1rem;
+      height: 4rem;
+    }
+    &--botomfx {
+      border-top: 0.2rem solid #003b4d;
+      border-bottom: 0.2rem solid #003b4d;
+      border-radius: 1rem;
+      height: 3rem;
+      text-decoration: none;
+      color: black;
+    }
+    &--botomFx:hover {
+      border-top: 0.2rem solid #003b4d;
+      border-bottom: 0.1rem;
+      border-radius: 1rem;
+      height: 4.5rem;
+      background-image: linear-gradient(whitesmoke, #b9d3ee);
+    }
+  }
+  .main__navMenu__listaProceso__item {
+    width: 59rem;
+  }
 }
 
-.main__navMenu {
-  display: flex;
-  grid-area: header__navMenu;
-  justify-self: space-between;
-  align-items: center;
-  border: 0.2rem solid black;
-  border-radius: 1rem;
-  background-color: whitesmoke;
-  color: black;
-  margin: 1rem 0rem;
-}
-.main__navMenu--botom {
-  padding: 0.2rem 0.8rem;
-  font-size: 2.3rem;
-  text-decoration: none;
-  transition: all 0.3s;
-  height: 4rem;
-  background-color: whitesmoke;
-  color: black;
-}
-.main__navMenu--botom:hover {
-  border-top: 0.2rem solid #003b4d;
-  border-bottom: 0.2rem solid #003b4d;
-  border-radius: 1rem;
-  height: 3rem;
-}
-.main__navmenu--botomfx {
-  border-top: 0.2rem solid #003b4d;
-  border-bottom: 0.2rem solid #003b4d;
-  border-radius: 1rem;
-  height: 3rem;
-  text-decoration: none;
-  color: black;
-}
-.main__navMenu--botomFx:hover {
-  border-top: 0.2rem solid #003b4d;
-  border-bottom: 0.1rem;
-  border-radius: 1rem;
-  height: 3rem;
-  background-image: linear-gradient(whitesmoke, #b9d3ee);
-}
-
-.main__navMenu__listaProceso__item {
-  width: 59rem;
-}
 .header__navUser__botom--textList {
   text-decoration: none;
   color: black;
+  font-size: 2rem;
+}
+.header__navUser__botom--textList:hover {
+  text-decoration: none;
+  color: rgb(0, 49, 33);
   font-size: 2rem;
 }
 
@@ -226,9 +233,7 @@ ul li:hover ol {
   border-radius: 1rem;
   height: 3rem;
 }
-.main {
-  grid-area: main;
-}
+
 .sectionPagos {
   position: relative;
   background-image: url(imagenes/clouds-and-blue-sky-with-copy-space-background-free-photo.jpg);
@@ -360,44 +365,44 @@ ul li:hover ol {
   border-top: 0.3rem solid#585F66;
   border-radius: 3rem;
   background-color: whitesmoke;
-}
-.footer__contact {
-  grid-area: footer__contact;
-}
-.footer__contact__item {
-  display: inline-block;
-  margin: 0.5rem 0.5rem;
-}
-.footer__contact__item--image {
-  width: 3rem;
-}
-.footer__contact__item--imageMail {
-  width: 4rem;
-}
-.footer__contact__text {
-  width: 25rem;
-  font-size: 1.2rem;
-  font-style: italic;
-  font-weight: bold;
-}
-.footer__up {
-  grid-area: footer__up;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-.footer__up--image {
-  width: 5rem;
-  vertical-align: middle;
-}
-.footer__up--text {
-  font-size: 1.3rem;
-  text-align: center;
-}
-.footer__copyright {
-  grid-area: footer__copyright;
-  text-align: center;
+  &__contact {
+    grid-area: footer__contact;
+    &__item {
+      display: inline-block;
+      margin: 0.5rem 0.5rem;
+      &--image {
+        width: 3rem;
+      }
+      &--imageMail {
+        width: 4rem;
+      }
+    }
+    &__text {
+      width: 25rem;
+      font-size: 1.2rem;
+      font-style: italic;
+      font-weight: bold;
+    }
+  }
+  .footer__up {
+    grid-area: footer__up;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    &--image {
+      width: 5rem;
+      vertical-align: middle;
+    }
+    &--text {
+      font-size: 1.3rem;
+      text-align: center;
+    }
+  }
+  &__copyright {
+    grid-area: footer__copyright;
+    text-align: center;
+  }
 }
 .chat {
   position: fixed;
@@ -428,12 +433,12 @@ ul li:hover ol {
     background-color: #80b1e5;
     padding: 0rem 2rem;
     align-items: center;
-  }
-  .header__title {
-    display: flex;
-    grid-area: header__title;
-    font-size: 1.7rem;
-    justify-self: flex-start;
+    &__title {
+      display: flex;
+      grid-area: header__title;
+      font-size: 1.7rem;
+      justify-self: flex-start;
+    }
   }
   .main__navMenu {
     display: flex;
@@ -523,13 +528,16 @@ ul li:hover ol {
     justify-content: space-between;
     padding: 1rem 2rem;
     border-top: 0.3rem solid#585F66;
-  }
-  .footer__up {
-    grid-area: footer__up;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-end;
+    .footer__up {
+      grid-area: footer__up;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      &--image {
+        width: 5rem;
+        vertical-align: middle;
+      }
+    }
   }
   .chat {
     position: fixed;
@@ -552,23 +560,23 @@ ul li:hover ol {
     background-color: #80b1e5;
     padding: 0rem 2rem 1rem;
     align-items: center;
-  }
-  .header__title {
-    justify-self: flex-start;
-    grid-area: header__title;
-    font-size: 2rem;
-  }
-  .header__navUser {
-    grid-area: header__navUser;
-    justify-self: flex-end;
-    align-self: flex-end;
-    font-size: 1.8rem;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: bold;
-  }
-  .header__navUser__botom--margin {
-    margin-right: 4rem;
+    &__title {
+      justify-self: flex-start;
+      grid-area: header__title;
+      font-size: 2rem;
+    }
+    &__navUser {
+      grid-area: header__navUser;
+      justify-self: flex-end;
+      align-self: flex-end;
+      font-size: 1.8rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      font-weight: bold;
+      &--margin {
+        margin-right: 4rem;
+      }
+    }
   }
   .main__navMenu {
     margin-top: 2rem;
@@ -643,20 +651,18 @@ ul li:hover ol {
     grid-template-areas: "footer__contact footer__up" "footer__copyright footer__copyright";
     justify-content: space-between;
     padding: 1rem 2rem;
+    .footer__contact {
+      display: flex;
+      flex-direction: row;
+      .footer__contact__text {
+        width: 30rem;
+        font-size: 1.5rem;
+        font-style: italic;
+        font-weight: bold;
+      }
+    }
   }
-  .footer__contact {
-    display: flex;
-    flex-direction: row;
-  }
-  .footer__up {
-    align-content: flex-start;
-  }
-  .footer__contact__text {
-    width: 30rem;
-    font-size: 1.5rem;
-    font-style: italic;
-    font-weight: bold;
-  }
+
   .chat {
     position: fixed;
     bottom: 13rem;
