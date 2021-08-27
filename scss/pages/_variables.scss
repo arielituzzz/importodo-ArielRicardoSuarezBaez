@@ -8,10 +8,43 @@ $color-brown-light: #e6b86a;
 $color-rose: #e6ad8c;
 $color-rose-light: #e9d3bc;
 
-$dark-mode: false; // Para Modo Oscuro cambiar valor a "true" o "false" para desactivar.
 //PRUEBA*****************************************************************************
+
+//DARK MODE*****************************************************************************
+$dark-mode-name: dark-mode;
+$dark-mode-status: false; // Para activar "Modo Oscuro", cambiar valor a "true" o "false" para desactivar.
+$dark-mode-background-color: rgb(50, 50, 50);
+$dark-mode-text-color: rgb(200, 200, 200);
+
 @if $dark-mode == true {
-  * {
-    background-color: black;
+  @mixin dark-mode($dark-mode-background-color, $dark-mode-text-color) {
+    background-color: $dark-mode-background-color;
+    color: $dark-mode-text-color;
+  }
+  @mixin dark-mode-fx {
+    border-left: 0.2rem solid $color-green;
+    border-right: 0.2rem solid $color-green;
+    background-color: $dark-mode-background-color;
+  }
+  #body {
+    @include dark-mode(-mode-background-color, -mode-text-color);
+  }
+  #header {
+    @include dark-mode(-mode-background-color, -mode-text-color);
+  }
+  #main {
+    @include dark-mode(-mode-background-color, -mode-text-color);
+  }
+  #footer {
+    @include dark-mode(-mode-background-color, -mode-text-color);
+  }
+  #productosDestacados {
+    @include dark-mode(-mode-background-color, -mode-text-color);
+  }
+  #productosPromocion {
+    @include dark-mode(-mode-background-color, -mode-text-color);
+  }
+  .mainTemplate__article:hover {
+    @include dark-mode-fx;
   }
 }

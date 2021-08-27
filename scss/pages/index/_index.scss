@@ -10,7 +10,7 @@
   grid-template-columns: repeat(8, auto);
   grid-template-rows: auto auto auto auto;
   grid-template-areas: ". . . . . header__purchase header__purchase header__purchase" "header__title header__title header__title header__title header__title header__title header__title header__title" "header__navUser header__navUser header__navUser header__navUser header__navUser header__navUser header__navUser header__navUser" "header__navMenu header__navMenu header__navMenu header__navMenu header__navMenu header__navMenu header__navMenu header__navMenu";
-  background-color: #80b1e5;
+  background-color: $color-site;
   padding: 0rem 2rem 1rem;
   .header__purchase {
     display: flex;

@@ -13,10 +13,8 @@
     transition: 0.4s;
   }
   &__article:hover {
-    // border-left: 0.2rem solid black;
-    // border-right: 0.2rem solid black;
     border-radius: 8rem;
-    background-color: #89e675;
+    background-color: $color-green;
   }
   &__article--imgPaquete {
     width: 8rem;
