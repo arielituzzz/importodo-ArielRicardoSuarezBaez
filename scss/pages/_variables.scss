@@ -1,9 +1,17 @@
 //COLORES***************************************************************************************
 
-$color-borde: #585f66;
+$color-borde: #d1d0d0;
 $color-site: #80b1e5;
 $color-green: #89e675;
 $color-violet: #e697d2;
 $color-brown-light: #e6b86a;
 $color-rose: #e6ad8c;
 $color-rose-light: #e9d3bc;
+
+$dark-mode: true; // Para Modo Oscuro cambiar valor a "true" o "false" para desactivar
+//PRUEBA*****************************************************************************
+@if $dark-mode == true {
+  * {
+    background-color: black;
+  }
+}

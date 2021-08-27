@@ -285,7 +285,7 @@ ul li:hover ol {
   align-items: center;
   text-align: center;
   transition: 0.3s;
-  border: 0.2rem solid grey;
+  border: 0.2rem solid $color-borde;
   border-radius: 3rem;
   padding: 1rem;
 }
@@ -333,7 +333,7 @@ ul li:hover ol {
   display: flex;
   align-items: center;
   text-decoration: none;
-  border: 0.2rem solid grey;
+  border: 0.2rem solid $color-borde;
   border-radius: 3rem;
   padding: 1rem;
   transition: 0.3s;
