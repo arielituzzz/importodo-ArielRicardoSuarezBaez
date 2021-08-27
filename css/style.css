@@ -1,7 +1,4 @@
 @charset "UTF-8";
-* {
-  background-color: black; }
-
 .bodyTemplate {
   display: grid;
   grid-template-columns: 1fr;

@@ -8,7 +8,7 @@ $color-brown-light: #e6b86a;
 $color-rose: #e6ad8c;
 $color-rose-light: #e9d3bc;
 
-$dark-mode: true; // Para Modo Oscuro cambiar valor a "true" o "false" para desactivar
+$dark-mode: false; // Para Modo Oscuro cambiar valor a "true" o "false" para desactivar.
 //PRUEBA*****************************************************************************
 @if $dark-mode == true {
   * {
