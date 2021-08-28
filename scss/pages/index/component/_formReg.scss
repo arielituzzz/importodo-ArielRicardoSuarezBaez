@@ -9,6 +9,9 @@
 }
 .formularioRegistro {
   background-color: whitesmoke;
+  @if $dark-mode-status == true {
+    color: $color-black;
+  }
 }
 #nombreYApellido {
   height: 2.2rem;

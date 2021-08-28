@@ -6,8 +6,12 @@
   justify-content: center;
   align-items: center;
 }
+
 .mainIngreso__form {
   width: 25rem;
+  @if $dark-mode-status == true {
+    color: $color-black;
+  }
 }
 .mainIngreso__form__botomSubmit--text {
   font-size: 1.5rem;

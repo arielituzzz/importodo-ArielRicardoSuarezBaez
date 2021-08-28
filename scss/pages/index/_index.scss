@@ -12,6 +12,7 @@
   grid-template-areas: ". . . . . header__purchase header__purchase header__purchase" "header__title header__title header__title header__title header__title header__title header__title header__title" "header__navUser header__navUser header__navUser header__navUser header__navUser header__navUser header__navUser header__navUser" "header__navMenu header__navMenu header__navMenu header__navMenu header__navMenu header__navMenu header__navMenu header__navMenu";
   background-color: $color-site;
   padding: 0rem 2rem 1rem;
+
   .header__purchase {
     display: flex;
     grid-area: header__purchase;
@@ -91,6 +92,7 @@
 }
 .main {
   grid-area: main;
+
   &__navMenu {
     display: flex;
     grid-area: header__navMenu;
@@ -279,6 +281,7 @@ ul li:hover ol {
   border: 0.3rem solid#585F66;
   border-radius: 1rem;
   background-color: white;
+  @include dark-mode-secondary;
 }
 .main__sectionProdDest__article {
   display: flex;
@@ -288,6 +291,7 @@ ul li:hover ol {
   border: 0.2rem solid $color-borde;
   border-radius: 3rem;
   padding: 1rem;
+  @include dark-mode-secondary;
 }
 .main__sectionProdDest__article:hover {
   text-align: center;
@@ -299,11 +303,22 @@ ul li:hover ol {
   grid-area: prodTitle;
   font-size: 2rem;
   margin-bottom: 1rem;
+  @include dark-mode-primary;
 }
 .main__sectionProdDest__article--text {
   font-size: 1.5rem;
   text-decoration: none;
-  color: #0089b3;
+  color: $color-article-blue-light;
+  @if $dark-mode-status == true {
+    @include dark-mode-secondary;
+  }
+}
+.main__sectionProdDest__article--text:hover {
+  text-decoration: none;
+  color: $color-black;
+  @if $dark-mode-status == true {
+    color: $color-white;
+  }
 }
 .main__sectionProdDest__article--imgPaquete {
   width: 7rem;
@@ -321,6 +336,7 @@ ul li:hover ol {
   background-color: white;
   padding: 2rem 2.5rem 2.5rem;
   row-gap: 3rem;
+  @include dark-mode-secondary;
 }
 .main__sectionPromo__title {
   align-self: center;
@@ -328,6 +344,7 @@ ul li:hover ol {
   margin-bottom: 1rem;
   grid-area: promo__title;
   justify-self: flex-start;
+  @include dark-mode-primary;
 }
 .main__sectionPromo__article {
   display: flex;
@@ -345,7 +362,17 @@ ul li:hover ol {
   font-size: 2.5rem;
   text-align: center;
   text-decoration: none;
-  color: #0089b3;
+  color: $color-article-blue-light;
+  @if $dark-mode-status == true {
+    @include dark-mode-secondary;
+  }
+}
+.main__sectionPromo__article--text:hover {
+  text-decoration: none;
+  color: $color-black;
+  @if $dark-mode-status == true {
+    color: $color-white;
+  }
 }
 .main__sectionPromo__article--imgPaquete {
   width: 10rem;
