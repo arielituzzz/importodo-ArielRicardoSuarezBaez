@@ -9,9 +9,6 @@
 
 .mainIngreso__form {
   width: 25rem;
-  @if $dark-mode-status == true {
-    color: $color-black;
-  }
 }
 .mainIngreso__form__botomSubmit--text {
   font-size: 1.5rem;
@@ -30,6 +27,7 @@
   border-radius: 1.5rem;
   background-color: whitesmoke;
   border: 0.3rem double rgb(15, 119, 15);
+  @include dark-mode-primary-activator;
 }
 #usuarioIng {
   width: 15rem;

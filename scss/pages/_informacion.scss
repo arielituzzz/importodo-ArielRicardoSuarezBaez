@@ -8,6 +8,15 @@
   margin: 2rem;
   width: 33rem;
   justify-self: center;
+
+  &__container {
+    border: 0.5rem solid#585F66;
+    border-radius: 1rem;
+    background-color: whitesmoke;
+    padding: 2rem;
+    @include dark-mode-primary-light-activator;
+    @include dark-mode-text-black-activator;
+  }
   &__Title {
     font-size: 5rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
@@ -15,12 +24,7 @@
     text-align: center;
     font-size: 3rem;
     margin-bottom: 1rem;
-  }
-  &__container {
-    border: 0.5rem solid#585F66;
-    border-radius: 1rem;
-    background-color: whitesmoke;
-    padding: 2rem;
+    @include dark-mode-text-white-activator;
   }
   &__cuestion__subTitle {
     font-size: 2.3rem;
