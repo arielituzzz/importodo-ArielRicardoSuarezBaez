@@ -5,29 +5,26 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  width: 110rem;
+  width: 33rem;
   &__container {
     border: 0.5rem solid#585F66;
     border-radius: 1rem;
     background-color: whitesmoke;
     padding: 2rem;
+    @include dark-mode-primary-light-activator;
+  }
+  &__cuestion {
+    border-radius: 1rem;
+    padding: 0rem 2rem;
+    background-color: whitesmoke;
+
     &__title {
-      font-size: 4rem;
+      font-size: 2.5rem;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
         Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       text-align: center;
       margin-bottom: 1rem;
       margin-top: 2rem;
-    }
-  }
-  &__cuestion {
-    width: 29rem;
-    border-radius: 1rem;
-    padding: 0rem 2rem;
-    background-color: whitesmoke;
-    &__title {
-      font-size: 3rem;
     }
     &__subTitle {
       font-size: 2rem;
@@ -37,6 +34,7 @@
     &__text {
       font-size: 2rem;
       line-height: 3rem;
+      @include dark-mode-text-black-activator;
     }
   }
 }
@@ -50,25 +48,26 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 50rem;
     &__container {
       border: 0.5rem solid#585F66;
       border-radius: 1rem;
       background-color: whitesmoke;
       padding: 2rem;
-      &__title {
-        font-size: 4rem;
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-        text-align: center;
-        margin-bottom: 1rem;
-        margin-top: 0rem;
-      }
+      @include dark-mode-primary-light-activator;
     }
   }
   .mainAyuda__cuestion {
-    width: 60rem;
     border: 0.2rem solid black;
     padding: 0rem 2rem;
+    &__title {
+      font-size: 4rem;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+      text-align: center;
+      margin-bottom: 1rem;
+      margin-top: 0rem;
+    }
     &__subTitle {
       font-size: 2.7rem;
     }
@@ -77,17 +76,15 @@
 
 /* DESKTOP ······················································································································· */
 @media (min-width: 1024px) {
-  .mainAyuda__cuestion {
+  .mainAyuda {
     width: 100rem;
-    border: 0.2rem solid black;
-    padding: 0rem 2rem;
-    background-color: whitesmoke;
-    &__subTitle {
-      font-size: 3.4rem;
-    }
-    &__text {
-      font-size: 2.5rem;
-      line-height: 3.5rem;
+    .mainAyuda__cuestion {
+      border: 0.2rem solid black;
+      padding: 0rem 2rem;
+      background-color: whitesmoke;
+      &__subTitle {
+        font-size: 3.4rem;
+      }
     }
   }
 }

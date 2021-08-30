@@ -1,4 +1,24 @@
 @charset "UTF-8";
+#body {
+  background-color: #323232;
+  color: #c8c8c8;
+}
+
+#main {
+  background-color: #323232;
+  color: #c8c8c8;
+}
+
+#main-random {
+  background-color: #3c3c3c;
+  color: #c8c8c8;
+}
+
+#footer {
+  background-color: #323232;
+  color: #c8c8c8;
+}
+
 /* TEMPLATES **************************************************************************** */
 .bodyTemplate {
   display: -ms-grid;
@@ -14,6 +34,7 @@
   border: 0.3rem solid #585F66;
   border-radius: 1rem;
   background-color: white;
+  background-color: #323232;
 }
 
 .mainTemplate__title {
@@ -31,6 +52,10 @@
   background-color: #89e675;
   -webkit-box-shadow: 0.21rem 0.2rem 0.2rem 0.2rem #d8d4d4;
           box-shadow: 0.21rem 0.2rem 0.2rem 0.2rem #d8d4d4;
+  border-left: 0.2rem solid #89e675;
+  border-right: 0.2rem solid #89e675;
+  border-radius: 5rem;
+  background-color: #3c3c3c;
 }
 
 .mainTemplate__article--imgPaquete {
@@ -41,11 +66,14 @@
 .mainTemplate__article--text {
   text-align: center;
   color: #0089b3;
+  background-color: #3c3c3c;
+  color: #c8c814;
 }
 
 .mainTemplate__article--text:hover {
   text-align: center;
   color: #323232;
+  color: #c8c8c8;
 }
 
 .mainTemplate a {
@@ -467,6 +495,8 @@ ul li:hover ol {
   border: 0.3rem solid #585F66;
   border-radius: 1rem;
   background-color: white;
+  background-color: #3c3c3c;
+  color: #c8c814;
 }
 
 .main__sectionProdDest__article {
@@ -482,6 +512,8 @@ ul li:hover ol {
   border: 0.2rem solid #d1d0d0;
   border-radius: 3rem;
   padding: 1rem;
+  background-color: #3c3c3c;
+  color: #c8c814;
 }
 
 .main__sectionProdDest__article:hover {
@@ -502,17 +534,22 @@ ul li:hover ol {
   grid-area: prodTitle;
   font-size: 2rem;
   margin-bottom: 1rem;
+  background-color: #3c3c3c;
+  color: #c8c8c8;
 }
 
 .main__sectionProdDest__article--text {
   font-size: 1.5rem;
   text-decoration: none;
   color: #0089b3;
+  background-color: #3c3c3c;
+  color: #c8c814;
 }
 
 .main__sectionProdDest__article--text:hover {
   text-decoration: none;
   color: #323232;
+  color: #c8c8c8;
 }
 
 .main__sectionProdDest__article--imgPaquete {
@@ -536,6 +573,8 @@ ul li:hover ol {
   background-color: white;
   padding: 2rem 2.5rem 2.5rem;
   row-gap: 3rem;
+  background-color: #3c3c3c;
+  color: #c8c814;
 }
 
 .main__sectionPromo__title {
@@ -548,6 +587,8 @@ ul li:hover ol {
   -ms-grid-column: 1;
   grid-area: promo__title;
   justify-self: flex-start;
+  background-color: #3c3c3c;
+  color: #c8c8c8;
 }
 
 .main__sectionPromo__article {
@@ -575,11 +616,14 @@ ul li:hover ol {
   text-align: center;
   text-decoration: none;
   color: #0089b3;
+  background-color: #3c3c3c;
+  color: #c8c814;
 }
 
 .main__sectionPromo__article--text:hover {
   text-decoration: none;
   color: #323232;
+  color: #c8c8c8;
 }
 
 .main__sectionPromo__article--imgPaquete {
@@ -1109,6 +1153,8 @@ ul li:hover ol {
   border-radius: 1.5rem;
   background-color: whitesmoke;
   border: 0.3rem double #0f770f;
+  background-color: #323232;
+  color: #c8c8c8;
 }
 
 #usuarioIng {
@@ -1187,10 +1233,14 @@ ul li:hover ol {
   background-color: whitesmoke;
   border: 0.3rem double #0f770f;
   border-radius: 1.5rem;
+  background-color: #323232;
+  color: #c8c8c8;
 }
 
 .formularioRegistro {
   background-color: whitesmoke;
+  background-color: #323232;
+  color: #c8c8c8;
 }
 
 #nombreYApellido {
@@ -1362,18 +1412,22 @@ ul li:hover ol {
   border-radius: 1rem;
   background-color: whitesmoke;
   padding: 2rem;
+  background-color: #3c3c3c;
+  color: #c8c8c8;
+  color: #323232;
 }
 
-.mainInfo__Title {
-  font-size: 5rem;
+.mainInfo__title {
+  font-size: 2.5rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   text-align: center;
   font-size: 3rem;
   margin-bottom: 1rem;
+  color: #c8c8c8;
 }
 
 .mainInfo__cuestion__subTitle {
-  font-size: 2.3rem;
+  font-size: 2rem;
 }
 
 .mainInfo__cuestion__text {
@@ -1431,6 +1485,15 @@ ul li:hover ol {
     margin: 2rem;
     width: 50rem;
   }
+  .mainInfo__title {
+    font-size: 4rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    text-align: center;
+    font-size: 4rem;
+  }
+  .mainInfo__subTitle {
+    font-size: 2.7rem;
+  }
 }
 
 /* DESKTOP ······················································································································· */
@@ -1448,12 +1511,6 @@ ul li:hover ol {
     -ms-grid-column-align: center;
         justify-self: center;
   }
-  .mainInfo__Title {
-    font-size: 5rem;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    text-align: center;
-    font-size: 4rem;
-  }
 }
 
 /* PAGINA "AYUDA"**************************************************************************** */
@@ -1469,7 +1526,7 @@ ul li:hover ol {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 110rem;
+  width: 33rem;
 }
 
 .mainAyuda__container {
@@ -1477,25 +1534,22 @@ ul li:hover ol {
   border-radius: 1rem;
   background-color: whitesmoke;
   padding: 2rem;
-}
-
-.mainAyuda__container__title {
-  font-size: 4rem;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  text-align: center;
-  margin-bottom: 1rem;
-  margin-top: 2rem;
+  background-color: #3c3c3c;
+  color: #c8c8c8;
 }
 
 .mainAyuda__cuestion {
-  width: 29rem;
   border-radius: 1rem;
   padding: 0rem 2rem;
   background-color: whitesmoke;
 }
 
 .mainAyuda__cuestion__title {
-  font-size: 3rem;
+  font-size: 2.5rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 2rem;
 }
 
 .mainAyuda__cuestion__subTitle {
@@ -1507,6 +1561,7 @@ ul li:hover ol {
 .mainAyuda__cuestion__text {
   font-size: 2rem;
   line-height: 3rem;
+  color: #323232;
 }
 
 /* MEDIA QUERIS········································································································ */
@@ -1524,24 +1579,26 @@ ul li:hover ol {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    width: 50rem;
   }
   .mainAyuda__container {
     border: 0.5rem solid #585F66;
     border-radius: 1rem;
     background-color: whitesmoke;
     padding: 2rem;
+    background-color: #3c3c3c;
+    color: #c8c8c8;
   }
-  .mainAyuda__container__title {
+  .mainAyuda__cuestion {
+    border: 0.2rem solid black;
+    padding: 0rem 2rem;
+  }
+  .mainAyuda__cuestion__title {
     font-size: 4rem;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     text-align: center;
     margin-bottom: 1rem;
     margin-top: 0rem;
-  }
-  .mainAyuda__cuestion {
-    width: 60rem;
-    border: 0.2rem solid black;
-    padding: 0rem 2rem;
   }
   .mainAyuda__cuestion__subTitle {
     font-size: 2.7rem;
@@ -1550,18 +1607,16 @@ ul li:hover ol {
 
 /* DESKTOP ······················································································································· */
 @media (min-width: 1024px) {
-  .mainAyuda__cuestion {
+  .mainAyuda {
     width: 100rem;
+  }
+  .mainAyuda .mainAyuda__cuestion {
     border: 0.2rem solid black;
     padding: 0rem 2rem;
     background-color: whitesmoke;
   }
-  .mainAyuda__cuestion__subTitle {
+  .mainAyuda .mainAyuda__cuestion__subTitle {
     font-size: 3.4rem;
-  }
-  .mainAyuda__cuestion__text {
-    font-size: 2.5rem;
-    line-height: 3.5rem;
   }
 }
 
