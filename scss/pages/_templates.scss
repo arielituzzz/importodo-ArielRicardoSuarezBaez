@@ -16,10 +16,13 @@
   }
   &__article {
     transition: 0.4s;
+    padding: 1rem;
   }
   &__article:hover {
     border-radius: 8rem;
     background-color: $color-green;
+
+    box-shadow: 0.21rem 0.2rem 0.2rem 0.2rem $color-grey;
     @include dark-mode-fx-light-activator;
   }
   &__article--imgPaquete {
@@ -80,8 +83,8 @@
       font-size: 5rem;
     }
     &__article--imgPaquete {
-      width: 14rem;
-      height: 17rem;
+      width: 13rem;
+      height: 16rem;
     }
     article a h4 {
       font-size: 1.9rem;

@@ -335,7 +335,7 @@ ul li:hover ol {
   margin-bottom: 1rem;
   grid-area: promo__title;
   justify-self: flex-start;
-  @include dark-mode-primary-light;
+  @include dark-mode-primary-light-activator;
 }
 .main__sectionPromo__article {
   display: flex;

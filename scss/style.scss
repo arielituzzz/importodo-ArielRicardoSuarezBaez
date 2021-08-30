@@ -1,12 +1,12 @@
 @import "pages/variables";
-@import "pages/index/index.scss";
-@import "pages/index/component/carrousel.scss";
-@import "pages/index/component/formIngr.scss";
-@import "pages/index/component/formReg.scss";
-@import "pages/informacion.scss";
-@import "pages/ayuda.scss";
-@import "pages/en_construccion.scss";
 @import "pages/templates";
+@import "pages/index/index";
+@import "pages/index/component/carrousel";
+@import "pages/index/component/formIngr";
+@import "pages/index/component/formReg";
+@import "pages/informacion";
+@import "pages/ayuda";
+@import "pages/en_construccion";
 
 /* RESET'S */
 * {
