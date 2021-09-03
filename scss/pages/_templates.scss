@@ -15,15 +15,15 @@
     font-size: 3rem;
   }
   &__article {
-    transition: 0.4s;
+    transition: 0.25s;
     padding: 1rem;
   }
   &__article:hover {
     border-radius: 8rem;
     background-color: $color-green;
-
     box-shadow: 0.21rem 0.2rem 0.2rem 0.2rem $color-grey;
     @include dark-mode-fx-light-activator;
+    @include dark-mode-box_shadow-none-activator;
   }
   &__article--imgPaquete {
     width: 8rem;

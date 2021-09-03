@@ -21,8 +21,8 @@
 }
 
 .mainTemplate__article {
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
   padding: 1rem;
 }
 
