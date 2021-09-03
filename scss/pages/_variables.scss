@@ -16,7 +16,7 @@ $color-article-blue-light: #0089b3 !default;
 //PRUEBA*****************************************************************************
 
 //DARK MODE*****************************************************************************
-$dark-mode-status: on; // Para activar "Modo Oscuro", cambiar valor a "on" u "off" para desactivar.
+$dark-mode-status: off; // Para activar "Modo Oscuro", cambiar valor a "on" u "off" para desactivar.
 
 @mixin dark-mode-background-black {
   background-color: $color-black;

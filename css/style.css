@@ -1,24 +1,4 @@
 @charset "UTF-8";
-#body {
-  background-color: #323232;
-  color: #c8c8c8;
-}
-
-#main {
-  background-color: #323232;
-  color: #c8c8c8;
-}
-
-#main-random {
-  background-color: #3c3c3c;
-  color: #c8c8c8;
-}
-
-#footer {
-  background-color: #323232;
-  color: #c8c8c8;
-}
-
 /* TEMPLATES **************************************************************************** */
 .bodyTemplate {
   display: -ms-grid;
@@ -34,7 +14,6 @@
   border: 0.3rem solid #585F66;
   border-radius: 1rem;
   background-color: white;
-  background-color: #323232;
 }
 
 .mainTemplate__title {
@@ -52,12 +31,6 @@
   background-color: #89e675;
   -webkit-box-shadow: 0.21rem 0.2rem 0.2rem 0.2rem #d8d4d4;
           box-shadow: 0.21rem 0.2rem 0.2rem 0.2rem #d8d4d4;
-  border-left: 0.2rem solid #89e675;
-  border-right: 0.2rem solid #89e675;
-  border-radius: 5rem;
-  background-color: #3c3c3c;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
 
 .mainTemplate__article--imgPaquete {
@@ -68,14 +41,11 @@
 .mainTemplate__article--text {
   text-align: center;
   color: #0089b3;
-  background-color: #3c3c3c;
-  color: #c8c814;
 }
 
 .mainTemplate__article--text:hover {
   text-align: center;
   color: #323232;
-  color: #c8c8c8;
 }
 
 .mainTemplate a {
@@ -148,6 +118,16 @@
       grid-template-areas: ". . . . . header__purchase header__purchase header__purchase" "header__title header__title header__title header__title header__title header__title header__title header__title" "header__navUser header__navUser header__navUser header__navUser header__navUser header__navUser header__navUser header__navUser" "header__navMenu header__navMenu header__navMenu header__navMenu header__navMenu header__navMenu header__navMenu header__navMenu";
   background-color: #80b1e5;
   padding: 0rem 2rem 1rem;
+}
+
+.header .botom__menuBurger {
+  background-color: #80b1e5;
+  border: none;
+}
+
+.header .botom__menuBurger--icon {
+  width: 3rem;
+  height: 3rem;
 }
 
 .header .header__purchase {
@@ -497,8 +477,6 @@ ul li:hover ol {
   border: 0.3rem solid #585F66;
   border-radius: 1rem;
   background-color: white;
-  background-color: #3c3c3c;
-  color: #c8c814;
 }
 
 .main__sectionProdDest__article {
@@ -514,8 +492,6 @@ ul li:hover ol {
   border: 0.2rem solid #d1d0d0;
   border-radius: 3rem;
   padding: 1rem;
-  background-color: #3c3c3c;
-  color: #c8c814;
 }
 
 .main__sectionProdDest__article:hover {
@@ -536,22 +512,17 @@ ul li:hover ol {
   grid-area: prodTitle;
   font-size: 2rem;
   margin-bottom: 1rem;
-  background-color: #3c3c3c;
-  color: #c8c8c8;
 }
 
 .main__sectionProdDest__article--text {
   font-size: 1.5rem;
   text-decoration: none;
   color: #0089b3;
-  background-color: #3c3c3c;
-  color: #c8c814;
 }
 
 .main__sectionProdDest__article--text:hover {
   text-decoration: none;
   color: #323232;
-  color: #c8c8c8;
 }
 
 .main__sectionProdDest__article--imgPaquete {
@@ -575,8 +546,6 @@ ul li:hover ol {
   background-color: white;
   padding: 2rem 2.5rem 2.5rem;
   row-gap: 3rem;
-  background-color: #3c3c3c;
-  color: #c8c814;
 }
 
 .main__sectionPromo__title {
@@ -589,8 +558,6 @@ ul li:hover ol {
   -ms-grid-column: 1;
   grid-area: promo__title;
   justify-self: flex-start;
-  background-color: #3c3c3c;
-  color: #c8c8c8;
 }
 
 .main__sectionPromo__article {
@@ -618,14 +585,11 @@ ul li:hover ol {
   text-align: center;
   text-decoration: none;
   color: #0089b3;
-  background-color: #3c3c3c;
-  color: #c8c814;
 }
 
 .main__sectionPromo__article--text:hover {
   text-decoration: none;
   color: #323232;
-  color: #c8c8c8;
 }
 
 .main__sectionPromo__article--imgPaquete {
@@ -1155,8 +1119,6 @@ ul li:hover ol {
   border-radius: 1.5rem;
   background-color: whitesmoke;
   border: 0.3rem double #0f770f;
-  background-color: #323232;
-  color: #c8c8c8;
 }
 
 #usuarioIng {
@@ -1235,14 +1197,10 @@ ul li:hover ol {
   background-color: whitesmoke;
   border: 0.3rem double #0f770f;
   border-radius: 1.5rem;
-  background-color: #323232;
-  color: #c8c8c8;
 }
 
 .formularioRegistro {
   background-color: whitesmoke;
-  background-color: #323232;
-  color: #c8c8c8;
 }
 
 #nombreYApellido {
@@ -1414,9 +1372,6 @@ ul li:hover ol {
   border-radius: 1rem;
   background-color: whitesmoke;
   padding: 2rem;
-  background-color: #3c3c3c;
-  color: #c8c8c8;
-  color: #323232;
 }
 
 .mainInfo__title {
@@ -1425,7 +1380,6 @@ ul li:hover ol {
   text-align: center;
   font-size: 3rem;
   margin-bottom: 1rem;
-  color: #c8c8c8;
 }
 
 .mainInfo__cuestion__subTitle {
@@ -1536,8 +1490,6 @@ ul li:hover ol {
   border-radius: 1rem;
   background-color: whitesmoke;
   padding: 2rem;
-  background-color: #3c3c3c;
-  color: #c8c8c8;
 }
 
 .mainAyuda__cuestion {
@@ -1563,7 +1515,6 @@ ul li:hover ol {
 .mainAyuda__cuestion__text {
   font-size: 2rem;
   line-height: 3rem;
-  color: #323232;
 }
 
 /* MEDIA QUERIS········································································································ */
@@ -1588,8 +1539,6 @@ ul li:hover ol {
     border-radius: 1rem;
     background-color: whitesmoke;
     padding: 2rem;
-    background-color: #3c3c3c;
-    color: #c8c8c8;
   }
   .mainAyuda__cuestion {
     border: 0.2rem solid black;

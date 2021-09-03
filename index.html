@@ -22,6 +22,287 @@
   <body id="body" class="bodyTemplate">
     <!-- COMIENZO DEL ENCABEZADO -->
     <header id="header" class="header">
+
+      <!-- COMIENZO DE MENU SCROLLABLE****************************************************************** -->
+      <button class="d-md-none btn btn-primary botom__menuBurger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><img class="botom__menuBurger--icon" src="imagenes/menu_hamburguesa.png" alt="menu_hamburguesa">></button>  
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">AREA DE USUARIOS</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <p>Try scrolling the rest of the page to see this option in action.</p>
+        </div>
+        <nav class="d-flex header__navUser">
+          <!-- Button trigger modal -->
+  
+          <button
+            type="button"
+            class="
+              btn btn-primary
+              bg-success
+              me-lg-5
+              header__navUser__botom header__navUser__botom--text
+            "
+            data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop"
+          >
+            Creá tu cuenta
+          </button>
+  
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="staticBackdrop"
+            data-bs-backdrop="static"
+            data-bs-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog mainRegistro__formulario">
+              <div class="modal-content formularioRegistro">
+                <div class="modal-header">
+                  <h5 class="modal-title form__title" id="staticBackdropLabel">
+                    Creá tu cuenta
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <form action="">
+                    <div>
+                      <label for="nombreYApellido">Nombre y Apellido:</label>
+                      <input
+                        type="text"
+                        name="nombreYApellido"
+                        id="nombreYApellido"
+                        placeholder="Nombre y Apellido"
+                        class="d-block d-sm-inline"
+                      />
+                    </div>
+                    <br />
+                    <div>
+                      <input
+                        type="radio"
+                        name="sexo"
+                        id="femenino"
+                        value="mujer"
+                      />
+                      <label for="femenino">Femenino</label>
+                      <br />
+                      <input
+                        type="radio"
+                        name="sexo"
+                        id="masculino"
+                        value="hombre"
+                      />
+                      <label for="masculino">Masculino</label>
+                    </div>
+                    <br />
+                    <div>
+                      <label for="password">Contraseña</label>
+                      <input
+                        class="d-block d-sm-inline"
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Minimo 8 caracteres"
+                      />
+                    </div>
+                    <br />
+                    <div>
+                      <label for="rePassword">Re-Ingresa Contraseña</label>
+                      <input
+                        class="d-block d-sm-inline"
+                        type="password"
+                        name="rePassword"
+                        id="rePassword"
+                        placeholder="Minimo 8 caracteres"
+                      />
+                    </div>
+                    <br />
+                    <div>
+                      <label for="pais_residencia">Pais de Residencia</label>
+                      <select name="pais_residencia" id="pais_residencia">
+                        <option value="Argentina">Argentina</option>
+                        <option value="Brasil">Brasil</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="Chile">Chile</option>
+                        <option value="Peru">Peru</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Colombia">Colombia</option>
+                        <option value="Venezuela">Venezuela</option>
+                      </select>
+                    </div>
+                    <br />
+                    <div>
+                      <label for="email">Correo Electronico</label>
+                      <input
+                        class="d-block d-sm-inline"
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="exampler@exampler.com"
+                      />
+                    </div>
+                    <br />
+                    <div>
+                      <label for="recibirInformacion"
+                        >SI! Quiero recibir el Newsletter!</label
+                      >
+                      <input
+                        type="checkbox"
+                        name="recibirInformacion"
+                        id="recibirInformacion"
+                        value="aceptaInfo"
+                      />
+                    </div>
+                    <br />
+                    <div class="mainRegistro__formulario__tituloComentario">
+                      <p>Ingresa informacion que creas relevante...</p>
+                      <textarea
+                        class="cuadroComentario"
+                        name="comentarios"
+                        id="comentarios"
+                        cols="30"
+                        rows="10"
+                      ></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="reset"
+                    class="
+                      btn btn-outline-danger
+                      mainIngreso__form__botomSubmit--text
+                    "
+                    data-bs-dismiss="modal"
+                  >
+                    Salir
+                  </button>
+                  <button
+                    type="submit"
+                    class="
+                      btn btn-outline-success
+                      mainIngreso__form__botomSubmit--text
+                    "
+                  >
+                    Registrarme
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Button trigger modal -->
+          <button
+            type="button"
+            class="
+              btn btn-primary
+              bg-success
+              header__navUser__botom header__navUser__botom--text
+            "
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModal"
+          >
+            Inicia Sesion
+          </button>
+  
+          <!-- Modal -->
+          <div
+            class="modal fade"
+            id="exampleModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered mainIngreso__form">
+              <div class="modal-content mainIngreso__form__fieldset">
+                <div class="modal-header">
+                  <h5 class="modal-title form__title" id="exampleModalLabel">
+                    Inicia Sesion
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close buttonClose"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+  
+                <div class="modal-body">
+                  <div>
+                    <label class="mainIngreso__form--text" for="usuario"
+                      >Usuario</label
+                    >
+                    <br />
+                    <input
+                      type="text"
+                      name="usuario"
+                      id="usuarioIng"
+                      placeholder="Ingrese Usuario"
+                    />
+                  </div>
+                  <div>
+                    <label class="mainIngreso__form--text" for="contrasena"
+                      >Contraseña</label
+                    >
+                    <br />
+                    <input
+                      type="password"
+                      name="contrasena"
+                      id="contrasenaIng"
+                      placeholder="Ingrese Contraseña"
+                    />
+                  </div>
+                  <div class="mainIngreso__recordarContrasena">
+                    <label
+                      class="mainIngreso__form--textoChico"
+                      for="recordarContrasena"
+                      >Recordar Contraseña</label
+                    >
+                    <input
+                      type="checkbox"
+                      name="recordarContrasena"
+                      id="recordarContrasenaIng"
+                      value="recordarContrasena"
+                    />
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="
+                      btn btn-outline-danger
+                      mainIngreso__form__botomSubmit--text
+                    "
+                    data-bs-dismiss="modal"
+                  >
+                    Salir
+                  </button>
+                  <button
+                    type="submit"
+                    class="
+                      btn btn-outline-success
+                      mainIngreso__form__botomSubmit--text
+                    "
+                  >
+                    Ingresar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+      
       <nav class="header__purchase">
         <a href="paginaConstruccion.html" class="header__purchase--text"
           >Compras
@@ -43,7 +324,7 @@
           </a>
         </h1>
       </div>
-      <nav class="header__navUser">
+      <nav class="d-none d-md-flex header__navUser">
         <!-- Button trigger modal -->
 
         <button
