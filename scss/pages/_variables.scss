@@ -1,6 +1,8 @@
 //COLORES***************************************************************************************
 $color-borde: #d1d0d0 !default;
 $color-site: #80b1e5 !default;
+$color-site-secondary: #466e99 !default;
+$color-site-light: #a8d2ff !default;
 $color-green: #89e675 !default;
 $color-violet: #e697d2 !default;
 $color-brown-light: #e6b86a !default;
@@ -8,10 +10,11 @@ $color-rose: #e6ad8c !default;
 $color-rose-light: #e9d3bc !default;
 $color-black: rgb(50, 50, 50) !default;
 $color-black-light: rgb(60, 60, 60) !default;
-$color-white: rgb(200, 200, 200) !default;
+$color-white: rgb(248, 248, 248) !default;
 $color-grey: rgb(216, 212, 212) !default;
+$color-grey-light: rgb(235, 235, 235) !default;
 $color-yellow: rgb(200, 200, 20) !default;
-$color-article-blue-light: #0089b3 !default;
+$color-article-text: $color-black;
 
 //PRUEBA*****************************************************************************
 

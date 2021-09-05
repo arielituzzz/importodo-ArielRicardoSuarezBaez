@@ -7,9 +7,8 @@
   grid-template-areas: "header" "main" "footer";
 }
 .mainTemplate {
-  border: 0.3rem solid#585F66;
   border-radius: 1rem;
-  background-color: white;
+  background-color: $color-white;
   @include dark-mode-background-black-activator;
   &__title {
     font-size: 3rem;
@@ -31,12 +30,12 @@
   }
   &__article--text {
     text-align: center;
-    color: $color-article-blue-light;
+    color: $color-article-text;
     @include dark-mode-secondary-light-activator;
   }
   &__article--text:hover {
     text-align: center;
-    color: $color-black;
+    color: $color-black-light;
     @include dark-mode-text-white-activator;
   }
   a {
@@ -55,9 +54,8 @@
 /* TABLET························································································································ */
 @media (min-width: 768px) {
   .mainTemplate {
-    border: 0.3rem solid#585F66;
     border-radius: 1rem;
-    background-color: white;
+    background-color: $color-white;
     &__title {
       font-size: 4rem;
     }
@@ -76,9 +74,8 @@
 /* DESKTOP ······················································································································· */
 @media (min-width: 1024px) {
   .mainTemplate {
-    border: 0.3rem solid#585F66;
     border-radius: 1rem;
-    background-color: white;
+    background-color: $color-white;
     &__title {
       font-size: 5rem;
     }
