@@ -2,21 +2,57 @@
   grid-area: header;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "menuBurger header__purchase" "header__title header__title" "header__navBar header__navBar";
+  grid-template-rows: auto auto auto auto;
+  grid-template-areas: "menuBurger header__purchase" "header__title header__title" "search search" "navBar navBar";
   column-gap: 2rem;
   background-color: $color-site;
   padding: 0rem 2rem 1rem;
-  .botom__menuBurger {
+  &__menuBurger {
     background-color: $color-site;
     border: none;
     grid-area: menuBurger;
     display: flex;
     justify-content: flex-start;
     align-self: center;
+    margin-top: 1rem;
     &--icon {
       width: 3rem;
       height: 3rem;
+    }
+    &__container {
+      width: 20rem;
+      &__botom {
+        height: 2.7rem;
+        border-radius: 3rem;
+        padding: 0rem 1rem;
+        transition: all 0.5s;
+        &--text {
+          text-decoration: none;
+          font-size: 1.5rem;
+          color: whitesmoke;
+          transition: all 0.5s;
+        }
+        &--textList {
+          text-decoration: none;
+          color: $color-black;
+          font-size: 2rem;
+        }
+      }
+      &__botom:hover {
+        height: 2.7rem;
+        border: 3px solid whitesmoke;
+        border-radius: 3rem;
+        padding: 0rem 1rem;
+      }
+      &--text:hover {
+        font-size: 1.5rem;
+        color: whitesmoke;
+      }
+      &--textList:hover {
+        text-decoration: none;
+        color: rgb(0, 49, 33);
+        font-size: 2rem;
+      }
     }
   }
 
@@ -24,8 +60,8 @@
     display: flex;
     grid-area: header__purchase;
     justify-self: flex-end;
-    align-self: flex-start;
-    padding-top: 1rem;
+    align-self: center;
+    margin-top: 1rem;
     .header__purchase--text {
       text-decoration: none;
       font-size: 1.9rem;
@@ -107,10 +143,27 @@
       font-size: 2rem;
     }
   }
+  &__search {
+    grid-area: search;
+    margin-bottom: 1rem;
+    &__imput {
+      border-radius: 0.5rem;
+      height: 3.5rem;
+      font-size: 1.7rem;
+    }
+    &__botom {
+      border-radius: 0.5rem;
+      font-size: 1.5rem;
+      color: $color-black-light;
+      font-weight: 600;
+      border: solid $color-site-secondary;
+    }
+  }
+
   &__navBar {
     background-color: $color-site-secondary;
     border-radius: 1rem;
-    grid-area: header__navBar;
+    grid-area: navBar;
     &__button {
       color: $color-white;
       font-size: 1.8rem;
@@ -127,7 +180,6 @@
     }
     &__button:hover {
       color: $color-grey;
-      font-size: 1.8rem;
     }
   }
 }
