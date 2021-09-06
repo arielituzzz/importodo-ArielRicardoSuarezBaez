@@ -168,28 +168,19 @@
   transition: all 0.5s;
 }
 
-.header__menuBurger__container__botom--textList {
-  text-decoration: none;
-  color: #323232;
-  font-size: 2rem;
-}
-
 .header__menuBurger__container__botom:hover {
   height: 2.7rem;
   border: 3px solid whitesmoke;
   border-radius: 3rem;
   padding: 0rem 1rem;
+  background-color: #f8f8f8;
+  -webkit-box-shadow: 0px 0px 1rem 0.5rem #ebebeb;
+          box-shadow: 0px 0px 1rem 0.5rem #ebebeb;
 }
 
 .header__menuBurger__container--text:hover {
   font-size: 1.5rem;
   color: whitesmoke;
-}
-
-.header__menuBurger__container--textList:hover {
-  text-decoration: none;
-  color: #003121;
-  font-size: 2rem;
 }
 
 .header .header__purchase {
