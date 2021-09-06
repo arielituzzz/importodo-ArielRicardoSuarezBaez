@@ -21,6 +21,63 @@
   </head>
   <body id="body" class="bodyTemplate">
     <header id="header_electro" class="header">
+      <!-- COMIENZO DE MENU SCROLLABLE****************************************************************** -->
+      <button
+        class="d-md-none btn btn-primary header__menuBurger"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions"
+        aria-controls="offcanvasWithBothOptions"
+      >
+        <img
+          class="header__menuBurger--icon"
+          src="imagenes/menu_hamburguesa.png"
+          alt="menu_hamburguesa"
+        />>
+      </button>
+      <div
+        class="offcanvas offcanvas-start header__menuBurger__container"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+            AREA DE USUARIOS
+          </h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="d-flex flex-column justify-content-center">
+            <button
+              type="button"
+              class="btn btn-success header__menuBurger__container__botom"
+            >
+              <a
+                class="header__menuBurger__container__botom--text"
+                href="registro.html"
+                >Creá tu cuenta</a
+              >
+            </button>
+            <button
+              type="button"
+              class="btn btn-success header__menuBurger__container__botom"
+            >
+              <a
+                class="header__menuBurger__container__botom--text"
+                href="inicio_sesion.html"
+                >Iniciá sesion</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
       <nav class="header__purchase">
         <a href="paginaConstruccion.html" class="header__purchase--text"
           >Compras
@@ -42,7 +99,7 @@
           </a>
         </h1>
       </div>
-      <nav class="header__navUser">
+      <nav class="d-none d-md-flex header__navUser">
         <!-- Button trigger modal -->
 
         <button
@@ -51,7 +108,9 @@
             btn btn-primary
             bg-success
             me-lg-5
-            header__navUser__botom header__navUser__botom--text
+            header__navUser__botom
+            header__navUser__botom--text
+            header__navUser--margin
           "
           data-bs-toggle="modal"
           data-bs-target="#staticBackdrop"
@@ -240,7 +299,7 @@
                 </h5>
                 <button
                   type="button"
-                  class="btn-close"
+                  class="btn-close buttonClose"
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
@@ -310,6 +369,120 @@
           </div>
         </div>
       </nav>
+      <!-- BARRA DE BUSQUEDA************************************************************************* -->
+      <div class="header__search">
+        <form class="d-flex">
+          <input
+            class="form-control me-2 header__search__imput"
+            type="search"
+            placeholder="Que buscas?"
+            aria-label="Search"
+          />
+          <button
+            class="btn btn-outline-success header__search__botom"
+            type="submit"
+          >
+            Buscar
+          </button>
+        </form>
+      </div>
+      <!-- FIN BARRA DE BUSQUEDA************************************************************************* -->
+      <!-- NAV-BAR********************************************************************** -->
+      <nav class="header__navBar">
+        <ul class="nav nav-pills nav-fill">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle header__navBar__button"
+              data-bs-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-expanded="false"
+              >CATEGORIAS</a
+            >
+            <ul
+              class="
+                dropdown-menu dropdown-menu-end
+                header__navBar__button__list
+              "
+            >
+              <li>
+                <a
+                  class="dropdown-item header__navBar__button__list__item"
+                  href="tecnologia.html"
+                  >Tecnologia</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item header__navBar__button__list__item"
+                  href="motos.html"
+                  >Motos</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item header__navBar__button__list__item"
+                  href="electrodomesticos.html"
+                  >Electrodomesticos</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item header__navBar__button__list__item"
+                  href="moda.html"
+                  >Moda</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item header__navBar__button__list__item"
+                  href="Gastronomia.html"
+                  >Gastronomia</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item header__navBar__button__list__item"
+                  href="Decoracion.html"
+                  >Decoracion</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item header__navBar__button__list__item"
+                  href="construccion.html"
+                  >Construccion</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link header__navBar__button"
+              aria-current="page"
+              href="ofertas.html"
+              >OFERTAS</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="d-none d-md-block nav-link header__navBar__button"
+              aria-current="page"
+              href="informacion.html"
+              >INFORMACION</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link header__navBar__button"
+              aria-current="page"
+              href="ayuda.html"
+              >AYUDA</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- FIN NAV-BAR********************************************************** -->
     </header>
     <main id="main-random" class="container my-3 main mainTemplate">
       <div class="row">
