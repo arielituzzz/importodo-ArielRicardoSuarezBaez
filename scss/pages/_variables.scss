@@ -1,0 +1,128 @@
+//COLORES***************************************************************************************
+$color-borde: #d1d0d0 !default;
+$color-site: #80b1e5 !default;
+$color-green: #89e675 !default;
+$color-violet: #e697d2 !default;
+$color-brown-light: #e6b86a !default;
+$color-rose: #e6ad8c !default;
+$color-rose-light: #e9d3bc !default;
+$color-black: rgb(50, 50, 50) !default;
+$color-black-light: rgb(60, 60, 60) !default;
+$color-white: rgb(200, 200, 200) !default;
+$color-grey: rgb(216, 212, 212) !default;
+$color-yellow: rgb(200, 200, 20) !default;
+$color-article-blue-light: #0089b3 !default;
+
+//PRUEBA*****************************************************************************
+
+//DARK MODE*****************************************************************************
+$dark-mode-status: on; // Para activar "Modo Oscuro", cambiar valor a "on" u "off" para desactivar.
+
+@mixin dark-mode-background-black {
+  background-color: $color-black;
+}
+@mixin dark-mode-background-black-light {
+  background-color: $color-black-light;
+}
+@mixin dark-mode-text-black {
+  color: $color-black;
+}
+@mixin dark-mode-text-white {
+  color: $color-white;
+}
+@mixin dark-mode-text-yellow {
+  color: $color-yellow;
+}
+@mixin dark-mode-box_shadow-none {
+  box-shadow: none;
+}
+@mixin dark-mode-primary {
+  @include dark-mode-background-black();
+  @include dark-mode-text-white;
+}
+@mixin dark-mode-primary-light {
+  @include dark-mode-background-black-light();
+  @include dark-mode-text-white();
+}
+@mixin dark-mode-secondary {
+  @include dark-mode-background-black();
+  @include dark-mode-text-yellow();
+}
+@mixin dark-mode-secondary-light {
+  @include dark-mode-background-black-light();
+  @include dark-mode-text-yellow();
+}
+@mixin dark-mode-fx-light {
+  border-left: 0.2rem solid $color-green;
+  border-right: 0.2rem solid $color-green;
+  border-radius: 5rem;
+  background-color: $color-black-light;
+}
+@mixin dark-mode-background-black-activator {
+  @if $dark-mode-status == on {
+    @include dark-mode-background-black();
+  }
+}
+@mixin dark-mode-background-black-light-activator {
+  @if $dark-mode-status == on {
+    @include dark-mode-background-black-light();
+  }
+}
+@mixin dark-mode-text-black-activator {
+  @if $dark-mode-status == on {
+    @include dark-mode-text-black();
+  }
+}
+@mixin dark-mode-text-white-activator {
+  @if $dark-mode-status == on {
+    @include dark-mode-text-white();
+  }
+}
+@mixin dark-mode-text-yellow-activator {
+  @if $dark-mode-status == on {
+    @include dark-mode-text-yellow();
+  }
+}
+@mixin dark-mode-primary-activator {
+  @if $dark-mode-status == on {
+    @include dark-mode-primary();
+  }
+}
+@mixin dark-mode-primary-light-activator {
+  @if $dark-mode-status == on {
+    @include dark-mode-primary-light();
+  }
+}
+@mixin dark-mode-secondary-activator {
+  @if $dark-mode-status == on {
+    @include dark-mode-secondary();
+  }
+}
+@mixin dark-mode-secondary-light-activator {
+  @if $dark-mode-status == on {
+    @include dark-mode-secondary-light();
+  }
+}
+@mixin dark-mode-fx-light-activator {
+  @if $dark-mode-status == on {
+    @include dark-mode-fx-light();
+  }
+}
+@mixin dark-mode-box_shadow-none-activator {
+  @if $dark-mode-status == on {
+    @include dark-mode-box_shadow-none();
+  }
+}
+
+#body {
+  @include dark-mode-primary-activator();
+}
+#main {
+  @include dark-mode-primary-activator();
+}
+#main-random {
+  @include dark-mode-primary-light-activator();
+}
+#footer {
+  @include dark-mode-primary-activator();
+}
