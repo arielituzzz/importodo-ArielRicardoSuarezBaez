@@ -675,6 +675,10 @@
   .main .main__sectionProdDest__title {
     display: inline-block;
     justify-self: flex-start;
+    text-align: left;
+  }
+  .main .main__sectionProdDest__title .main__sectionProdDest__title--text {
+    font-size: 2.5rem;
   }
   .main .main__sectionProdDest__article {
     width: 20rem;
@@ -685,11 +689,15 @@
     width: 8rem;
     height: 11rem;
   }
-  .main .main__sectionProdDest__article .main__sectionProdDest__title--text {
-    font-size: 2.5rem;
-  }
   .main .main__sectionPromo {
     padding: 2rem 2rem 1rem;
+  }
+  .main .main__sectionPromo .main__sectionPromo__title {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  .main .main__sectionPromo .main__sectionPromo__title .main__sectionPromo__title--text {
+    font-size: 2.5rem;
   }
   .main .main__sectionPromo .main__sectionPromo__article {
     width: 20rem;
@@ -698,9 +706,6 @@
   .main .main__sectionPromo .main__sectionPromo__article .main__sectionPromo__article--imgPaquete {
     width: 10rem;
     height: 12rem;
-  }
-  .main .main__sectionPromo .main__sectionPromo__article .main__sectionPromo__title--text {
-    font-size: 2.5rem;
   }
   .footer {
     -ms-grid-row: 3;
