@@ -5,6 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ImporTodo.Com</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="estilos.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -38,18 +44,275 @@
         </h1>
       </div>
       <nav class="header__navUser">
-        <div class="header__navUser__botom header__navUser__botom--margin">
-          <a href="registroUsuario.html" class="header__navUser__botom--text"
-            >Creá tu cuenta</a
-          >
+        <!-- Button trigger modal -->
+
+        <button
+          type="button"
+          class="
+            btn btn-primary
+            bg-success
+            me-lg-5
+            header__navUser__botom header__navUser__botom--text
+          "
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+        >
+          Creá tu cuenta
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="staticBackdrop"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="staticBackdropLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog mainRegistro__formulario">
+            <div class="modal-content formularioRegistro">
+              <div class="modal-header">
+                <h5 class="modal-title form__title" id="staticBackdropLabel">
+                  Creá tu cuenta
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <form action="">
+                  <div>
+                    <label for="nombreYApellido">Nombre y Apellido:</label>
+                    <input
+                      type="text"
+                      name="nombreYApellido"
+                      id="nombreYApellido"
+                      placeholder="Nombre y Apellido"
+                      class="d-block d-sm-inline"
+                    />
+                  </div>
+                  <br />
+                  <div>
+                    <input
+                      type="radio"
+                      name="sexo"
+                      id="femenino"
+                      value="mujer"
+                    />
+                    <label for="femenino">Femenino</label>
+                    <br />
+                    <input
+                      type="radio"
+                      name="sexo"
+                      id="masculino"
+                      value="hombre"
+                    />
+                    <label for="masculino">Masculino</label>
+                  </div>
+                  <br />
+                  <div>
+                    <label for="password">Contraseña</label>
+                    <input
+                      class="d-block d-sm-inline"
+                      type="password"
+                      name="password"
+                      id="password"
+                      placeholder="Minimo 8 caracteres"
+                    />
+                  </div>
+                  <br />
+                  <div>
+                    <label for="rePassword">Re-Ingresa Contraseña</label>
+                    <input
+                      class="d-block d-sm-inline"
+                      type="password"
+                      name="rePassword"
+                      id="rePassword"
+                      placeholder="Minimo 8 caracteres"
+                    />
+                  </div>
+                  <br />
+                  <div>
+                    <label for="pais_residencia">Pais de Residencia</label>
+                    <select name="pais_residencia" id="pais_residencia">
+                      <option value="Argentina">Argentina</option>
+                      <option value="Brasil">Brasil</option>
+                      <option value="Paraguay">Paraguay</option>
+                      <option value="Ecuador">Ecuador</option>
+                      <option value="Chile">Chile</option>
+                      <option value="Peru">Peru</option>
+                      <option value="Uruguay">Uruguay</option>
+                      <option value="Colombia">Colombia</option>
+                      <option value="Venezuela">Venezuela</option>
+                    </select>
+                  </div>
+                  <br />
+                  <div>
+                    <label for="email">Correo Electronico</label>
+                    <input
+                      class="d-block d-sm-inline"
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="exampler@exampler.com"
+                    />
+                  </div>
+                  <br />
+                  <div>
+                    <label for="recibirInformacion"
+                      >SI! Quiero recibir el Newsletter!</label
+                    >
+                    <input
+                      type="checkbox"
+                      name="recibirInformacion"
+                      id="recibirInformacion"
+                      value="aceptaInfo"
+                    />
+                  </div>
+                  <br />
+                  <div class="mainRegistro__formulario__tituloComentario">
+                    <p>Ingresa informacion que creas relevante...</p>
+                    <textarea
+                      class="anchoComentario"
+                      name="comentarios"
+                      id="comentarios"
+                      cols="30"
+                      rows="10"
+                    ></textarea>
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="reset"
+                  class="
+                    btn btn-outline-danger
+                    mainIngreso__form__botomSubmit--text
+                  "
+                  data-bs-dismiss="modal"
+                >
+                  Salir
+                </button>
+                <button
+                  type="submit"
+                  class="
+                    btn btn-outline-success
+                    mainIngreso__form__botomSubmit--text
+                  "
+                >
+                  Registrarme
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="header__navUser__botom">
-          <a href="ingresoUsuario.html" class="header__navUser__botom--text"
-            >Inicia Sesion</a
-          >
+
+        <!-- Button trigger modal -->
+        <button
+          type="button"
+          class="
+            btn btn-primary
+            bg-success
+            header__navUser__botom header__navUser__botom--text
+          "
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        >
+          Inicia Sesion
+        </button>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered mainIngreso__form">
+            <div class="modal-content mainIngreso__form__fieldset">
+              <div class="modal-header">
+                <h5 class="modal-title form__title" id="exampleModalLabel">
+                  Inicia Sesion
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body">
+                <div>
+                  <label class="mainIngreso__form--text" for="usuario"
+                    >Usuario</label
+                  >
+                  <br />
+                  <input
+                    type="text"
+                    name="usuario"
+                    id="usuarioIng"
+                    placeholder="Ingrese Usuario"
+                  />
+                </div>
+                <div>
+                  <label class="mainIngreso__form--text" for="contrasena"
+                    >Contraseña</label
+                  >
+                  <br />
+                  <input
+                    type="password"
+                    name="contrasena"
+                    id="contrasenaIng"
+                    placeholder="Ingrese Contraseña"
+                  />
+                </div>
+                <div class="mainIngreso__recordarContrasena">
+                  <label
+                    class="mainIngreso__form--textoChico"
+                    for="recordarContrasena"
+                    >Recordar Contraseña</label
+                  >
+                  <input
+                    type="checkbox"
+                    name="recordarContrasena"
+                    id="recordarContrasenaIng"
+                    value="recordarContrasena"
+                  />
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="
+                    btn btn-outline-danger
+                    mainIngreso__form__botomSubmit--text
+                  "
+                  data-bs-dismiss="modal"
+                >
+                  Salir
+                </button>
+                <button
+                  type="submit"
+                  class="
+                    btn btn-outline-success
+                    mainIngreso__form__botomSubmit--text
+                  "
+                >
+                  Ingresar
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </nav>
       <!--Comienzo desplegable "PROCESO DE COMPRA" -->
+
       <nav id="navMenu" class="header__navMenu">
         <ul class="header__navMenu--botom">
           <li class="header__navMenu__listaProceso">
@@ -158,7 +421,7 @@
         </div>
       </nav>
     </header>
-    <main class="main">
+    <main class="container main">
       <!-- HACIA ABAJO ES LA SECCION DE OPCIONES DE PAGO -->
       <section class="sectionPagos">
         <nav class="sectionPagos__nav">
@@ -208,7 +471,8 @@
           </div>
         </nav>
       </section>
-      <!-- HACIA ABAJO ES EL CHAT-BOT -->
+
+      <!-- CHAT-BOT -->
       <div class="chat">
         <a href="paginaConstruccion.html"
           ><img
@@ -218,16 +482,81 @@
         /></a>
         <p>Chat Virtual</p>
       </div>
-      <!-- ACA COMIENZA EL BANNER DE PUBLIDAD -->
-      <section class="sectionBanner">
-        <!-- <img
-          class="bannerAlCentro"
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgVf0NKDeLX_65dV6-GGNAecvsgAtX0XL5cw&usqp=CAU"
-          alt="banner"
-          --
-        /> -->
+      <!-- FIN DEL CHAT-BOT -->
+
+      <!-- BANNER DE PUBLIDAD -->
+      <section
+        id="carouselExampleIndicators"
+        class="carousel slide mh-100"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner sectionBanner d-none d-md-block">
+          <div class="carousel-item active">
+            <img
+              src="https://media.istockphoto.com/vectors/mega-sale-70-percent-off-promotion-website-banner-heading-design-on-vector-id1188251781?k=6&m=1188251781&s=612x612&w=0&h=TNhITm7jl9aVfZ3SY5nf9I4_sklfTsOuSjotl4-WXwE="
+              class="d-block sectionBanner__image"
+              alt="carrusel1"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://cdn.pixabay.com/photo/2020/05/31/20/06/cyber-5244032__340.png"
+              class="d-block sectionBanner__image"
+              alt="carrusel2"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="https://media.istockphoto.com/vectors/clearance-sale-80-percent-off-promotion-website-banner-heading-design-vector-id1188718957?k=6&m=1188718957&s=612x612&w=0&h=WSABtltZRcx1sT28cE7tkswh8cQs8xDhxY7wEHb3AFQ="
+              class="d-block sectionBanner__image"
+              alt="carrusel3"
+            />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </section>
-      <!-- HACIA ABAJO ES LA SECCION DE PRODUCTOS DESTACADOS -->
+      <!-- FIN DEL BANNER DE PUBLIDAD -->
+
+      <!-- PRODUCTOS DESTACADOS -->
       <section class="main__sectionProdDest">
         <div class="main__sectionProdDest__title">
           <h3 class="main__sectionProdDest__title--text">Un poco de todo...</h3>
@@ -390,7 +719,9 @@
           </a>
         </article>
       </section>
-      <!-- HACIA ABAJO ES LA SECCION DE PROMOCIONES -->
+      <!-- FIN DE PRODUCTOS DESTACADOS -->
+
+      <!-- SECCION DE PROMOCIONES -->
       <section class="main__sectionPromo">
         <div class="main__sectionPromo__title">
           <h3 class="main__sectionPromo__title--text">
@@ -476,7 +807,9 @@
           </a>
         </article>
       </section>
+      <!-- FIN DE LA SECCION DE PROMOCIONES -->
     </main>
+
     <!--de aca para abajo empieza el pie de pagina-->
     <footer class="footer">
       <div class="footer__contact">
@@ -546,5 +879,10 @@
         <strong>TODOS LOS DERECHOS RESERVADOS - "IMPORTODO.COM"</strong>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
