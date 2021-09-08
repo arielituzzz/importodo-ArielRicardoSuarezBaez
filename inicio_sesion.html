@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ImporTodo.Com-Decoracion</title>
+    <title>Inicio Sesion</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -19,8 +19,8 @@
       rel="stylesheet"
     />
   </head>
-  <body id="body" class="bodyTemplate">
-    <header id="header_deco" class="header">
+  <body id="body" class="body">
+    <header id="header" class="header">
       <!-- COMIENZO DE MENU SCROLLABLE****************************************************************** -->
       <button
         class="d-md-none btn btn-primary header__menuBurger"
@@ -68,6 +68,8 @@
             <button
               type="button"
               class="btn btn-success header__menuBurger__container__botom"
+              aria-label="Disabled select example"
+              disabled
             >
               <a
                 class="header__menuBurger__container__botom--text"
@@ -375,7 +377,7 @@
           <input
             class="form-control me-2 header__search__imput"
             type="search"
-            placeholder="Que buscas?"
+            placeholder="Encontra tu proxima compra..."
             aria-label="Search"
           />
           <button
@@ -484,316 +486,76 @@
       </nav>
       <!-- FIN NAV-BAR********************************************************** -->
     </header>
-    <main id="main-random" class="container my-3 main mainTemplate">
-      <div class="row">
-        <div>
-          <h3
-            class="
-              col-12
-              my-4
-              d-flex
-              justify-content-center
-              mainTemplate__title
-            "
-          >
-            Decoracion
-          </h3>
-        </div>
-        <article class="col-6 col-md-4 col-xl-3 mainTemplate__article">
-          <a
-            href="paginaConstruccion.html"
-            class="
-              d-flex
-              align-items-center
-              flex-column
-              mainTemplate__article--text
-            "
-            ><img
-              class="mainTemplate__article--imgPaquete"
-              src="imagenes/Productos/Decoracion/3CuadrosNordicoModernos45x30MarcoImpreso.webp"
-              alt="imgPaquete"
-            />
-            <h4>Cuadro Nordico 45x30cm Marco Impreso</h4>
-            <p>$2.600</p>
-          </a>
-        </article>
-        <article class="col-6 col-md-4 col-xl-3 mainTemplate__article">
-          <a
-            href="paginaConstruccion.html"
-            class="
-              d-flex
-              align-items-center
-              flex-column
-              mainTemplate__article--text
-            "
-            ><img
-              class="mainTemplate__article--imgPaquete"
-              src="imagenes/Productos/Decoracion/CanastoCestoOrganizadorRopaSuciaPlegableReforzado.webp"
-              alt="imgPaquete"
-            />
-            <h4>Canasto Organizador Plegable</h4>
-            <p>$2.100</p>
-          </a>
-        </article>
-        <article class="col-6 col-md-4 col-xl-3 mainTemplate__article">
-          <a
-            href="paginaConstruccion.html"
-            class="
-              d-flex
-              align-items-center
-              flex-column
-              mainTemplate__article--text
-            "
-            ><img
-              class="mainTemplate__article--imgPaquete"
-              src="imagenes/Productos/Decoracion/CartelLogoHarleyDavidsonLuminosoVintageLed.webp"
-              alt="imgPaquete"
-            />
-            <h4>Cartel Logo HARLEY DAVIDSON Vintage Led</h4>
-            <p>$3.500</p>
-          </a>
-        </article>
-        <article class="col-6 col-md-4 col-xl-3 mainTemplate__article">
-          <a
-            href="paginaConstruccion.html"
-            class="
-              d-flex
-              align-items-center
-              flex-column
-              mainTemplate__article--text
-            "
-            ><img
-              class="mainTemplate__article--imgPaquete"
-              src="imagenes/Productos/Decoracion/CuadroArbolDeLaVidaColor4EstacionesAnoPoliptico.webp"
-              alt="imgPaquete"
-            />
-            <h4>Cuadro Arbol de la Vida Color 4 Estaciones Poliptico</h4>
-            <p>$3.600</p>
-          </a>
-        </article>
+    <main id="main" class="container d-flex justify-content-center mt-3 main">
+      <div class="mainIngreso__form">
+        <div class="mainIngreso__form__fieldset">
+          <div class="modal-header">
+            <h5 class="modal-title form__title" id="exampleModalLabel">
+              Inicia Sesion
+            </h5>
+          </div>
 
-        <article class="col-6 col-md-4 col-xl-3 mainTemplate__article">
-          <a
-            href="paginaConstruccion.html"
-            class="
-              d-flex
-              align-items-center
-              flex-column
-              mainTemplate__article--text
-            "
-            ><img
-              class="mainTemplate__article--imgPaquete"
-              src="imagenes/Productos/Decoracion/CuadroDecorativo20x30Cm.webp"
-              alt="imgPaquete"
-            />
-            <h4>Cuadro Decorativo 20x30cm</h4>
-            <p>$800</p>
-          </a>
-        </article>
-        <article class="col-6 col-md-4 col-xl-3 mainTemplate__article">
-          <a
-            href="paginaConstruccion.html"
-            class="
-              d-flex
-              align-items-center
-              flex-column
-              mainTemplate__article--text
-            "
-            ><img
-              class="mainTemplate__article--imgPaquete"
-              src="imagenes/Productos/Decoracion/CuadroTripticoArbolDeLaVdaCaladoEnMadera120x60Cm.webp"
-              alt="imgPaquete"
-            />
-            <h4>Cuadro Arbol de la Vida Calado Madera 120x60cm</h4>
-            <p>$1.500</p>
-          </a>
-        </article>
-        <article class="col-6 col-md-4 col-xl-3 mainTemplate__article">
-          <a
-            href="paginaConstruccion.html"
-            class="
-              d-flex
-              align-items-center
-              flex-column
-              mainTemplate__article--text
-            "
-            ><img
-              class="mainTemplate__article--imgPaquete"
-              src="imagenes/Productos/Decoracion/EspejoModernoMarcoDeHierroCristalPrimeraCalidad60Cm.webp"
-              alt="imgPaquete"
-            />
-            <h4>Espejo Moderno Marco de hierro 60cm</h4>
-            <p>$4.800</p>
-          </a>
-        </article>
-        <article class="col-6 col-md-4 col-xl-3 mainTemplate__article">
-          <a
-            href="paginaConstruccion.html"
-            class="
-              d-flex
-              align-items-center
-              flex-column
-              mainTemplate__article--text
-            "
-            ><img
-              class="mainTemplate__article--imgPaquete"
-              src="imagenes/Productos/Decoracion/JuegoDeCortinasBlackoutTextilPresillasOcultas.webp"
-              alt="imgPaquete"
-            />
-            <h4>Juego de Cortinas BlackOut</h4>
-            <p>$13.100</p>
-          </a>
-        </article>
-        <article class="col-6 col-md-4 col-xl-3 mainTemplate__article">
-          <a
-            href="paginaConstruccion.html"
-            class="
-              d-flex
-              align-items-center
-              flex-column
-              mainTemplate__article--text
-            "
-            ><img
-              class="mainTemplate__article--imgPaquete"
-              src="imagenes/Productos/Decoracion/MiniPizarraLuminosaCartelLuzMensajesUsb.webp"
-              alt="imgPaquete"
-            />
-            <h4>Mini Pizarra Luminosa Mensajes Usb</h4>
-            <p>$2.000</p>
-          </a>
-        </article>
-        <article class="col-6 col-md-4 col-xl-3 mainTemplate__article">
-          <a
-            href="paginaConstruccion.html"
-            class="
-              d-flex
-              align-items-center
-              flex-column
-              mainTemplate__article--text
-            "
-            ><img
-              class="mainTemplate__article--imgPaquete"
-              src="imagenes/Productos/Decoracion/PiePortaMacetaDeMaderax2Un.webp"
-              alt="imgPaquete"
-            />
-            <h4>Pie Porta Maceta de Madera x 2un.</h4>
-            <p>$2.900</p>
-          </a>
-        </article>
-        <article class="col-6 col-md-4 col-xl-3 mainTemplate__article">
-          <a
-            href="paginaConstruccion.html"
-            class="
-              d-flex
-              align-items-center
-              flex-column
-              mainTemplate__article--text
-            "
-            ><img
-              class="mainTemplate__article--imgPaquete"
-              src="imagenes/Productos/Decoracion/PlanisferioViajesLuzLedCalidaMaderaConAcces140x70Cm.webp"
-              alt="imgPaquete"
-            />
-            <h4>Planisferio Viajes Luz Led de Madera 140x70cm.</h4>
-            <p>$6.900</p>
-          </a>
-        </article>
-        <article class="col-6 col-md-4 col-xl-3 mainTemplate__article">
-          <a
-            href="paginaConstruccion.html"
-            class="
-              d-flex
-              align-items-center
-              flex-column
-              mainTemplate__article--text
-            "
-            ><img
-              class="mainTemplate__article--imgPaquete"
-              src="imagenes/Productos/Decoracion/PortaretratosCuadrosModernosDecorativosSetx9Begonia.webp"
-              alt="imgPaquete"
-            />
-            <h4>Set x 9un. Porta Retrato Cuadros modernos BEGONIA</h4>
-            <p>$7.000</p>
-          </a>
-        </article>
-        <article class="col-6 col-md-4 col-xl-3 mainTemplate__article">
-          <a
-            href="paginaConstruccion.html"
-            class="
-              d-flex
-              align-items-center
-              flex-column
-              mainTemplate__article--text
-            "
-            ><img
-              class="mainTemplate__article--imgPaquete"
-              src="imagenes/Productos/Decoracion/PortaretratosCuadrosModernosSetx7Begonia.webp"
-              alt="imgPaquete"
-            />
-            <h4>Set x 7un. Porta Retrato Cuadros Modernos BEGONIA</h4>
-            <p>$6.000</p>
-          </a>
-        </article>
-        <article class="col-6 col-md-4 col-xl-3 mainTemplate__article">
-          <a
-            href="paginaConstruccion.html"
-            class="
-              d-flex
-              align-items-center
-              flex-column
-              mainTemplate__article--text
-            "
-            ><img
-              class="mainTemplate__article--imgPaquete"
-              src="imagenes/Productos/Decoracion/Set3CajasOrganizadorasSimilRattanGrisBegonia.webp"
-              alt="imgPaquete"
-            />
-            <h4>Set x 3un. Cajas Organizadoras Simil Rattan Gris BEGONIA</h4>
-            <p>$3.500</p>
-          </a>
-        </article>
-        <article class="col-6 col-md-4 col-xl-3 mainTemplate__article">
-          <a
-            href="paginaConstruccion.html"
-            class="
-              d-flex
-              align-items-center
-              flex-column
-              mainTemplate__article--text
-            "
-            ><img
-              class="mainTemplate__article--imgPaquete"
-              src="imagenes/Productos/Decoracion/Velon7Dias10UnidadesIluminarte.webp"
-              alt="imgPaquete"
-            />
-            <h4>Velon 7 Dias x 10un.</h4>
-            <p>$2.700</p>
-          </a>
-        </article>
-        <article
-          class="
-            col-6 col-md-4 col-xl-3
-            d-md-none d-xl-inline
-            mainTemplate__article
-          "
-        >
-          <a
-            href="paginaConstruccion.html"
-            class="
-              d-flex
-              align-items-center
-              flex-column
-              mainTemplate__article--text
-            "
-            ><img
-              class="mainTemplate__article--imgPaquete"
-              src="imagenes/Productos/Decoracion/PortaretratosCuadrosModernosSetx7Begonia.webp"
-              alt="imgPaquete"
-            />
-            <h4>Set x 7un. Porta Retrato Cuadros Modernos BEGONIA</h4>
-            <p>$6.000</p>
-          </a>
-        </article>
+          <div class="modal-body">
+            <div>
+              <label class="mainIngreso__form--text" for="usuario"
+                >Usuario</label
+              >
+              <br />
+              <input
+                type="text"
+                name="usuario"
+                id="usuarioIng"
+                placeholder="Ingrese Usuario"
+              />
+            </div>
+            <div>
+              <label class="mainIngreso__form--text" for="contrasena"
+                >Contraseña</label
+              >
+              <br />
+              <input
+                type="password"
+                name="contrasena"
+                id="contrasenaIng"
+                placeholder="Ingrese Contraseña"
+              />
+            </div>
+            <div class="mainIngreso__recordarContrasena">
+              <label
+                class="mainIngreso__form--textoChico"
+                for="recordarContrasena"
+                >Recordar Contraseña</label
+              >
+              <input
+                type="checkbox"
+                name="recordarContrasena"
+                id="recordarContrasenaIng"
+                value="recordarContrasena"
+              />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="
+                btn btn-outline-danger
+                mainIngreso__form__botomSubmit--text
+              "
+              data-bs-dismiss="modal"
+            >
+              Salir
+            </button>
+            <button
+              type="submit"
+              class="
+                btn btn-outline-success
+                mainIngreso__form__botomSubmit--text
+              "
+            >
+              Ingresar
+            </button>
+          </div>
+        </div>
       </div>
     </main>
     <footer id="footer" class="footer">
@@ -851,7 +613,7 @@
         </div>
       </div>
       <div class="footer__up">
-        <a href="#header_deco"
+        <a href="#header"
           ><img
             class="footer__up--image"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5CDUa_JNpkMmSE5frEAm2krd3sbQ2tZB5bg&usqp=CAU"

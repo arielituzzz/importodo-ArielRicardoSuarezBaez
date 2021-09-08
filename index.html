@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ImporTodo.Com</title>
+    <meta
+      name="description"
+      content="Sitio dedicado a la comercializacion de productos importados, brindando confianza, rapidez y seguridad en tus compras"
+    />
+    <meta
+      name="keywords"
+      content="importacion, productos, ofertas, tecnologia, decoracion, moda, construccion, motos, electrodomesticos, gastronomia, promociones"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -22,6 +30,63 @@
   <body id="body" class="bodyTemplate">
     <!-- COMIENZO DEL ENCABEZADO -->
     <header id="header" class="header">
+      <!-- COMIENZO DE MENU SCROLLABLE****************************************************************** -->
+      <button
+        class="d-md-none btn btn-primary header__menuBurger"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasWithBothOptions"
+        aria-controls="offcanvasWithBothOptions"
+      >
+        <img
+          class="header__menuBurger--icon"
+          src="imagenes/menu_hamburguesa.png"
+          alt="menu_hamburguesa"
+        />>
+      </button>
+      <div
+        class="offcanvas offcanvas-start header__menuBurger__container"
+        data-bs-scroll="true"
+        tabindex="-1"
+        id="offcanvasWithBothOptions"
+        aria-labelledby="offcanvasWithBothOptionsLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel">
+            AREA DE USUARIOS
+          </h5>
+          <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="d-flex flex-column justify-content-center">
+            <button
+              type="button"
+              class="btn btn-success header__menuBurger__container__botom"
+            >
+              <a
+                class="header__menuBurger__container__botom--text"
+                href="registro.html"
+                >Creá tu cuenta</a
+              >
+            </button>
+            <button
+              type="button"
+              class="btn btn-success header__menuBurger__container__botom"
+            >
+              <a
+                class="header__menuBurger__container__botom--text"
+                href="inicio_sesion.html"
+                >Iniciá sesion</a
+              >
+            </button>
+          </div>
+        </div>
+      </div>
       <nav class="header__purchase">
         <a href="paginaConstruccion.html" class="header__purchase--text"
           >Compras
@@ -43,7 +108,7 @@
           </a>
         </h1>
       </div>
-      <nav class="header__navUser">
+      <nav class="d-none d-md-flex header__navUser">
         <!-- Button trigger modal -->
 
         <button
@@ -52,7 +117,9 @@
             btn btn-primary
             bg-success
             me-lg-5
-            header__navUser__botom header__navUser__botom--text
+            header__navUser__botom
+            header__navUser__botom--text
+            header__navUser--margin
           "
           data-bs-toggle="modal"
           data-bs-target="#staticBackdrop"
@@ -311,11 +378,125 @@
           </div>
         </div>
       </nav>
+      <!-- BARRA DE BUSQUEDA************************************************************************* -->
+      <div class="header__search">
+        <form class="d-flex">
+          <input
+            class="form-control me-2 header__search__imput"
+            type="search"
+            placeholder="Que buscas?"
+            aria-label="Search"
+          />
+          <button
+            class="btn btn-outline-success header__search__botom"
+            type="submit"
+          >
+            Buscar
+          </button>
+        </form>
+      </div>
+      <!-- FIN BARRA DE BUSQUEDA************************************************************************* -->
+      <!-- NAV-BAR********************************************************************** -->
+      <nav class="header__navBar">
+        <ul class="nav nav-pills nav-fill">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle header__navBar__button"
+              data-bs-toggle="dropdown"
+              href="#"
+              role="button"
+              aria-expanded="false"
+              >CATEGORIAS</a
+            >
+            <ul
+              class="
+                dropdown-menu dropdown-menu-end
+                header__navBar__button__list
+              "
+            >
+              <li>
+                <a
+                  class="dropdown-item header__navBar__button__list__item"
+                  href="tecnologia.html"
+                  >Tecnologia</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item header__navBar__button__list__item"
+                  href="motos.html"
+                  >Motos</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item header__navBar__button__list__item"
+                  href="electrodomesticos.html"
+                  >Electrodomesticos</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item header__navBar__button__list__item"
+                  href="moda.html"
+                  >Moda</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item header__navBar__button__list__item"
+                  href="Gastronomia.html"
+                  >Gastronomia</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item header__navBar__button__list__item"
+                  href="Decoracion.html"
+                  >Decoracion</a
+                >
+              </li>
+              <li>
+                <a
+                  class="dropdown-item header__navBar__button__list__item"
+                  href="construccion.html"
+                  >Construccion</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link header__navBar__button"
+              aria-current="page"
+              href="ofertas.html"
+              >OFERTAS</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="d-none d-md-block nav-link header__navBar__button"
+              aria-current="page"
+              href="informacion.html"
+              >INFORMACION</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link header__navBar__button"
+              aria-current="page"
+              href="ayuda.html"
+              >AYUDA</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- FIN NAV-BAR********************************************************** -->
     </header>
-    <!--Comienzo desplegable "PROCESO DE COMPRA" -->
     <main id="main" class="container main">
-      <nav id="navMenu" class="d-flex justify-content-around main__navMenu">
-        <ul class="d-none d-md-inline main__navMenu--botom">
+      <!--Comienzo desplegable "PROCESO DE COMPRA" -->
+
+      <!-- <ul class="d-none d-md-inline main__navMenu--botom">
           <li class="d-none d-md-inline">
             Proceso de compra
             <ol>
@@ -344,88 +525,18 @@
               </li>
             </ol>
           </li>
-        </ul>
-        <!--Comienzo menu desplegable "CATEGORIAS" -->
-        <ul class="main__navMenu--botom">
-          <li>
-            Categorias
-            <ul>
-              <li class="main__navMenu--botomFx">
-                <a
-                  href="tecnologia.html"
-                  class="header__navUser__botom--textList"
-                  >Tecnologia</a
-                >
-              </li>
-              <li class="main__navMenu--botomFx">
-                <a href="motos.html" class="header__navUser__botom--textList"
-                  >Motos</a
-                >
-              </li>
-              <li class="main__navMenu--botomFx">
-                <a
-                  href="electrodomesticos.html"
-                  class="header__navUser__botom--textList"
-                  >Electrodomesticos</a
-                >
-              </li>
-              <li class="main__navMenu--botomFx">
-                <a
-                  href="gastronomia.html"
-                  class="header__navUser__botom--textList"
-                  >Gastronomia</a
-                >
-              </li>
-              <li class="main__navMenu--botomFx">
-                <a href="moda.html" class="header__navUser__botom--textList"
-                  >Moda</a
-                >
-              </li>
-              <li class="main__navMenu--botomFx">
-                <a
-                  href="decoracion.html"
-                  class="header__navUser__botom--textList"
-                  >Decoracion
-                </a>
-              </li>
-              <li class="main__navMenu--botomFx">
-                <a
-                  href="construccion.html"
-                  class="header__navUser__botom--textList"
-                  >Construccion</a
-                >
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <!-- Fin del menu desplegable "CATEGORIAS" -->
-        <div class="main__navMenu__ofertas">
-          <a class="main__navMenu--botom" href="ofertas.html">Ofertas</a>
-        </div>
+        </ul> -->
 
-        <div class="d-none d-xl-inline main__navMenu__info">
-          <a class="main__navMenu--botom" href="informacion.html"
-            >Informacion necesaria</a
-          >
-        </div>
+      <!-- <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form> -->
 
-        <div class="d-none main__navMenu__nosotros">
-          <a class="main__navMenu--botom" href="nosotros.html"
-            >Sobre nosotros</a
-          >
-        </div>
-
-        <div class="main__navMenu__ayuda">
-          <a class="main__navMenu--botom" href="ayuda.html">Ayuda</a>
-        </div>
-      </nav>
       <!-- HACIA ABAJO ES LA SECCION DE OPCIONES DE PAGO -->
       <section class="d-none d-xl-inline sectionPagos">
         <nav class="sectionPagos__nav">
           <div class="sectionPagos__nav__botom">
-            <a
-              href="#"
-              class="sectionPagos__nav__botom--text"
+            <a href="#" class="sectionPagos__nav__botom--text"
               ><img
                 src="imagenes/credit-card.svg"
                 alt="credito"
@@ -434,9 +545,7 @@
             >
           </div>
           <div class="sectionPagos__nav__botom">
-            <a
-              href="#"
-              class="sectionPagos__nav__botom--text"
+            <a href="#" class="sectionPagos__nav__botom--text"
               ><img
                 src="imagenes/debit-card.svg"
                 alt="debito"
@@ -445,9 +554,7 @@
             >
           </div>
           <div class="sectionPagos__nav__botom">
-            <a
-              href="#"
-              class="sectionPagos__nav__botom--text"
+            <a href="#" class="sectionPagos__nav__botom--text"
               ><img
                 src="imagenes/mercado-creditsv2.svg"
                 alt="financiacion"
@@ -456,9 +563,7 @@
             >
           </div>
           <div class="sectionPagos__nav__botom">
-            <a
-              href="#"
-              class="sectionPagos__nav__botom--text"
+            <a href="#" class="sectionPagos__nav__botom--text"
               ><img
                 src="imagenes/payment-agreement.svg"
                 alt="efectivo"
@@ -484,7 +589,7 @@
       <!-- BANNER DE PUBLIDAD -->
       <section
         id="carouselExampleIndicators"
-        class="carousel slide mh-100"
+        class="carousel d-none d-md-block slide mh-100"
         data-bs-ride="carousel"
       >
         <div class="carousel-indicators">
@@ -509,7 +614,7 @@
             aria-label="Slide 3"
           ></button>
         </div>
-        <div class="carousel-inner sectionBanner d-none d-md-block">
+        <div class="carousel-inner sectionBanner">
           <a href="#" class="carousel-item active">
             <img
               src="https://media.istockphoto.com/vectors/mega-sale-70-percent-off-promotion-website-banner-heading-design-on-vector-id1188251781?k=6&m=1188251781&s=612x612&w=0&h=TNhITm7jl9aVfZ3SY5nf9I4_sklfTsOuSjotl4-WXwE="
@@ -530,8 +635,8 @@
               class="d-block sectionBanner__image"
               alt="carrusel3"
             />
-          </div>
-        </a>
+          </a>
+        </div>
         <button
           class="carousel-control-prev"
           type="button"
@@ -554,290 +659,435 @@
       <!-- FIN DEL BANNER DE PUBLIDAD -->
 
       <!-- PRODUCTOS DESTACADOS -->
-      <section id="productosDestacados" class="main__sectionProdDest">
-        <div class="main__sectionProdDest__title">
+      <section id="productosDestacados" class="container main__sectionProdDest">
+        <div class="row col-12 main__sectionProdDest__title">
           <h3 class="main__sectionProdDest__title--text">Un poco de todo...</h3>
         </div>
-        <article class="main__sectionProdDest__article prod1">
-          <a
-            href="paginaConstruccion.html"
-            class="main__sectionProdDest__article--text"
-            ><img
-              class="main__sectionProdDest__article--imgPaquete"
-              src="imagenes/Productos/Tecnologia/Celulares/AppleIphone12Mini64Gb.webp"
-              alt="imgPaquete"
-            />
-            <h4>IPHONE 12 Mini 64Gb</h4>
-            <p>$150.000</p>
-          </a>
-        </article>
-        <article class="main__sectionProdDest__article prod2">
-          <a
-            href="paginaConstruccion.html"
-            class="main__sectionProdDest__article--text"
-            ><img
-              class="main__sectionProdDest__article--imgPaquete"
-              src="imagenes/Productos/Tecnologia/Celulares/SamsungGalaxyS21+5G128Gb.webp"
-              alt="imgPaquete"
-            />
-            <h4>SAMSUNG GALAXY S21 Ultra +5G 128Gb</h4>
-            <p>$180.000</p>
-          </a>
-        </article>
-        <article class="main__sectionProdDest__article prod3">
-          <a
-            href="paginaConstruccion.html"
-            class="main__sectionProdDest__article--text"
-            ><img
-              class="main__sectionProdDest__article--imgPaquete"
-              src="imagenes/Productos/Tecnologia/Celulares/SamsungGalaxyA1264Gb.webp"
-              alt="imgPaquete"
-            />
-            <h4>SAMSUNG GALAXY A12 64Gb</h4>
-            <p>$40.000</p>
-          </a>
-        </article>
-        <article class="main__sectionProdDest__article prod4">
-          <a
-            href="paginaConstruccion.html"
-            class="main__sectionProdDest__article--text"
-            ><img
-              class="main__sectionProdDest__article--imgPaquete"
-              src="imagenes/Productos/Tecnologia/Celulares/XiaomiMi10T5GDualSim128Gb.webp"
-              alt="imgPaquete"
-            />
-            <h4>XIAOMI MI10T 5G Dual Sim 128Gb</h4>
-            <p>$60.000</p>
-          </a>
-        </article>
-
-        <article class="main__sectionProdDest__article prod5">
-          <a
-            href="paginaConstruccion.html"
-            class="main__sectionProdDest__article--text"
-            ><img
-              class="main__sectionProdDest__article--imgPaquete"
-              src="imagenes/Productos/Electrodomesticos/MultiprocesadoraSmartlifeSLFP05091000W.webp"
-              alt="imgPaquete"
-            />
-            <h4>Multi-Procesadora SMART-LIFE SLFP0509 1000W</h4>
-            <p>$12.000</p>
-          </a>
-        </article>
-        <article class="main__sectionProdDest__article prod6">
-          <a
-            href="paginaConstruccion.html"
-            class="main__sectionProdDest__article--text"
-            ><img
-              class="main__sectionProdDest__article--imgPaquete"
-              src="imagenes/Productos/Moda/CamperaRockieBordoHombre.webp"
-              alt="imgPaquete"
-            />
-            <h4>Campera ROCKIE Bordo Hombre</h4>
-            <p>$25.000</p>
-          </a>
-        </article>
-        <article class="main__sectionProdDest__article prod7">
-          <a
-            href="paginaConstruccion.html"
-            class="main__sectionProdDest__article--text"
-            ><img
-              class="main__sectionProdDest__article--imgPaquete"
-              src="imagenes/Productos/Decoracion/Set3CajasOrganizadorasSimilRattanGrisBegonia.webp"
-              alt="imgPaquete"
-            />
-            <h4>Set 3 Cajas Organizadoras Simil Rattan Gris Begonia</h4>
-            <p>$3.500</p>
-          </a>
-        </article>
-        <article class="main__sectionProdDest__article prod8">
-          <a
-            href="paginaConstruccion.html"
-            class="main__sectionProdDest__article--text"
-            ><img
-              class="main__sectionProdDest__article--imgPaquete"
-              src="imagenes/Productos/Decoracion/MiniPizarraLuminosaCartelLuzMensajesUsb.webp"
-              alt="imgPaquete"
-            />
-            <h4>MINI PIZARRA LUMINOSA Cartel luz led con USB</h4>
-            <p>$800</p>
-          </a>
-        </article>
-        <article class="main__sectionProdDest__article prod9">
-          <a
-            href="paginaConstruccion.html"
-            class="main__sectionProdDest__article--text"
-            ><img
-              class="main__sectionProdDest__article--imgPaquete"
-              src="imagenes/Productos/Motos/MotoHondaXRE300.webp"
-              alt="imgPaquete"
-            />
-            <h4>HONDA XRE300</h4>
-            <p>$249.000</p>
-          </a>
-        </article>
-        <article class="main__sectionProdDest__article prod10">
-          <a
-            href="paginaConstruccion.html"
-            class="main__sectionProdDest__article--text"
-            ><img
-              class="main__sectionProdDest__article--imgPaquete"
-              src="imagenes/Productos/Construccion/CarroPlegableAceroBoron.webp"
-              alt="imgPaquete"
-            />
-            <h4>Carro plegable ACERO BORON</h4>
-            <p>$970</p>
-          </a>
-        </article>
-        <article class="main__sectionProdDest__article prod11">
-          <a
-            href="paginaConstruccion.html"
-            class="main__sectionProdDest__article--text"
-            ><img
-              class="main__sectionProdDest__article--imgPaquete"
-              src="imagenes/Productos/Gastronomia/ParrillaElectricaSpeedyGrill1099.webp"
-              alt="imgPaquete"
-            />
-            <h4>Parrilla Electroncia SPEEDY Grill1099</h4>
-            <p>$2.500</p>
-          </a>
-        </article>
-        <article class="main__sectionProdDest__article prod12">
-          <a
-            href="paginaConstruccion.html"
+        <div class="row justify-content-evenly">
+          <article
             class="
-              d-flex
-              align-items-center
-              flex-column
-              main__sectionProdDest__article--text
+              col-6 col-md-4 col-xl-3
+              justify-content-center
+              main__sectionProdDest__article
             "
-            ><img
-              class="main__sectionProdDest__article--imgPaquete"
-              src="imagenes/Productos/Tecnologia/Tablet/TabletGadnicFenixPhoneTAB0024D10.webp"
-              alt="imgPaquete"
-            />
-            <h4>Tablet GADNIC FenixPhone TAB0024D10</h4>
-            <p>$28.000</p>
-          </a>
-        </article>
+          >
+            <a
+              href="paginaConstruccion.html"
+              class="main__sectionProdDest__article--text"
+              ><img
+                class="main__sectionProdDest__article--imgPaquete"
+                src="imagenes/Productos/Tecnologia/Celulares/AppleIphone12Mini64Gb.webp"
+                alt="imgPaquete"
+              />
+              <h4 class="main__sectionProdDest__article--text">
+                IPHONE 12 Mini 64Gb
+              </h4>
+              <p>$150.000</p>
+            </a>
+          </article>
+          <article
+            class="
+              col-6 col-md-4 col-xl-3
+              justify-content-center
+              main__sectionProdDest__article
+            "
+          >
+            <a
+              href="paginaConstruccion.html"
+              class="main__sectionProdDest__article--text"
+              ><img
+                class="main__sectionProdDest__article--imgPaquete"
+                src="imagenes/Productos/Tecnologia/Celulares/SamsungGalaxyS21+5G128Gb.webp"
+                alt="imgPaquete"
+              />
+              <h4 class="main__sectionProdDest__article--text">
+                SAMSUNG GALAXY S21 Ultra +5G 128Gb
+              </h4>
+              <p>$180.000</p>
+            </a>
+          </article>
+          <article
+            class="
+              col-6 col-md-4 col-xl-3
+              justify-content-center
+              main__sectionProdDest__article
+            "
+          >
+            <a
+              href="paginaConstruccion.html"
+              class="main__sectionProdDest__article--text"
+              ><img
+                class="main__sectionProdDest__article--imgPaquete"
+                src="imagenes/Productos/Tecnologia/Celulares/SamsungGalaxyA1264Gb.webp"
+                alt="imgPaquete"
+              />
+              <h4 class="main__sectionProdDest__article--text">
+                SAMSUNG GALAXY A12 64Gb
+              </h4>
+              <p>$40.000</p>
+            </a>
+          </article>
+
+          <article
+            class="
+              col-6 col-md-4 col-xl-3
+              justify-content-center
+              main__sectionProdDest__article
+            "
+          >
+            <a
+              href="paginaConstruccion.html"
+              class="main__sectionProdDest__article--text"
+              ><img
+                class="main__sectionProdDest__article--imgPaquete"
+                src="imagenes/Productos/Tecnologia/Celulares/XiaomiMi10T5GDualSim128Gb.webp"
+                alt="imgPaquete"
+              />
+              <h4 class="main__sectionProdDest__article--text">
+                XIAOMI MI10T 5G Dual Sim 128Gb
+              </h4>
+              <p>$60.000</p>
+            </a>
+          </article>
+
+          <article
+            class="
+              col-6 col-md-4 col-xl-3
+              justify-content-center
+              main__sectionProdDest__article
+            "
+          >
+            <a
+              href="paginaConstruccion.html"
+              class="main__sectionProdDest__article--text"
+              ><img
+                class="main__sectionProdDest__article--imgPaquete"
+                src="imagenes/Productos/Electrodomesticos/MultiprocesadoraSmartlifeSLFP05091000W.webp"
+                alt="imgPaquete"
+              />
+              <h4 class="main__sectionProdDest__article--text">
+                Multi-Procesadora SMART-LIFE SLFP0509 1000W
+              </h4>
+              <p>$12.000</p>
+            </a>
+          </article>
+          <article
+            class="
+              col-6 col-md-4 col-xl-3
+              justify-content-center
+              main__sectionProdDest__article
+            "
+          >
+            <a
+              href="paginaConstruccion.html"
+              class="main__sectionProdDest__article--text"
+              ><img
+                class="main__sectionProdDest__article--imgPaquete"
+                src="imagenes/Productos/Moda/CamperaRockieBordoHombre.webp"
+                alt="imgPaquete"
+              />
+              <h4 class="main__sectionProdDest__article--text">
+                Campera ROCKIE Bordo Hombre
+              </h4>
+              <p>$25.000</p>
+            </a>
+          </article>
+          <article
+            class="
+              col-6 col-md-4 col-xl-3
+              justify-content-center
+              main__sectionProdDest__article
+            "
+          >
+            <a
+              href="paginaConstruccion.html"
+              class="main__sectionProdDest__article--text"
+              ><img
+                class="main__sectionProdDest__article--imgPaquete"
+                src="imagenes/Productos/Decoracion/Set3CajasOrganizadorasSimilRattanGrisBegonia.webp"
+                alt="imgPaquete"
+              />
+              <h4 class="main__sectionProdDest__article--text">
+                Set 3 Cajas Organizadoras Simil Rattan Gris Begonia
+              </h4>
+              <p>$3.500</p>
+            </a>
+          </article>
+          <article
+            class="
+              col-6 col-md-4 col-xl-3
+              justify-content-center
+              main__sectionProdDest__article
+            "
+          >
+            <a
+              href="paginaConstruccion.html"
+              class="main__sectionProdDest__article--text"
+              ><img
+                class="main__sectionProdDest__article--imgPaquete"
+                src="imagenes/Productos/Decoracion/MiniPizarraLuminosaCartelLuzMensajesUsb.webp"
+                alt="imgPaquete"
+              />
+              <h4 class="main__sectionProdDest__article--text">
+                MINI PIZARRA LUMINOSA Cartel luz led con USB
+              </h4>
+              <p>$800</p>
+            </a>
+          </article>
+
+          <article
+            class="
+              col-6 col-md-4 col-xl-3
+              justify-content-center
+              main__sectionProdDest__article
+            "
+          >
+            <a
+              href="paginaConstruccion.html"
+              class="main__sectionProdDest__article--text"
+              ><img
+                class="main__sectionProdDest__article--imgPaquete"
+                src="imagenes/Productos/Motos/MotoHondaXRE300.webp"
+                alt="imgPaquete"
+              />
+              <h4 class="main__sectionProdDest__article--text">HONDA XRE300</h4>
+              <p>$249.000</p>
+            </a>
+          </article>
+          <article
+            class="
+              col-6 col-md-4 col-xl-3
+              justify-content-center
+              main__sectionProdDest__article
+            "
+          >
+            <a
+              href="paginaConstruccion.html"
+              class="main__sectionProdDest__article--text"
+              ><img
+                class="main__sectionProdDest__article--imgPaquete"
+                src="imagenes/Productos/Construccion/CarroPlegableAceroBoron.webp"
+                alt="imgPaquete"
+              />
+              <h4 class="main__sectionProdDest__article--text">
+                Carro plegable ACERO BORON
+              </h4>
+              <p>$970</p>
+            </a>
+          </article>
+          <article
+            class="
+              col-6 col-md-4 col-xl-3
+              justify-content-center
+              main__sectionProdDest__article
+            "
+          >
+            <a
+              href="paginaConstruccion.html"
+              class="main__sectionProdDest__article--text"
+              ><img
+                class="main__sectionProdDest__article--imgPaquete"
+                src="imagenes/Productos/Gastronomia/ParrillaElectricaSpeedyGrill1099.webp"
+                alt="imgPaquete"
+              />
+              <h4 class="main__sectionProdDest__article--text">
+                Parrilla Electroncia SPEEDY Grill1099
+              </h4>
+              <p>$2.500</p>
+            </a>
+          </article>
+          <article
+            class="
+              col-6 col-md-4 col-xl-3
+              justify-content-center
+              main__sectionProdDest__article
+            "
+          >
+            <a
+              href="paginaConstruccion.html"
+              class="
+                d-flex
+                align-items-center
+                flex-column
+                main__sectionProdDest__article--text
+              "
+              ><img
+                class="main__sectionProdDest__article--imgPaquete"
+                src="imagenes/Productos/Tecnologia/Tablet/TabletGadnicFenixPhoneTAB0024D10.webp"
+                alt="imgPaquete"
+              />
+              <h4 class="main__sectionProdDest__article--text">
+                Tablet GADNIC FenixPhone TAB0024D10
+              </h4>
+              <p>$28.000</p>
+            </a>
+          </article>
+        </div>
       </section>
       <!-- FIN DE PRODUCTOS DESTACADOS -->
 
       <!-- SECCION DE PROMOCIONES -->
-      <section class="main__sectionPromo">
-        <div class="main__sectionPromo__title">
-          <h3 class="main__sectionPromo__title--text">
+      <section class="container main__sectionPromo">
+        <div class="row main__sectionPromo__title">
+          <h3 class="col-12 main__sectionPromo__title--text">
             Promos especiales para vos!
           </h3>
         </div>
-        <article class="main__sectionPromo__article promo1">
-          <a
-            href="paginaConstruccion.html"
+        <div class="row justify-content-evenly">
+          <article
             class="
-              d-flex
-              align-items-center
-              flex-column
-              main__sectionPromo__article--text
+              col-12 col-md-6 col-xl-4
+              justify-content-center
+              main__sectionPromo__article
             "
-            ><img
-              class="main__sectionPromo__article--imgPaquete"
-              src="imagenes/Productos/Gastronomia/TermometroParaHorno.webp"
-              alt="imgPaquete"
-            />
-            <h4>Termometro para Horno GENERICO</h4>
-            <p>$250</p>
-          </a>
-        </article>
-        <article class="main__sectionPromo__article promo2">
-          <a
-            href="paginaConstruccion.html"
+          >
+            <a
+              href="paginaConstruccion.html"
+              class="
+                d-block
+                align-items-center
+                main__sectionPromo__article--text
+              "
+              ><img
+                class="main__sectionPromo__article--imgPaquete"
+                src="imagenes/Productos/Gastronomia/TermometroParaHorno.webp"
+                alt="imgPaquete"
+              />
+              <h4 class="main__sectionPromo__article--text">
+                Termometro para Horno GENERICO
+              </h4>
+              <p>$250</p>
+            </a>
+          </article>
+          <article
             class="
-              d-flex
-              align-items-center
-              flex-column
-              main__sectionPromo__article--text
+              col-12 col-md-6 col-xl-4
+              justify-content-center
+              main__sectionPromo__article
             "
-            ><img
-              class="main__sectionPromo__article--imgPaquete"
-              src="imagenes/Productos/Motos/MotoZanellaStyler150RS.webp"
-              alt="imgPaquete"
-            />
-            <h4>ZANELLA Styler 150RS</h4>
-            <p>$198.000</p>
-          </a>
-        </article>
-        <article class="main__sectionPromo__article promo3">
-          <a
-            href="paginaConstruccion.html"
+          >
+            <a
+              href="paginaConstruccion.html"
+              class="
+                d-flex
+                align-items-center
+                flex-column
+                main__sectionPromo__article--text
+              "
+              ><img
+                class="main__sectionPromo__article--imgPaquete"
+                src="imagenes/Productos/Motos/MotoZanellaStyler150RS.webp"
+                alt="imgPaquete"
+              />
+              <h4 class="main__sectionPromo__article--text">
+                ZANELLA Styler 150RS
+              </h4>
+              <p>$198.000</p>
+            </a>
+          </article>
+
+          <article
             class="
-              d-flex
-              align-items-center
-              flex-column
-              main__sectionPromo__article--text
+              col-12
+              d-md-none d-xl-flex
+              col-xl-4
+              justify-content-center
+              main__sectionPromo__article
             "
-            ><img
-              class="main__sectionPromo__article--imgPaquete"
-              src="imagenes/Productos/Construccion/espumaDePoliuretanoExpandidoAislante3M750Mlts.webp"
-              alt="imgPaquete"
-            />
-            <h4>Espuma de poliuretano expandido 3M 750Ml.</h4>
-            <p>$130</p>
-          </a>
-        </article>
-        <article class="main__sectionPromo__article promo4">
-          <a
-            href="paginaConstruccion.html"
+          >
+            <a
+              href="paginaConstruccion.html"
+              class="
+                d-block
+                align-items-center
+                main__sectionPromo__article--text
+              "
+              ><img
+                class="main__sectionPromo__article--imgPaquete"
+                src="imagenes/Productos/Construccion/espumaDePoliuretanoExpandidoAislante3M750Mlts.webp"
+                alt="imgPaquete"
+              />
+              <h4 class="main__sectionPromo__article--text">
+                Espuma de poliuretano expandido 3M 750Ml.
+              </h4>
+              <p>$130</p>
+            </a>
+          </article>
+        </div>
+        <div class="row justify-content-evenly">
+          <article
             class="
-              d-flex
-              align-items-center
-              flex-column
-              main__sectionPromo__article--text
+              d-none d-md-flex
+              col-md-6 col-xl-4
+              justify-content-center
+              main__sectionPromo__article
             "
-            ><img
-              class="main__sectionPromo__article--imgPaquete"
-              src="imagenes/Productos/Moda/AnteojosSolInfinitParisNegroBrillandeLenteRosa.webp"
-              alt="imgPaquete"
-            />
-            <h4>Anteojos INFINIT Paris</h4>
-            <p>$15.000</p>
-          </a>
-        </article>
-        <article class="main__sectionPromo__article promo5">
-          <a
-            href="paginaConstruccion.html"
+          >
+            <a
+              href="paginaConstruccion.html"
+              class="
+                d-block
+                align-items-center
+                main__sectionPromo__article--text
+              "
+              ><img
+                class="main__sectionPromo__article--imgPaquete"
+                src="imagenes/Productos/Moda/AnteojosSolInfinitParisNegroBrillandeLenteRosa.webp"
+                alt="imgPaquete"
+              />
+              <h4 class="main__sectionPromo__article--text">
+                Anteojos INFINIT Paris
+              </h4>
+              <p>$15.000</p>
+            </a>
+          </article>
+          <article
             class="
-              d-flex
-              align-items-center
-              flex-column
-              main__sectionPromo__article--text
+              d-none d-md-flex
+              col-md-6 col-xl-4
+              justify-content-center
+              main__sectionPromo__article
             "
-            ><img
-              class="main__sectionPromo__article--imgPaquete"
-              src="imagenes/Productos/Construccion/DiscoFlap115PulidoVidrioMamposteria.webp"
-              alt="imgPaquete"
-            />
-            <h4>Disco Flap 15"</h4>
-            <p>$200</p>
-          </a>
-        </article>
-        <article class="main__sectionPromo__article promo6">
-          <a
-            href="paginaConstruccion.html"
+          >
+            <a
+              href="paginaConstruccion.html"
+              class="d-block main__sectionPromo__article--text"
+              ><img
+                class="main__sectionPromo__article--imgPaquete"
+                src="imagenes/Productos/Construccion/DiscoFlap115PulidoVidrioMamposteria.webp"
+                alt="imgPaquete"
+              />
+              <h4 class="main__sectionPromo__article--text">Disco Flap 15"</h4>
+              <p>$200</p>
+            </a>
+          </article>
+          <article
             class="
-              d-flex
-              align-items-center
-              flex-column
-              main__sectionPromo__article--text
+              d-none d-xl-flex
+              col-md-6 col-xl-4
+              justify-content-center
+              main__sectionPromo__article
             "
-            ><img
-              class="main__sectionPromo__article--imgPaquete"
-              src="imagenes/Productos/Tecnologia/Varios/JoystickInalambricoSonyPlayStationDualSense.webp"
-              alt="imgPaquete"
-            />
-            <h4>Joystick SONY PLAY STATION Dual Sense</h4>
-            <p>$7.800</p>
-          </a>
-        </article>
+          >
+            <a
+              href="paginaConstruccion.html"
+              class="
+                d-block
+                align-items-center
+                main__sectionPromo__article--text
+              "
+              ><img
+                class="main__sectionPromo__article--imgPaquete"
+                src="imagenes/Productos/Tecnologia/Varios/JoystickInalambricoSonyPlayStationDualSense.webp"
+                alt="imgPaquete"
+              />
+              <h4 class="main__sectionPromo__article--text">
+                Joystick SONY PLAY STATION Dual Sense
+              </h4>
+              <p>$7.800</p>
+            </a>
+          </article>
+        </div>
       </section>
       <!-- FIN DE LA SECCION DE PROMOCIONES -->
     </main>
