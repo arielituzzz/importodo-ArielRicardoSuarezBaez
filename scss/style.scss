@@ -1,0 +1,43 @@
+@import "pages/variables";
+@import "pages/templates";
+@import "pages/index/index";
+@import "pages/index/component/carrousel";
+@import "pages/index/component/formIngr";
+@import "pages/index/component/formReg";
+@import "pages/informacion";
+@import "pages/ayuda";
+@import "pages/en_construccion";
+
+/* RESET'S */
+* {
+  margin: 0%;
+  padding: 0%;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Lora", serif;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  background-color: $color-grey;
+  text-decoration: none;
+}
+
+/* GENERALES************************************************************************************ */
+
+.bordes {
+  border: 0.1rem solid black;
+}
+
+/* EDICION DE IMAGENES************************************************************************** */
+.logChico {
+  width: 10rem;
+  vertical-align: middle;
+}
+.imgChat {
+  width: 3rem;
+  border-color: teal;
+  border-style: outset;
+}

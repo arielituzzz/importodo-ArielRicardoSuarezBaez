@@ -1,0 +1,92 @@
+/* TEMPLATES **************************************************************************** */
+
+.bodyTemplate {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header" "main" "footer";
+}
+.mainTemplate {
+  border-radius: 1rem;
+  background-color: $color-white;
+  @include dark-mode-background-black-activator;
+  &__title {
+    font-size: 3rem;
+  }
+  &__article {
+    transition: 0.25s;
+    padding: 1rem 0rem;
+  }
+  &__article:hover {
+    border-radius: 8rem;
+    box-shadow: 0rem 0rem 1rem 0.6rem $color-grey;
+    @include dark-mode-fx-light-activator;
+    @include dark-mode-box_shadow-none-activator;
+  }
+  &__article--imgPaquete {
+    width: 8rem;
+    height: 11rem;
+  }
+  &__article--text {
+    text-align: center;
+    color: $color-article-text;
+    @include dark-mode-secondary-light-activator;
+  }
+  &__article--text:hover {
+    text-align: center;
+    color: $color-black-light;
+    @include dark-mode-text-white-activator;
+  }
+  a {
+    text-decoration: none;
+  }
+  article a h4 {
+    font-size: 1.7rem;
+  }
+  article a p {
+    font-size: 1.8em;
+  }
+}
+
+/* MEDIA QUERIS········································································································ */
+
+/* TABLET························································································································ */
+@media (min-width: 768px) {
+  .mainTemplate {
+    border-radius: 1rem;
+    background-color: $color-white;
+    &__title {
+      font-size: 4rem;
+    }
+    &__article--imgPaquete {
+      width: 11rem;
+      height: 14rem;
+    }
+    article a h4 {
+      font-size: 1.8rem;
+    }
+    article a p {
+      font-size: 2em;
+    }
+  }
+}
+/* DESKTOP ······················································································································· */
+@media (min-width: 1024px) {
+  .mainTemplate {
+    border-radius: 1rem;
+    background-color: $color-white;
+    &__title {
+      font-size: 5rem;
+    }
+    &__article--imgPaquete {
+      width: 13rem;
+      height: 16rem;
+    }
+    article a h4 {
+      font-size: 1.9rem;
+    }
+    article a p {
+      font-size: 2.1em;
+    }
+  }
+}
