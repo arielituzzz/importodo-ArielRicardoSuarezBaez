@@ -12,7 +12,7 @@
   &__container {
     border: 0.5rem solid#585F66;
     border-radius: 1rem;
-    background-color: whitesmoke;
+    background-color: $color-white;
     padding: 2rem;
     @include dark-mode-primary-light-activator;
     @include dark-mode-text-black-activator;

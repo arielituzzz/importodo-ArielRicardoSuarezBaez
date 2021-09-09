@@ -3,13 +3,13 @@
 .mainRegistro__formulario {
   padding: 1rem;
   font-size: 1.6rem;
-  background-color: whitesmoke;
+  background-color: $color-white;
   border: 0.3rem double rgb(15, 119, 15);
   border-radius: 1.5rem;
   @include dark-mode-primary-activator;
 }
 .formularioRegistro {
-  background-color: whitesmoke;
+  background-color: $color-white;
   @include dark-mode-primary-activator;
 }
 #nombreYApellido {

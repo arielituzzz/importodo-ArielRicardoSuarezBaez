@@ -25,7 +25,7 @@
 }
 .mainIngreso__form__fieldset {
   border-radius: 1.5rem;
-  background-color: whitesmoke;
+  background-color: $color-white;
   border: 0.3rem double rgb(15, 119, 15);
   @include dark-mode-primary-activator;
 }
@@ -54,7 +54,7 @@
   padding: 0.5rem;
 }
 .mainIngreso__submit:hover {
-  background-image: radial-gradient(whitesmoke, rgb(159, 200, 228));
+  background-image: radial-gradient($color-white, rgb(159, 200, 228));
 }
 .mainIngreso__recordarContrasena {
   display: flex;

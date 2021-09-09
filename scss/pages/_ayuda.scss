@@ -6,17 +6,18 @@
   flex-direction: column;
   align-items: center;
   width: 33rem;
+  margin-top: 2rem;
   &__container {
-    border: 0.5rem solid#585F66;
+    border: 0.5rem solid $color-site;
     border-radius: 1rem;
-    background-color: whitesmoke;
+    background-color: $color-white;
     padding: 2rem;
     @include dark-mode-primary-light-activator;
   }
   &__cuestion {
     border-radius: 1rem;
     padding: 0rem 2rem;
-    background-color: whitesmoke;
+    background-color: $color-white;
 
     &__title {
       font-size: 2.5rem;
@@ -24,12 +25,11 @@
         Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       text-align: center;
       margin-bottom: 1rem;
-      margin-top: 2rem;
     }
     &__subTitle {
       font-size: 2rem;
       margin-top: 1rem;
-      background-color: whitesmoke;
+      background-color: $color-white;
     }
     &__text {
       font-size: 2rem;
@@ -50,15 +50,15 @@
     align-items: center;
     width: 50rem;
     &__container {
-      border: 0.5rem solid#585F66;
+      border: 0.5rem solid $color-site;
       border-radius: 1rem;
-      background-color: whitesmoke;
+      background-color: $color-white;
       padding: 2rem;
       @include dark-mode-primary-light-activator;
     }
   }
   .mainAyuda__cuestion {
-    border: 0.2rem solid black;
+    border: 0.2rem solid $color-black;
     padding: 0rem 2rem;
     &__title {
       font-size: 4rem;
@@ -66,7 +66,6 @@
         Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       text-align: center;
       margin-bottom: 1rem;
-      margin-top: 0rem;
     }
     &__subTitle {
       font-size: 2.7rem;
@@ -79,9 +78,9 @@
   .mainAyuda {
     width: 100rem;
     .mainAyuda__cuestion {
-      border: 0.2rem solid black;
+      border: 0.2rem solid $color-black;
       padding: 0rem 2rem;
-      background-color: whitesmoke;
+      background-color: $color-white;
       &__subTitle {
         font-size: 3.4rem;
       }
