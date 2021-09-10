@@ -493,7 +493,7 @@
 @media (min-width: 1024px) {
   .header {
     grid-area: header;
-    display: grid;
+    display: none;
     grid-template-columns: auto auto max-content;
     grid-template-rows: auto auto auto;
     grid-template-areas: "header__title header__purchase header__purchase" "header__title search search" "navBar navBar header__navUser";
