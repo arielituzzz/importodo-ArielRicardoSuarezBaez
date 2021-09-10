@@ -1,8 +1,8 @@
 /* PAGINA "EN CONSTRUCCION"********************************************************************************************************************** */
 .bodyConstruccion {
-  background-image: linear-gradient(#80b1e5, $color-white);
+  background-color: $color-site;
   .mainConstruccion {
-    padding-bottom: 25rem;
+    padding: 0rem 2rem;
     &__div {
       display: flex;
       flex-direction: column;
@@ -10,11 +10,62 @@
       &__text {
         font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
           "Lucida Sans", Arial, sans-serif;
-        font-size: 5rem;
+        font-size: 4rem;
         text-align: center;
       }
       &__image {
-        width: 40rem;
+        width: 30rem;
+      }
+    }
+  }
+}
+
+/* MEDIA QUERIS········································································································ */
+
+/* TABLET························································································································ */
+@media (min-width: 768px) {
+  .bodyConstruccion {
+    background-color: $color-site;
+    .mainConstruccion {
+      padding: 0rem 2rem;
+      &__div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__text {
+          font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+            "Lucida Sans", Arial, sans-serif;
+          font-size: 5rem;
+          text-align: center;
+        }
+        &__image {
+          width: 50rem;
+        }
+      }
+    }
+  }
+}
+
+/* DESKTOP ······················································································································· */
+@media (min-width: 1024px) {
+  .bodyConstruccion {
+    background-color: $color-site;
+    .mainConstruccion {
+      padding: 0rem 2rem;
+
+      &__div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &__text {
+          font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+            "Lucida Sans", Arial, sans-serif;
+          font-size: 5rem;
+          text-align: center;
+        }
+        &__image {
+          width: 60rem;
+        }
       }
     }
   }
