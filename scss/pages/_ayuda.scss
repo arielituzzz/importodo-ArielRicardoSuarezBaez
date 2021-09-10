@@ -76,6 +76,7 @@
 /* DESKTOP ······················································································································· */
 @media (min-width: 1024px) {
   .mainAyuda {
+    display: none;
     width: 100rem;
     .mainAyuda__cuestion {
       border: 0.2rem solid $color-black;
