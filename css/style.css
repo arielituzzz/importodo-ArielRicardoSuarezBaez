@@ -760,7 +760,8 @@
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: header;
-    display: none;
+    display: -ms-grid;
+    display: grid;
     -ms-grid-columns: auto auto max-content;
         grid-template-columns: auto auto -webkit-max-content;
         grid-template-columns: auto auto max-content;
