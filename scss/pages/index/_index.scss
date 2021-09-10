@@ -34,13 +34,13 @@
         &--text {
           text-decoration: none;
           font-size: 1.5rem;
-          color: $color-white;
+          color: whitesmoke;
           transition: all 0.5s;
         }
       }
       &__botom:hover {
         height: 2.7rem;
-        border: 3px solid $color-white;
+        border: 3px solid whitesmoke;
         border-radius: 3rem;
         padding: 0rem 1rem;
         background-color: $color-white;
@@ -58,21 +58,21 @@
     justify-self: flex-end;
     align-self: center;
     margin-top: 1rem;
-    &--text {
+    .header__purchase--text {
       text-decoration: none;
       font-size: 1.9rem;
       color: $color-black;
       font-weight: bold;
       transition: all 0.5s;
     }
-    &--text:hover {
+    .header__purchase--text:hover {
       text-decoration: none;
       font-size: 2rem;
       font-weight: bold;
       border-bottom: 0.2rem solid $color-black;
       border-radius: 1rem;
     }
-    &--carrito {
+    .header__purchase--carrito {
       width: 3rem;
       vertical-align: middle;
     }
@@ -83,15 +83,15 @@
     grid-area: header__title;
     font-size: 1.5rem;
     justify-content: center;
-    &--text {
+    .header__title--text {
       text-decoration: none;
     }
 
-    &--text1 {
-      color: $color-white;
+    .header__title--text1 {
+      color: whitesmoke;
       font-family: serif;
     }
-    &--text2 {
+    .header__title--text2 {
       color: rgb(204, 16, 16);
       font-style: italic;
       font-weight: bold;
@@ -101,32 +101,39 @@
   .header__navUser {
     grid-area: header__navUser;
     display: flex;
-    justify-content: flex-start;
-    font-size: 1.5rem;
+    justify-content: space-around;
+    font-size: 1.8rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: bold;
-    &__botom {
-      height: max-content;
-      width: max-content;
+    .header__navUser__botom {
+      height: 2.7rem;
       border-radius: 3rem;
+      padding: 0rem 1rem;
       transition: all 0.5s;
-      &--text {
-        text-decoration: none;
-        font-size: 1.5rem;
-        color: $color-white;
-        transition: all 0.5s;
-      }
     }
-    &__botom:hover {
-      border: 3px solid $color-white;
+    .header__navUser__botom:hover {
+      height: 2.7rem;
+      border: 3px solid whitesmoke;
       border-radius: 3rem;
+      padding: 0rem 1rem;
     }
-    &--text:hover {
+    .header__navUser__botom--text {
+      text-decoration: none;
       font-size: 1.5rem;
-      color: $color-white;
+      color: whitesmoke;
+      transition: all 0.5s;
     }
-    &--textList:hover {
+    .header__navUser__botom--text:hover {
+      font-size: 1.5rem;
+      color: whitesmoke;
+    }
+    .header__navUser__botom--textList {
+      text-decoration: none;
+      color: $color-black;
+      font-size: 2rem;
+    }
+    .header__navUser__botom--textList:hover {
       text-decoration: none;
       color: rgb(0, 49, 33);
       font-size: 2rem;
@@ -202,7 +209,7 @@
     border-bottom: 0.8rem solid #80b1e5;
     border-left: 0.8rem solid brown;
     padding: 0.3rem 0.8rem;
-    background-color: $color-white;
+    background-color: whitesmoke;
   }
   .sectionPagos__nav__botom--pay {
     vertical-align: middle;
@@ -324,7 +331,7 @@
   flex-wrap: wrap;
   border-top: 0.3rem solid#585F66;
   border-radius: 3rem;
-  background-color: $color-white;
+  background-color: whitesmoke;
   &__contact {
     grid-area: footer__contact;
     &__item {
@@ -406,13 +413,8 @@
         Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       font-weight: bold;
       margin-bottom: 1rem;
-      &__botom {
-        &--text {
-          font-size: 0.1rem;
-        }
-        &--margin {
-          margin-right: 1rem;
-        }
+      &--margin {
+        margin-right: 1rem;
       }
     }
   }
