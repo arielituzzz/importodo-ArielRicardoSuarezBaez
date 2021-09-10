@@ -760,8 +760,7 @@
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: header;
-    display: -ms-grid;
-    display: grid;
+    display: none;
     -ms-grid-columns: auto auto max-content;
         grid-template-columns: auto auto -webkit-max-content;
         grid-template-columns: auto auto max-content;
@@ -1393,7 +1392,7 @@
     background-color: #f8f8f8;
   }
   .mainAyuda .mainAyuda__cuestion__subTitle {
-    font-size: 3.4rem;
+    font-size: 4.4rem;
   }
 }
 
