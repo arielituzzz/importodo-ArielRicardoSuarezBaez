@@ -2,7 +2,7 @@
 /* TEMPLATES **************************************************************************** */
 .bodyTemplate {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 100vw;
   grid-template-rows: auto auto auto;
   grid-template-areas: "header" "main" "footer"; }
 
@@ -237,14 +237,14 @@
     background-color: #f8f8f8; }
   .main .main__sectionProdDest__article {
     display: flex;
-    align-items: center;
+    align-content: center;
     text-align: center;
     transition: 0.3s;
     border: 0.2rem solid #d1d0d0;
     border-radius: 3rem;
     padding: 0.5rem;
-    width: 18rem;
-    height: 19rem;
+    width: 15rem;
+    height: 17rem;
     margin: 0.5rem;
     overflow: hidden; }
   .main .main__sectionProdDest__article:hover {
@@ -263,8 +263,8 @@
     text-decoration: none;
     color: #323232; }
   .main .main__sectionProdDest__article--imgPaquete {
-    width: 7rem;
-    height: 10rem; }
+    width: 6rem;
+    height: 8rem; }
   .main .main__sectionPromo {
     border-radius: 1rem;
     background-color: #f8f8f8;
