@@ -217,14 +217,14 @@
   }
   .main__sectionProdDest__article {
     display: flex;
-    align-items: center;
+    align-content: center;
     text-align: center;
     transition: 0.3s;
     border: 0.2rem solid $color-borde;
     border-radius: 3rem;
     padding: 0.5rem;
-    width: 18rem;
-    height: 19rem;
+    width: 15rem;
+    height: 17rem;
     margin: 0.5rem;
     overflow: hidden;
     @include dark-mode-secondary-light-activator;
@@ -253,8 +253,8 @@
     @include dark-mode-text-white-activator;
   }
   .main__sectionProdDest__article--imgPaquete {
-    width: 7rem;
-    height: 10rem;
+    width: 6rem;
+    height: 8rem;
   }
 
   .main__sectionPromo {
