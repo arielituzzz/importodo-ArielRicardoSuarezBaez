@@ -98,11 +98,11 @@
         .header__menuBurger__container__botom--text {
           text-decoration: none;
           font-size: 1.5rem;
-          color: whitesmoke;
+          color: #f8f8f8;
           transition: all 0.5s; }
       .header__menuBurger__container__botom:hover {
         height: 2.7rem;
-        border: 3px solid whitesmoke;
+        border: 3px solid #f8f8f8;
         border-radius: 3rem;
         padding: 0rem 1rem;
         background-color: #f8f8f8;
@@ -138,7 +138,7 @@
     .header .header__title .header__title--text {
       text-decoration: none; }
     .header .header__title .header__title--text1 {
-      color: whitesmoke;
+      color: #f8f8f8;
       font-family: serif; }
     .header .header__title .header__title--text2 {
       color: #cc1010;
@@ -158,25 +158,17 @@
       transition: all 0.5s; }
     .header .header__navUser .header__navUser__botom:hover {
       height: 2.7rem;
-      border: 3px solid whitesmoke;
+      border: 3px solid #f8f8f8;
       border-radius: 3rem;
       padding: 0rem 1rem; }
     .header .header__navUser .header__navUser__botom--text {
       text-decoration: none;
       font-size: 1.5rem;
-      color: whitesmoke;
+      color: #f8f8f8;
       transition: all 0.5s; }
     .header .header__navUser .header__navUser__botom--text:hover {
       font-size: 1.5rem;
-      color: whitesmoke; }
-    .header .header__navUser .header__navUser__botom--textList {
-      text-decoration: none;
-      color: #323232;
-      font-size: 2rem; }
-    .header .header__navUser .header__navUser__botom--textList:hover {
-      text-decoration: none;
-      color: #003121;
-      font-size: 2rem; }
+      color: #f8f8f8; }
   .header__search {
     grid-area: search;
     margin-bottom: 1rem; }
@@ -233,7 +225,7 @@
     border-bottom: 0.8rem solid #80b1e5;
     border-left: 0.8rem solid brown;
     padding: 0.3rem 0.8rem;
-    background-color: whitesmoke; }
+    background-color: #f8f8f8; }
   .main .sectionPagos__nav__botom--pay {
     vertical-align: middle; }
   .main .sectionPagos__nav__botom--text {
@@ -324,7 +316,7 @@
   flex-wrap: wrap;
   border-top: 0.3rem solid #585F66;
   border-radius: 3rem;
-  background-color: whitesmoke; }
+  background-color: #f8f8f8; }
   .footer__contact {
     grid-area: footer__contact; }
     .footer__contact__item {
@@ -391,8 +383,10 @@
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       font-weight: bold;
       margin-bottom: 1rem; }
-      .header__navUser--margin {
-        margin-right: 1rem; }
+      .header__navUser __botom {
+        height: max-content; }
+        .header__navUser __botom--margin {
+          margin-right: 1rem; }
   .main .main__sectionProdDest__title {
     display: inline-block;
     justify-self: flex-start;

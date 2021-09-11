@@ -34,13 +34,13 @@
         &--text {
           text-decoration: none;
           font-size: 1.5rem;
-          color: whitesmoke;
+          color: $color-white;
           transition: all 0.5s;
         }
       }
       &__botom:hover {
         height: 2.7rem;
-        border: 3px solid whitesmoke;
+        border: 3px solid $color-white;
         border-radius: 3rem;
         padding: 0rem 1rem;
         background-color: $color-white;
@@ -88,7 +88,7 @@
     }
 
     .header__title--text1 {
-      color: whitesmoke;
+      color: $color-white;
       font-family: serif;
     }
     .header__title--text2 {
@@ -114,29 +114,19 @@
     }
     .header__navUser__botom:hover {
       height: 2.7rem;
-      border: 3px solid whitesmoke;
+      border: 3px solid $color-white;
       border-radius: 3rem;
       padding: 0rem 1rem;
     }
     .header__navUser__botom--text {
       text-decoration: none;
       font-size: 1.5rem;
-      color: whitesmoke;
+      color: $color-white;
       transition: all 0.5s;
     }
     .header__navUser__botom--text:hover {
       font-size: 1.5rem;
-      color: whitesmoke;
-    }
-    .header__navUser__botom--textList {
-      text-decoration: none;
-      color: $color-black;
-      font-size: 2rem;
-    }
-    .header__navUser__botom--textList:hover {
-      text-decoration: none;
-      color: rgb(0, 49, 33);
-      font-size: 2rem;
+      color: $color-white;
     }
   }
   &__search {
@@ -209,7 +199,7 @@
     border-bottom: 0.8rem solid #80b1e5;
     border-left: 0.8rem solid brown;
     padding: 0.3rem 0.8rem;
-    background-color: whitesmoke;
+    background-color: $color-white;
   }
   .sectionPagos__nav__botom--pay {
     vertical-align: middle;
@@ -331,7 +321,7 @@
   flex-wrap: wrap;
   border-top: 0.3rem solid#585F66;
   border-radius: 3rem;
-  background-color: whitesmoke;
+  background-color: $color-white;
   &__contact {
     grid-area: footer__contact;
     &__item {
@@ -413,8 +403,12 @@
         Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       font-weight: bold;
       margin-bottom: 1rem;
-      &--margin {
-        margin-right: 1rem;
+      __botom {
+        height: max-content;
+
+        &--margin {
+          margin-right: 1rem;
+        }
       }
     }
   }
