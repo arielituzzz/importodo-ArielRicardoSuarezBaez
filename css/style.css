@@ -525,16 +525,14 @@
   .sectionBanner {
     margin-top: 2rem; }
   .sectionBanner__image {
-    height: 35rem;
-    width: 71rem; } }
+    height: 35rem; } }
 
 /* DESKTOP ······················································································································· */
 @media (min-width: 1024px) {
   .sectionBanner {
     height: 40rem; }
   .sectionBanner__image {
-    height: 40rem;
-    width: 113rem; } }
+    height: 40rem; } }
 
 /* FORMULARIO "INGRESO"*************************************************************************** */
 .mainIngreso {
