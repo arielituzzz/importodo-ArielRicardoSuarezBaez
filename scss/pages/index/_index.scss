@@ -196,7 +196,7 @@
     font-weight: bold;
     border-top: 0.8rem solid rgb(128, 177, 229);
     border-right: 0.8rem solid brown;
-    border-bottom: 0.8rem solid #80b1e5;
+    border-bottom: 0.8rem solid $color-site;
     border-left: 0.8rem solid brown;
     padding: 0.3rem 0.8rem;
     background-color: $color-white;
@@ -209,7 +209,6 @@
   }
 
   .main__sectionProdDest {
-    flex-wrap: wrap;
     padding: 2rem 1.5rem;
     margin: 2rem 0rem 2rem;
     border-radius: 1rem;
@@ -261,7 +260,7 @@
   .main__sectionPromo {
     border-radius: 1rem;
     background-color: $color-white;
-    padding: 2rem 2.5rem 2.5rem;
+    padding: 2rem 1.5rem 1.5rem;
     @include dark-mode-secondary-light-activator;
   }
   .main__sectionPromo__title {
@@ -312,7 +311,7 @@
 .footer {
   grid-area: footer;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   grid-template-areas: "footer__contact footer__up" "footer__copyright footer__copyright";
   justify-content: space-between;
