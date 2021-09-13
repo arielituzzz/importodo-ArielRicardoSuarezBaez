@@ -34,13 +34,13 @@
         &--text {
           text-decoration: none;
           font-size: 1.5rem;
-          color: whitesmoke;
+          color: $color-white;
           transition: all 0.5s;
         }
       }
       &__botom:hover {
         height: 2.7rem;
-        border: 3px solid whitesmoke;
+        border: 3px solid $color-white;
         border-radius: 3rem;
         padding: 0rem 1rem;
         background-color: $color-white;
@@ -88,7 +88,7 @@
     }
 
     .header__title--text1 {
-      color: whitesmoke;
+      color: $color-white;
       font-family: serif;
     }
     .header__title--text2 {
@@ -114,29 +114,19 @@
     }
     .header__navUser__botom:hover {
       height: 2.7rem;
-      border: 3px solid whitesmoke;
+      border: 3px solid $color-white;
       border-radius: 3rem;
       padding: 0rem 1rem;
     }
     .header__navUser__botom--text {
       text-decoration: none;
       font-size: 1.5rem;
-      color: whitesmoke;
+      color: $color-white;
       transition: all 0.5s;
     }
     .header__navUser__botom--text:hover {
       font-size: 1.5rem;
-      color: whitesmoke;
-    }
-    .header__navUser__botom--textList {
-      text-decoration: none;
-      color: $color-black;
-      font-size: 2rem;
-    }
-    .header__navUser__botom--textList:hover {
-      text-decoration: none;
-      color: rgb(0, 49, 33);
-      font-size: 2rem;
+      color: $color-white;
     }
   }
   &__search {
@@ -206,10 +196,10 @@
     font-weight: bold;
     border-top: 0.8rem solid rgb(128, 177, 229);
     border-right: 0.8rem solid brown;
-    border-bottom: 0.8rem solid #80b1e5;
+    border-bottom: 0.8rem solid $color-site;
     border-left: 0.8rem solid brown;
     padding: 0.3rem 0.8rem;
-    background-color: whitesmoke;
+    background-color: $color-white;
   }
   .sectionPagos__nav__botom--pay {
     vertical-align: middle;
@@ -219,7 +209,6 @@
   }
 
   .main__sectionProdDest {
-    flex-wrap: wrap;
     padding: 2rem 1.5rem;
     margin: 2rem 0rem 2rem;
     border-radius: 1rem;
@@ -228,14 +217,14 @@
   }
   .main__sectionProdDest__article {
     display: flex;
-    align-items: center;
+    align-content: center;
     text-align: center;
     transition: 0.3s;
     border: 0.2rem solid $color-borde;
     border-radius: 3rem;
     padding: 0.5rem;
-    width: 18rem;
-    height: 19rem;
+    width: 15rem;
+    height: 17rem;
     margin: 0.5rem;
     overflow: hidden;
     @include dark-mode-secondary-light-activator;
@@ -264,14 +253,14 @@
     @include dark-mode-text-white-activator;
   }
   .main__sectionProdDest__article--imgPaquete {
-    width: 7rem;
-    height: 10rem;
+    width: 6rem;
+    height: 8rem;
   }
 
   .main__sectionPromo {
     border-radius: 1rem;
     background-color: $color-white;
-    padding: 2rem 2.5rem 2.5rem;
+    padding: 2rem 1.5rem 1.5rem;
     @include dark-mode-secondary-light-activator;
   }
   .main__sectionPromo__title {
@@ -322,7 +311,7 @@
 .footer {
   grid-area: footer;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: auto auto;
   grid-template-rows: auto auto;
   grid-template-areas: "footer__contact footer__up" "footer__copyright footer__copyright";
   justify-content: space-between;
@@ -331,7 +320,7 @@
   flex-wrap: wrap;
   border-top: 0.3rem solid#585F66;
   border-radius: 3rem;
-  background-color: whitesmoke;
+  background-color: $color-white;
   &__contact {
     grid-area: footer__contact;
     &__item {
@@ -413,8 +402,12 @@
         Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       font-weight: bold;
       margin-bottom: 1rem;
-      &--margin {
-        margin-right: 1rem;
+      __botom {
+        height: max-content;
+
+        &--margin {
+          margin-right: 1rem;
+        }
       }
     }
   }
