@@ -14,12 +14,14 @@
     font-size: 3rem;
   }
   &__article {
+    display: flex;
+    justify-content: center;
     padding: 1rem 0rem;
     position: relative;
     overflow: hidden;
     &__carrito {
       position: absolute;
-      margin-top: 5rem;
+      margin-top: 7rem;
       margin-left: -31rem;
       transition: 0.3s;
       &--img {
@@ -31,12 +33,17 @@
     }
     &--imgPaquete {
       width: 8rem;
-      height: 11rem;
+      height: 12rem;
+      margin-bottom: 0.5rem;
     }
-    &--text {
-      text-align: center;
-      color: $color-article-text;
-      @include dark-mode-secondary-light-activator;
+    &__box {
+      width: 15rem;
+      border-top: 0.15rem solid $color-grey;
+      &--text {
+        text-align: center;
+        color: $color-article-text;
+        @include dark-mode-secondary-light-activator;
+      }
     }
   }
   &__article:hover {
@@ -44,9 +51,8 @@
     @include dark-mode-box_shadow-none-activator;
   }
   &__article:hover .mainTemplate__article__carrito {
-    transform: translateX(7rem);
+    transform: translateX(8rem);
   }
-
   &__article--text:hover {
     text-align: center;
     color: $color-black-light;
@@ -62,7 +68,6 @@
     font-size: 1.8em;
   }
 }
-
 /* MEDIA QUERIS········································································································ */
 
 /* TABLET························································································································ */
@@ -75,7 +80,7 @@
     }
     &__article {
       &__carrito {
-        margin-top: 7rem;
+        margin-top: 10rem;
         margin-left: -29rem;
 
         &--img {
@@ -85,11 +90,14 @@
       }
       &--imgPaquete {
         width: 11rem;
-        height: 14rem;
+        height: 15rem;
+      }
+      &__box {
+        width: 18rem;
       }
     }
     &__article:hover .mainTemplate__article__carrito {
-      transform: translateX(6.5rem);
+      transform: translateX(6rem);
     }
     article a h4 {
       font-size: 1.8rem;
@@ -109,18 +117,21 @@
     }
     &__article {
       &__carrito {
-        margin-top: 8rem;
-        margin-left: -36rem;
+        margin-top: 13rem;
+        margin-left: -37rem;
 
         &--img {
           width: 3.6rem;
           height: 3.6rem;
         }
       }
-    }
-    &--imgPaquete {
-      width: 13rem;
-      height: 16rem;
+      &__box {
+        width: 23rem;
+      }
+      &--imgPaquete {
+        width: 13rem;
+        height: 19rem;
+      }
     }
     &__article:hover .mainTemplate__article__carrito {
       transform: translateX(9rem);
