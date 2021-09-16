@@ -58,21 +58,21 @@
     justify-self: flex-end;
     align-self: center;
     margin-top: 1rem;
-    .header__purchase--text {
+    &--text {
       text-decoration: none;
       font-size: 1.9rem;
       color: $color-black;
       font-weight: bold;
       transition: all 0.5s;
     }
-    .header__purchase--text:hover {
+    &--text:hover {
       text-decoration: none;
       font-size: 2rem;
       font-weight: bold;
       border-bottom: 0.2rem solid $color-black;
       border-radius: 1rem;
     }
-    .header__purchase--carrito {
+    &--carrito {
       width: 3rem;
       vertical-align: middle;
     }
@@ -83,15 +83,15 @@
     grid-area: header__title;
     font-size: 1.5rem;
     justify-content: center;
-    .header__title--text {
+    &--text {
       text-decoration: none;
     }
 
-    .header__title--text1 {
+    &--text1 {
       color: $color-white;
       font-family: serif;
     }
-    .header__title--text2 {
+    &--text2 {
       color: rgb(204, 16, 16);
       font-style: italic;
       font-weight: bold;
@@ -106,26 +106,26 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
       Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
     font-weight: bold;
-    .header__navUser__botom {
+    &__botom {
       height: 2.7rem;
       border-radius: 3rem;
       padding: 0rem 1rem;
       transition: all 0.5s;
       border: 0.2rem solid $color-site;
+      &--text {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: $color-white;
+        transition: all 0.3s;
+      }
     }
-    .header__navUser__botom:hover {
+    &__botom:hover {
       height: 2.7rem;
       border: 0.2rem solid $color-white;
       border-radius: 3rem;
       padding: 0rem 1rem;
     }
-    .header__navUser__botom--text {
-      text-decoration: none;
-      font-size: 1.5rem;
-      color: $color-white;
-      transition: all 0.3s;
-    }
-    .header__navUser__botom--text:hover {
+    &__botom--text:hover {
       font-size: 1.5rem;
       color: $color-white;
     }
@@ -177,36 +177,33 @@
 .main {
   grid-area: main;
 
-  .sectionPagos {
-    position: relative;
-    background-image: url(imagenes/clouds-and-blue-sky-with-copy-space-background-free-photo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    padding: 0.5rem 2rem;
-    margin: 1rem 0rem 1rem;
+  &__sectionPagos {
+    margin: 0.5rem 2rem;
     border-radius: 1rem;
-  }
-  .sectionPagos__nav {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: row wrap;
-  }
-  .sectionPagos__nav__botom {
-    font-size: 2.2rem;
-    font-weight: bold;
-    border-top: 0.8rem solid rgb(128, 177, 229);
-    border-right: 0.8rem solid brown;
-    border-bottom: 0.8rem solid $color-site;
-    border-left: 0.8rem solid brown;
-    padding: 0.3rem 0.8rem;
-    background-color: $color-white;
-  }
-  .sectionPagos__nav__botom--pay {
-    vertical-align: middle;
-  }
-  .sectionPagos__nav__botom--text {
-    text-decoration: none;
+    &__nav {
+      display: flex;
+      justify-content: space-between;
+      &__botom {
+        font-size: 2.2rem;
+        font-weight: bold;
+        border-top: 0.8rem solid $color-site;
+        border-right: 0.8rem solid$color-site-secondary;
+        border-bottom: 0.8rem solid $color-site;
+        border-left: 0.8rem solid $color-site-secondary;
+        padding: 0rem 0.8rem;
+        background-color: $color-yellow-light;
+        border-radius: 1rem;
+        @include dark-mode-background-black-light-activator;
+        &--pay {
+          vertical-align: middle;
+        }
+        &--text {
+          text-decoration: none;
+          color: $color-site-secondary;
+          @include dark-mode-text-white-activator;
+        }
+      }
+    }
   }
 
   &__sectionProdDest {
