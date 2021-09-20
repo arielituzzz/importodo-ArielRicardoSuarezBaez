@@ -26,6 +26,11 @@
       href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="css/animate.css" />
   </head>
   <body id="body" class="bodyTemplate">
     <!-- COMIENZO DEL ENCABEZADO********************************************************************************************** -->
@@ -614,7 +619,15 @@
       </section>
       <!-- FIN DEL BANNER DE PUBLIDAD -->
       <!-- PRODUCTOS DESTACADOS -->
-      <section id="productosDestacados" class="container main__sectionProdDest">
+      <section
+        id="productosDestacados"
+        class="
+          container
+          wow
+          animate__animated animate__fadeInDown
+          main__sectionProdDest
+        "
+      >
         <div class="row col-12 main__sectionProdDest__title">
           <h3 class="main__sectionProdDest__title--text">Un poco de todo...</h3>
         </div>
@@ -882,7 +895,14 @@
       <!-- FIN DE PRODUCTOS DESTACADOS -->
 
       <!-- SECCION DE PROMOCIONES -->
-      <section class="container main__sectionPromo">
+      <section
+        class="
+          container
+          wow
+          animate__animated animate__fadeInDown
+          main__sectionPromo
+        "
+      >
         <div class="row main__sectionPromo__title">
           <h3 class="col-12 main__sectionPromo__title--text">
             Promos especiales para vos!
@@ -1121,5 +1141,9 @@
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
