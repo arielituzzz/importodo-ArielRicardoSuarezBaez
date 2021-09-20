@@ -557,6 +557,15 @@
           transform: scale(1.1, 1.1);
 }
 
+.main__chat {
+  position: fixed;
+  margin-left: 85%;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: cursive;
+  z-index: 999;
+}
+
 .footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
@@ -643,16 +652,6 @@
   text-align: center;
 }
 
-.chat {
-  position: fixed;
-  bottom: 16rem;
-  right: 1rem;
-  text-align: center;
-  font-size: 1.5rem;
-  font-family: cursive;
-  z-index: 999;
-}
-
 /* MEDIA QUERIS········································································································ */
 /* TABLET························································································································ */
 @media (min-width: 768px) {
@@ -709,6 +708,12 @@
   }
   .header__navUser--margin {
     margin-right: 1rem;
+  }
+  .main__chat {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: cursive;
+    z-index: 999;
   }
   .main__sectionProdDest__title {
     display: inline-block;
@@ -781,15 +786,6 @@
     width: 5rem;
     vertical-align: middle;
   }
-  .chat {
-    position: fixed;
-    bottom: 15rem;
-    right: 1rem;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: cursive;
-    z-index: 999;
-  }
 }
 
 /* DESKTOP ······················································································································· */
@@ -842,7 +838,13 @@
     font-weight: bold;
     margin-bottom: 0rem;
   }
-  .sectionPagos {
+  .main__chat {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: cursive;
+    z-index: 999;
+  }
+  .main .sectionPagos {
     display: block;
     position: relative;
     background-image: url(imagenes/clouds-and-blue-sky-with-copy-space-background-free-photo.jpg);
@@ -906,15 +908,6 @@
     font-size: 1.5rem;
     font-style: italic;
     font-weight: bold;
-  }
-  .chat {
-    position: fixed;
-    bottom: 13rem;
-    right: 1rem;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: cursive;
-    z-index: 999;
   }
 }
 

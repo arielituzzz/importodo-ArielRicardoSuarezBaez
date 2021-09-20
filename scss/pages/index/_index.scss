@@ -307,6 +307,15 @@
       transform: scale(1.1, 1.1);
     }
   }
+  &__chat {
+    position: fixed;
+    // margin-top: 75rem;
+    margin-left: 85%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: cursive;
+    z-index: 999;
+  }
 }
 
 .footer {
@@ -361,15 +370,6 @@
     text-align: center;
   }
 }
-.chat {
-  position: fixed;
-  bottom: 16rem;
-  right: 1rem;
-  text-align: center;
-  font-size: 1.5rem;
-  font-family: cursive;
-  z-index: 999;
-}
 
 /* MEDIA QUERIS········································································································ */
 
@@ -412,6 +412,12 @@
     }
   }
   .main {
+    &__chat {
+      text-align: center;
+      font-size: 1.5rem;
+      font-family: cursive;
+      z-index: 999;
+    }
     &__sectionProdDest {
       &__title {
         display: inline-block;
@@ -473,15 +479,6 @@
       }
     }
   }
-  .chat {
-    position: fixed;
-    bottom: 15rem;
-    right: 1rem;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: cursive;
-    z-index: 999;
-  }
 }
 
 /* DESKTOP ······················································································································· */
@@ -518,16 +515,22 @@
     }
   }
 
-  .sectionPagos {
-    display: block;
-    position: relative;
-    background-image: url(imagenes/clouds-and-blue-sky-with-copy-space-background-free-photo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    padding: 0.5rem 2rem;
-  }
   .main {
+    &__chat {
+      text-align: center;
+      font-size: 1.5rem;
+      font-family: cursive;
+      z-index: 999;
+    }
+    .sectionPagos {
+      display: block;
+      position: relative;
+      background-image: url(imagenes/clouds-and-blue-sky-with-copy-space-background-free-photo.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top;
+      padding: 0.5rem 2rem;
+    }
     &__sectionProdDest {
       flex-wrap: wrap;
       padding: 2rem 2rem;
@@ -571,15 +574,5 @@
         font-weight: bold;
       }
     }
-  }
-
-  .chat {
-    position: fixed;
-    bottom: 13rem;
-    right: 1rem;
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: cursive;
-    z-index: 999;
   }
 }
