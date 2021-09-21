@@ -349,21 +349,21 @@
   background-color: $color-white;
   &__contact {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     grid-area: footer__contact;
     &__item {
-      display: inline-block;
+      display: flex;
       margin: 0.5rem 0.5rem;
       &--image {
-        width: 3rem;
+        width: 2rem;
       }
       &--imageMail {
-        width: 4rem;
+        width: 2.5rem;
       }
     }
     &__text {
-      width: 20rem;
-      font-size: 1rem;
+      width: 15rem;
+      font-size: 0.8rem;
       font-style: italic;
       font-weight: bold;
       text-align: center;
@@ -372,6 +372,7 @@
   &__copyright {
     grid-area: footer__copyright;
     text-align: center;
+    font-size: 0.8rem;
   }
 }
 
@@ -465,6 +466,27 @@
           height: 12rem;
         }
       }
+    }
+  }
+  .footer {
+    &__contact {
+      &__item {
+        &--image {
+          width: 3rem;
+        }
+        &--imageMail {
+          width: 4rem;
+        }
+      }
+      &__text {
+        width: 25rem;
+        font-size: 1.2rem;
+      }
+    }
+    &__copyright {
+      grid-area: footer__copyright;
+      text-align: center;
+      font-size: 0.8rem;
     }
   }
 }
