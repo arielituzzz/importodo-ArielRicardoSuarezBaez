@@ -52,7 +52,7 @@
     }
   }
 
-  .header__purchase {
+  &__purchase {
     display: flex;
     grid-area: header__purchase;
     justify-self: flex-end;
@@ -78,27 +78,35 @@
     }
   }
 
-  .header__title {
+  &__title {
     display: flex;
     grid-area: header__title;
-    font-size: 1.5rem;
     justify-content: center;
-    &--text {
+    &--img {
+      display: inline-block;
+      width: 10rem;
+      vertical-align: middle;
+    }
+    &__text {
+      display: inline-block;
       text-decoration: none;
-    }
-
-    &--text1 {
-      color: $color-white;
-      font-family: serif;
-    }
-    &--text2 {
-      color: rgb(204, 16, 16);
-      font-style: italic;
-      font-weight: bold;
+      color: $color-black-light;
+      &--text1 {
+        color: $color-white;
+        font-family: serif;
+        font-size: 2.5rem;
+        font-family: $roboto;
+      }
+      &--text2 {
+        color: rgb(204, 16, 16);
+        font-style: italic;
+        font-weight: bold;
+        font-size: 2.5rem;
+      }
     }
   }
 
-  .header__navUser {
+  &__navUser {
     grid-area: header__navUser;
     display: flex;
     justify-content: space-around;
@@ -389,10 +397,7 @@
     background-color: $color-site;
 
     &__title {
-      display: flex;
-      grid-area: header__title;
-      font-size: 1.7rem;
-      justify-self: flex-start;
+      justify-content: flex-start;
     }
     &__search {
       display: flex;
@@ -502,11 +507,7 @@
     background-color: $color-site;
     padding: 0rem 2rem 1rem;
     align-items: center;
-    &__title {
-      justify-self: flex-start;
-      grid-area: header__title;
-      font-size: 2rem;
-    }
+
     &__search {
       display: flex;
       align-self: flex-end;
