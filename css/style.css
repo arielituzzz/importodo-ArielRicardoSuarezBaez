@@ -248,24 +248,24 @@
 
 .header__purchase--text {
   text-decoration: none;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   color: #323232;
   font-weight: bold;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .header__purchase--text:hover {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: bold;
-  border-bottom: 0.2rem solid #323232;
-  border-radius: 1rem;
+  color: #323232;
 }
 
 .header__purchase--carrito {
   width: 3rem;
   vertical-align: middle;
+  border-radius: 3rem;
 }
 
 .header__title {
@@ -404,6 +404,103 @@
 
 .header__navBar__button:hover {
   color: #d8d4d4;
+}
+
+/* MEDIA QUERIS········································································································ */
+/* TABLET························································································································ */
+@media (min-width: 768px) {
+  .header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: header;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto;
+        grid-template-columns: auto auto auto;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "header__title . header__purchase" "header__title search header__navUser" "navBar navBar navBar";
+    background-color: #80b1e5;
+  }
+  .header__title {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .header__search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .header__navUser {
+    -ms-grid-row: 2;
+    -ms-grid-column: 3;
+    grid-area: header__navUser;
+    justify-self: flex-end;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    font-size: 1.8rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  .header__navUser__botom {
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+  }
+  .header__navUser--margin {
+    margin-right: 1rem;
+  }
+}
+
+/* DESKTOP ······················································································································· */
+@media (min-width: 1024px) {
+  .header {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: header;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto max-content;
+        grid-template-columns: auto auto -webkit-max-content;
+        grid-template-columns: auto auto max-content;
+    -ms-grid-rows: auto auto auto;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: "header__title header__purchase header__purchase" "header__title search search" "navBar navBar header__navUser";
+    background-color: #80b1e5;
+    padding: 0rem 2rem 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__search {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  .header__search__imput {
+    width: 35rem;
+  }
+  .header__navUser {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: header__navUser;
+    font-size: 1.8rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-weight: bold;
+    margin-bottom: 0rem;
+  }
 }
 
 .main {
@@ -597,6 +694,100 @@
           transform: scale(1.1, 1.1);
 }
 
+/* MEDIA QUERIS········································································································ */
+/* TABLET························································································································ */
+@media (min-width: 768px) {
+  .main__chat {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: cursive;
+    z-index: 999;
+  }
+  .main__sectionProdDest__title {
+    display: inline-block;
+    justify-self: flex-start;
+    text-align: left;
+  }
+  .main__sectionProdDest__title--text {
+    font-size: 2.5rem;
+  }
+  .main__sectionProdDest__article {
+    width: 20rem;
+    height: 20rem;
+    margin: 0.7rem;
+  }
+  .main__sectionProdDest__article--imgPaquete {
+    width: 8rem;
+    height: 11rem;
+  }
+  .main__up__box {
+    margin-right: -40%;
+  }
+  .main__sectionPromo {
+    padding: 2rem 2rem 1rem;
+  }
+  .main__sectionPromo__title {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+  .main__sectionPromo__title--text {
+    font-size: 2.5rem;
+  }
+  .main__sectionPromo__article {
+    width: 20rem;
+    height: 21rem;
+  }
+  .main__sectionPromo__article--imgPaquete {
+    width: 10rem;
+    height: 12rem;
+  }
+}
+
+/* DESKTOP ······················································································································· */
+@media (min-width: 1024px) {
+  .main__chat {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: cursive;
+    z-index: 999;
+  }
+  .main__sectionProdDest {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 2rem 2rem;
+    padding-bottom: 2.5rem;
+  }
+  .main__sectionProdDest__article {
+    width: 22rem;
+    height: 23rem;
+  }
+  .main__sectionProdDest__article--imgPaquete {
+    width: 10rem;
+    height: 12rem;
+  }
+  .main__up {
+    top: 78%;
+  }
+  .main__up__box {
+    margin-right: -65%;
+  }
+  .main__up__box--image {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  .main__sectionPromo {
+    padding: 2rem 2.5rem 3rem;
+  }
+  .main__sectionPromo__article {
+    width: 26rem;
+    height: 27rem;
+  }
+  .main__sectionPromo__article--imgPaquete {
+    width: 15rem;
+    height: 18rem;
+  }
+}
+
 .footer {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
@@ -666,98 +857,6 @@
 /* MEDIA QUERIS········································································································ */
 /* TABLET························································································································ */
 @media (min-width: 768px) {
-  .header {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: header;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto auto auto;
-        grid-template-columns: auto auto auto;
-    -ms-grid-rows: auto auto auto;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "header__title . header__purchase" "header__title search header__navUser" "navBar navBar navBar";
-    background-color: #80b1e5;
-  }
-  .header__title {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-  }
-  .header__search {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .header__navUser {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
-    grid-area: header__navUser;
-    justify-self: flex-end;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    font-size: 1.8rem;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: bold;
-    margin-bottom: 1rem;
-  }
-  .header__navUser__botom {
-    height: -webkit-max-content;
-    height: -moz-max-content;
-    height: max-content;
-  }
-  .header__navUser--margin {
-    margin-right: 1rem;
-  }
-  .main__chat {
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: cursive;
-    z-index: 999;
-  }
-  .main__sectionProdDest__title {
-    display: inline-block;
-    justify-self: flex-start;
-    text-align: left;
-  }
-  .main__sectionProdDest__title--text {
-    font-size: 2.5rem;
-  }
-  .main__sectionProdDest__article {
-    width: 20rem;
-    height: 20rem;
-    margin: 0.7rem;
-  }
-  .main__sectionProdDest__article--imgPaquete {
-    width: 8rem;
-    height: 11rem;
-  }
-  .main__up__box {
-    margin-right: -85%;
-  }
-  .main__sectionPromo {
-    padding: 2rem 2rem 1rem;
-  }
-  .main__sectionPromo__title {
-    margin-bottom: 1rem;
-    text-align: left;
-  }
-  .main__sectionPromo__title--text {
-    font-size: 2.5rem;
-  }
-  .main__sectionPromo__article {
-    width: 20rem;
-    height: 21rem;
-  }
-  .main__sectionPromo__article--imgPaquete {
-    width: 10rem;
-    height: 12rem;
-  }
   .footer__contact__item--image {
     width: 3rem;
   }
@@ -775,91 +874,6 @@
     grid-area: footer__copyright;
     text-align: center;
     font-size: 0.8rem;
-  }
-}
-
-/* DESKTOP ······················································································································· */
-@media (min-width: 1024px) {
-  .header {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: header;
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto auto max-content;
-        grid-template-columns: auto auto -webkit-max-content;
-        grid-template-columns: auto auto max-content;
-    -ms-grid-rows: auto auto auto;
-        grid-template-rows: auto auto auto;
-        grid-template-areas: "header__title header__purchase header__purchase" "header__title search search" "navBar navBar header__navUser";
-    background-color: #80b1e5;
-    padding: 0rem 2rem 1rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .header__search {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-item-align: end;
-        align-self: flex-end;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  .header__search__imput {
-    width: 35rem;
-  }
-  .header__navUser {
-    -ms-grid-row: 3;
-    -ms-grid-column: 3;
-    grid-area: header__navUser;
-    font-size: 1.8rem;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-weight: bold;
-    margin-bottom: 0rem;
-  }
-  .main__chat {
-    text-align: center;
-    font-size: 1.5rem;
-    font-family: cursive;
-    z-index: 999;
-  }
-  .main__sectionProdDest {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding: 2rem 2rem;
-    padding-bottom: 2.5rem;
-  }
-  .main__sectionProdDest__article {
-    width: 22rem;
-    height: 23rem;
-  }
-  .main__sectionProdDest__article--imgPaquete {
-    width: 10rem;
-    height: 12rem;
-  }
-  .main__up {
-    top: 78%;
-  }
-  .main__up__box {
-    margin-right: -95%;
-  }
-  .main__up__box--image {
-    width: 4.5rem;
-    height: 4.5rem;
-  }
-  .main__sectionPromo {
-    padding: 2rem 2.5rem 3rem;
-  }
-  .main__sectionPromo__article {
-    width: 26rem;
-    height: 27rem;
-  }
-  .main__sectionPromo__article--imgPaquete {
-    width: 15rem;
-    height: 18rem;
   }
 }
 
