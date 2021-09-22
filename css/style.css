@@ -248,24 +248,24 @@
 
 .header__purchase--text {
   text-decoration: none;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   color: #323232;
   font-weight: bold;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
 }
 
 .header__purchase--text:hover {
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: bold;
-  border-bottom: 0.2rem solid #323232;
-  border-radius: 1rem;
+  color: #323232;
 }
 
 .header__purchase--carrito {
   width: 3rem;
   vertical-align: middle;
+  border-radius: 3rem;
 }
 
 .header__title {
@@ -738,7 +738,7 @@
     height: 11rem;
   }
   .main__up__box {
-    margin-right: -85%;
+    margin-right: -40%;
   }
   .main__sectionPromo {
     padding: 2rem 2rem 1rem;
@@ -844,7 +844,7 @@
     top: 78%;
   }
   .main__up__box {
-    margin-right: -95%;
+    margin-right: -65%;
   }
   .main__up__box--image {
     width: 4.5rem;

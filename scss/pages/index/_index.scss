@@ -60,21 +60,21 @@
     margin-top: 1rem;
     &--text {
       text-decoration: none;
-      font-size: 1.9rem;
+      font-size: 1.5rem;
       color: $color-black;
       font-weight: bold;
-      transition: all 0.5s;
+      transition: all 0.4s;
     }
     &--text:hover {
       text-decoration: none;
-      font-size: 2rem;
+      font-size: 1.6rem;
       font-weight: bold;
-      border-bottom: 0.2rem solid $color-black;
-      border-radius: 1rem;
+      color: $color-black;
     }
     &--carrito {
       width: 3rem;
       vertical-align: middle;
+      border-radius: 3rem;
     }
   }
 
@@ -450,7 +450,7 @@
     }
     &__up {
       &__box {
-        margin-right: -85%;
+        margin-right: -40%;
       }
     }
     &__sectionPromo {
@@ -550,7 +550,7 @@
     &__up {
       top: 78%;
       &__box {
-        margin-right: -95%;
+        margin-right: -65%;
         &--image {
           width: 4.5rem;
           height: 4.5rem;
