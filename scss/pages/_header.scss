@@ -214,7 +214,14 @@
       font-weight: bold;
       margin-bottom: 1rem;
       &__botom {
-        height: max-content;
+        width: max-content;
+        &--text {
+          font-size: 1.3rem;
+          font-weight: 600;
+        }
+      }
+      &__botom--text:hover {
+        font-size: 1.3rem;
       }
       &--margin {
         margin-right: 1rem;
@@ -250,6 +257,14 @@
         Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
       font-weight: bold;
       margin-bottom: 0rem;
+      &__botom {
+        &--text {
+          font-size: 1.5rem;
+        }
+      }
+      &__botom--text:hover {
+        font-size: 1.5rem;
+      }
     }
   }
 }

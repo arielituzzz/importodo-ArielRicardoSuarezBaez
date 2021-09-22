@@ -85,13 +85,15 @@
     top: 70%;
     overflow: visible;
     height: 0rem;
+    width: 4.6;
     text-align: center;
     font-size: 1.5rem;
     font-family: cursive;
     z-index: 999;
+
     &__box {
-      margin-left: 30rem;
       text-decoration: none;
+      margin-left: 75%;
       &--image {
         border-radius: 5rem;
         width: 3rem;
@@ -189,8 +191,9 @@
       }
     }
     &__up {
+      top: 80%;
       &__box {
-        margin-right: -40%;
+        margin-left: 90%;
       }
     }
     &__sectionPromo {
@@ -241,7 +244,6 @@
     &__up {
       top: 78%;
       &__box {
-        margin-right: -65%;
         &--image {
           width: 4.5rem;
           height: 4.5rem;
