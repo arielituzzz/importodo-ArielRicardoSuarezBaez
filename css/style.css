@@ -406,6 +406,10 @@
   color: #d8d4d4;
 }
 
+header.dark {
+  background-color: #3c3c3c;
+}
+
 /* MEDIA QUERIS········································································································ */
 /* TABLET························································································································ */
 @media (min-width: 768px) {
@@ -708,6 +712,10 @@
           transform: scale(1.1, 1.1);
 }
 
+.main.dark {
+  background-color: #3c3c3c;
+}
+
 /* MEDIA QUERIS········································································································ */
 /* TABLET························································································································ */
 @media (min-width: 768px) {
@@ -845,6 +853,7 @@
 
 .footer__contact__item--image {
   width: 2rem;
+  border-radius: 3rem;
 }
 
 .footer__contact__item--imageMail {
@@ -866,6 +875,11 @@
   grid-area: footer__copyright;
   text-align: center;
   font-size: 0.8rem;
+}
+
+footer.dark {
+  background-color: #3c3c3c;
+  color: #f8f8f8;
 }
 
 /* MEDIA QUERIS········································································································ */
@@ -1513,6 +1527,10 @@ body {
   overflow-x: hidden;
   background-color: #d8d4d4;
   text-decoration: none;
+}
+
+body.dark {
+  background-color: #3c3c3c;
 }
 
 /* GENERALES************************************************************************************ */

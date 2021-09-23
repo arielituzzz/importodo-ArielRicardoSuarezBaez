@@ -26,6 +26,9 @@ body {
   background-color: $color-grey;
   text-decoration: none;
 }
+body.dark {
+  background-color: $color-black-light;
+}
 
 /* GENERALES************************************************************************************ */
 

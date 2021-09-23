@@ -20,6 +20,7 @@
       margin: 0.5rem 0.5rem;
       &--image {
         width: 2rem;
+        border-radius: 3rem;
       }
       &--imageMail {
         width: 2.5rem;
@@ -39,7 +40,10 @@
     font-size: 0.8rem;
   }
 }
-
+footer.dark {
+  background-color: $color-black-light;
+  color: $color-white;
+}
 /* MEDIA QUERIS········································································································ */
 
 /* TABLET························································································································ */
