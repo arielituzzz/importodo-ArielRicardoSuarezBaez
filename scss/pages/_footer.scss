@@ -40,9 +40,8 @@
     font-size: 0.8rem;
   }
 }
-footer.dark {
-  background-color: $color-black-light;
-  color: $color-white;
+#footer.dark {
+  @include dark-mode-primary-light;
 }
 /* MEDIA QUERIS········································································································ */
 

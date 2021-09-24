@@ -563,6 +563,62 @@ header.dark {
   color: #3c3c3c;
 }
 
+.main #pagos_1.dark {
+  background-color: #323232;
+  color: #f8f8f8;
+}
+
+.main #pagos_1.dark :hover {
+  color: #89e675;
+}
+
+.main #pagos_2.dark {
+  background-color: #323232;
+  color: #f8f8f8;
+}
+
+.main #pagos_2.dark :hover {
+  color: #89e675;
+}
+
+.main #pagos_3.dark {
+  background-color: #323232;
+  color: #f8f8f8;
+}
+
+.main #pagos_3.dark :hover {
+  color: #89e675;
+}
+
+.main #pagos_4.dark {
+  background-color: #323232;
+  color: #f8f8f8;
+}
+
+.main #pagos_4.dark :hover {
+  color: #89e675;
+}
+
+.main #pagos_1_text.dark {
+  background-color: #323232;
+  color: #f8f8f8;
+}
+
+.main #pagos_2_text.dark {
+  background-color: #323232;
+  color: #f8f8f8;
+}
+
+.main #pagos_3_text.dark {
+  background-color: #323232;
+  color: #f8f8f8;
+}
+
+.main #pagos_4_text.dark {
+  background-color: #323232;
+  color: #f8f8f8;
+}
+
 .main__sectionProdDest {
   padding: 2rem 1.5rem;
   margin: 2rem 0rem 2rem;
@@ -712,8 +768,8 @@ header.dark {
           transform: scale(1.1, 1.1);
 }
 
-.main.dark {
-  background-color: #3c3c3c;
+#main.dark {
+  background-color: #323232;
 }
 
 /* MEDIA QUERIS········································································································ */
@@ -877,7 +933,7 @@ header.dark {
   font-size: 0.8rem;
 }
 
-footer.dark {
+#footer.dark {
   background-color: #3c3c3c;
   color: #f8f8f8;
 }
@@ -1530,7 +1586,7 @@ body {
 }
 
 body.dark {
-  background-color: #3c3c3c;
+  background-color: #323232;
 }
 
 /* GENERALES************************************************************************************ */
