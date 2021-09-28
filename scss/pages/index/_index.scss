@@ -31,42 +31,7 @@
       }
     }
   }
-  #pagos_1.dark {
-    @include dark-mode-primary;
-    :hover {
-      color: $color-green;
-    }
-  }
-  #pagos_2.dark {
-    @include dark-mode-primary;
-    :hover {
-      color: $color-green;
-    }
-  }
-  #pagos_3.dark {
-    @include dark-mode-primary;
-    :hover {
-      color: $color-green;
-    }
-  }
-  #pagos_4.dark {
-    @include dark-mode-primary;
-    :hover {
-      color: $color-green;
-    }
-  }
-  #pagos_1_text.dark {
-    @include dark-mode-primary;
-  }
-  #pagos_2_text.dark {
-    @include dark-mode-primary;
-  }
-  #pagos_3_text.dark {
-    @include dark-mode-primary;
-  }
-  #pagos_4_text.dark {
-    @include dark-mode-primary;
-  }
+
   &__sectionProdDest {
     padding: 2rem 1.5rem;
     margin: 2rem 0rem 2rem;
@@ -98,7 +63,7 @@
       }
       &--text:hover {
         text-decoration: none;
-        color: $color-black;
+        color: $color-green-primary;
         @include dark-mode-text-white-activator;
       }
     }
@@ -180,7 +145,7 @@
       }
       &--text:hover {
         text-decoration: none;
-        color: $color-black;
+        color: $color-green-primary;
         @include dark-mode-text-white-activator;
       }
       &--imgPaquete {
@@ -193,8 +158,18 @@
     }
   }
 }
-#main.dark {
-  @include dark-mode-background-black;
+.modalStock {
+  width: max-content;
+
+  &__cont {
+    border-radius: 2rem;
+  }
+  &__title {
+    font-size: 2rem;
+  }
+  &__txt {
+    font-size: 1.5rem;
+  }
 }
 
 /* MEDIA QUERIS········································································································ */

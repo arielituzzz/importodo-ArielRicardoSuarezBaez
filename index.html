@@ -495,6 +495,42 @@
     </header>
     <!-- FIN DEL ENCABEZADO******************************************************************************************** -->
     <main id="main" class="container main">
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="exampleModals"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modalStock">
+          <div class="modal-content modalStock__cont">
+            <div class="modal-header">
+              <h5 class="modal-title modalStock__title" id="exampleModalLabel">
+                IMPORTODO.COM
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body modalStock__txt">
+              Lo sentimos! El producto seleccionado se encuentra fuera de Stock!
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- HACIA ABAJO ES LA SECCION DE OPCIONES DE PAGO -->
       <section class="d-none d-xl-inline main__sectionPagos">
         <nav class="main__sectionPagos__nav">
@@ -523,7 +559,11 @@
               />Paga con Debito!</a
             >
           </div>
-          <div id="pagos_3" class="main__sectionPagos__nav__botom">
+          <div
+            id="pagos_3"
+            class="main__sectionPagos__nav__botom"
+            data-bs-toggle="modal"
+          >
             <a
               id="pagos_3_text"
               href="#"
@@ -631,243 +671,259 @@
           main__sectionProdDest
         "
       >
-        <div class="row col-12 main__sectionProdDest__title">
+        <div id="prodDestTitle" class="row col-12 main__sectionProdDest__title">
           <h3 class="main__sectionProdDest__title--text">Un poco de todo...</h3>
         </div>
         <div class="row justify-content-evenly">
           <article
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModals"
             class="
               col-6 col-md-4 col-xl-3
               justify-content-center
               main__sectionProdDest__article
             "
           >
-            <a
-              href="paginaConstruccion.html"
-              class="main__sectionProdDest__article--text"
+            <a class="main__sectionProdDest__article--text"
               ><img
                 class="main__sectionProdDest__article--imgPaquete"
                 src="imagenes/Productos/Tecnologia/Celulares/AppleIphone12Mini64Gb.webp"
                 alt="imgPaquete"
               />
-              <h4 class="main__sectionProdDest__article--text">
+              <h4 class="main__sectionProdDest__article--text prodD1T">
                 IPHONE 12 Mini 64Gb
               </h4>
-              <p>$150.000</p>
+              <p class="prodD1P">$150.000</p>
             </a>
           </article>
           <article
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModals"
             class="
               col-6 col-md-4 col-xl-3
               justify-content-center
               main__sectionProdDest__article
             "
           >
-            <a
-              href="paginaConstruccion.html"
-              class="main__sectionProdDest__article--text"
+            <a class="main__sectionProdDest__article--text"
               ><img
                 class="main__sectionProdDest__article--imgPaquete"
                 src="imagenes/Productos/Tecnologia/Celulares/SamsungGalaxyS21+5G128Gb.webp"
                 alt="imgPaquete"
               />
-              <h4 class="main__sectionProdDest__article--text">
+              <h4 class="main__sectionProdDest__article--text prodD2T">
                 SAMSUNG GALAXY S21 Ultra +5G 128Gb
               </h4>
-              <p>$180.000</p>
+              <p class="prodD2P">$180.000</p>
             </a>
           </article>
           <article
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModals"
             class="
               col-6 col-md-4 col-xl-3
               justify-content-center
               main__sectionProdDest__article
             "
           >
-            <a
-              href="paginaConstruccion.html"
-              class="main__sectionProdDest__article--text"
+            <a class="main__sectionProdDest__article--text"
               ><img
                 class="main__sectionProdDest__article--imgPaquete"
                 src="imagenes/Productos/Tecnologia/Celulares/SamsungGalaxyA1264Gb.webp"
                 alt="imgPaquete"
               />
-              <h4 class="main__sectionProdDest__article--text">
+              <h4 class="main__sectionProdDest__article--text prodD3T">
                 SAMSUNG GALAXY A12 64Gb
               </h4>
-              <p>$40.000</p>
+              <p class="prodD3P">$40.000</p>
             </a>
           </article>
 
           <article
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModals"
             class="
               col-6 col-md-4 col-xl-3
               justify-content-center
               main__sectionProdDest__article
             "
           >
-            <a
-              href="paginaConstruccion.html"
-              class="main__sectionProdDest__article--text"
+            <a class="main__sectionProdDest__article--text"
               ><img
                 class="main__sectionProdDest__article--imgPaquete"
                 src="imagenes/Productos/Tecnologia/Celulares/XiaomiMi10T5GDualSim128Gb.webp"
                 alt="imgPaquete"
               />
-              <h4 class="main__sectionProdDest__article--text">
+              <h4 class="main__sectionProdDest__article--text prodD4T">
                 XIAOMI MI10T 5G Dual Sim 128Gb
               </h4>
-              <p>$60.000</p>
+              <p class="prodD4P">$60.000</p>
             </a>
           </article>
 
           <article
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModals"
             class="
               col-6 col-md-4 col-xl-3
               justify-content-center
               main__sectionProdDest__article
             "
           >
-            <a
-              href="paginaConstruccion.html"
-              class="main__sectionProdDest__article--text"
+            <a class="main__sectionProdDest__article--text"
               ><img
                 class="main__sectionProdDest__article--imgPaquete"
                 src="imagenes/Productos/Electrodomesticos/MultiprocesadoraSmartlifeSLFP05091000W.webp"
                 alt="imgPaquete"
               />
-              <h4 class="main__sectionProdDest__article--text">
+              <h4 class="main__sectionProdDest__article--text prodD5T">
                 Multi-Procesadora SMART-LIFE SLFP0509 1000W
               </h4>
-              <p>$12.000</p>
+              <p class="prodD5P">$12.000</p>
             </a>
           </article>
           <article
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModals"
             class="
               col-6 col-md-4 col-xl-3
               justify-content-center
               main__sectionProdDest__article
             "
           >
-            <a
-              href="paginaConstruccion.html"
-              class="main__sectionProdDest__article--text"
+            <a class="main__sectionProdDest__article--text"
               ><img
                 class="main__sectionProdDest__article--imgPaquete"
                 src="imagenes/Productos/Moda/CamperaRockieBordoHombre.webp"
                 alt="imgPaquete"
               />
-              <h4 class="main__sectionProdDest__article--text">
+              <h4 class="main__sectionProdDest__article--text prodD6T">
                 Campera ROCKIE Bordo Hombre
               </h4>
-              <p>$25.000</p>
+              <p class="prodD6P">$25.000</p>
             </a>
           </article>
           <article
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModals"
             class="
               col-6 col-md-4 col-xl-3
               justify-content-center
               main__sectionProdDest__article
             "
           >
-            <a
-              href="paginaConstruccion.html"
-              class="main__sectionProdDest__article--text"
+            <a class="main__sectionProdDest__article--text"
               ><img
                 class="main__sectionProdDest__article--imgPaquete"
                 src="imagenes/Productos/Decoracion/Set3CajasOrganizadorasSimilRattanGrisBegonia.webp"
                 alt="imgPaquete"
               />
-              <h4 class="main__sectionProdDest__article--text">
+              <h4 class="main__sectionProdDest__article--text prodD7T">
                 Set 3 Cajas Organizadoras Simil Rattan Gris Begonia
               </h4>
-              <p>$3.500</p>
+              <p class="prodD7P">$3.500</p>
             </a>
           </article>
           <article
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModals"
             class="
               col-6 col-md-4 col-xl-3
               justify-content-center
               main__sectionProdDest__article
             "
           >
-            <a
-              href="paginaConstruccion.html"
-              class="main__sectionProdDest__article--text"
+            <a class="main__sectionProdDest__article--text"
               ><img
                 class="main__sectionProdDest__article--imgPaquete"
                 src="imagenes/Productos/Decoracion/MiniPizarraLuminosaCartelLuzMensajesUsb.webp"
                 alt="imgPaquete"
               />
-              <h4 class="main__sectionProdDest__article--text">
+              <h4 class="main__sectionProdDest__article--text prodD8T">
                 MINI PIZARRA LUMINOSA Cartel luz led con USB
               </h4>
-              <p>$800</p>
+              <p class="prodD8P">$800</p>
             </a>
           </article>
 
           <article
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModals"
             class="
               col-6 col-md-4 col-xl-3
               justify-content-center
               main__sectionProdDest__article
             "
           >
-            <a
-              href="paginaConstruccion.html"
-              class="main__sectionProdDest__article--text"
+            <a class="main__sectionProdDest__article--text"
               ><img
                 class="main__sectionProdDest__article--imgPaquete"
                 src="imagenes/Productos/Motos/MotoHondaXRE300.webp"
                 alt="imgPaquete"
               />
-              <h4 class="main__sectionProdDest__article--text">HONDA XRE300</h4>
-              <p>$249.000</p>
+              <h4 class="main__sectionProdDest__article--text prodD9T">
+                HONDA XRE300
+              </h4>
+              <p class="prodD9P">$249.000</p>
             </a>
           </article>
           <article
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModals"
             class="
               col-6 col-md-4 col-xl-3
               justify-content-center
               main__sectionProdDest__article
             "
           >
-            <a
-              href="paginaConstruccion.html"
-              class="main__sectionProdDest__article--text"
+            <a class="main__sectionProdDest__article--text"
               ><img
                 class="main__sectionProdDest__article--imgPaquete"
                 src="imagenes/Productos/Construccion/CarroPlegableAceroBoron.webp"
                 alt="imgPaquete"
               />
-              <h4 class="main__sectionProdDest__article--text">
+              <h4 class="main__sectionProdDest__article--text prodD10T">
                 Carro plegable ACERO BORON
               </h4>
-              <p>$970</p>
+              <p class="prodD10P">$970</p>
             </a>
           </article>
           <article
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModals"
             class="
               col-6 col-md-4 col-xl-3
               justify-content-center
               main__sectionProdDest__article
             "
           >
-            <a
-              href="paginaConstruccion.html"
-              class="main__sectionProdDest__article--text"
+            <a class="main__sectionProdDest__article--text"
               ><img
                 class="main__sectionProdDest__article--imgPaquete"
                 src="imagenes/Productos/Gastronomia/ParrillaElectricaSpeedyGrill1099.webp"
                 alt="imgPaquete"
               />
-              <h4 class="main__sectionProdDest__article--text">
+              <h4 class="main__sectionProdDest__article--text prodD11T">
                 Parrilla Electroncia SPEEDY Grill1099
               </h4>
-              <p>$2.500</p>
+              <p class="prodD11P">$2.500</p>
             </a>
           </article>
           <article
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModals"
             class="
               col-6 col-md-4 col-xl-3
               justify-content-center
@@ -875,7 +931,6 @@
             "
           >
             <a
-              href="paginaConstruccion.html"
               class="
                 d-flex
                 align-items-center
@@ -887,10 +942,10 @@
                 src="imagenes/Productos/Tecnologia/Tablet/TabletGadnicFenixPhoneTAB0024D10.webp"
                 alt="imgPaquete"
               />
-              <h4 class="main__sectionProdDest__article--text">
+              <h4 class="main__sectionProdDest__article--text prodD12T">
                 Tablet GADNIC FenixPhone TAB0024D10
               </h4>
-              <p>$28.000</p>
+              <p class="prodD12P">$28.000</p>
             </a>
           </article>
         </div>
@@ -912,6 +967,7 @@
       <!-- FIN UP -->
       <!-- SECCION DE PROMOCIONES -->
       <section
+        id="promociones"
         class="
           container
           wow
@@ -919,13 +975,16 @@
           main__sectionPromo
         "
       >
-        <div class="row main__sectionPromo__title">
+        <div id="promoTitle" class="row main__sectionPromo__title">
           <h3 class="col-12 main__sectionPromo__title--text">
             Promos especiales para vos!
           </h3>
         </div>
         <div class="row justify-content-evenly">
           <article
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModals"
             class="
               col-12 col-md-6 col-xl-4
               justify-content-center
@@ -933,7 +992,6 @@
             "
           >
             <a
-              href="paginaConstruccion.html"
               class="
                 d-block
                 align-items-center
@@ -944,13 +1002,16 @@
                 src="imagenes/Productos/Gastronomia/TermometroParaHorno.webp"
                 alt="imgPaquete"
               />
-              <h4 class="main__sectionPromo__article--text">
+              <h4 class="main__sectionPromo__article--text prodM1T">
                 Termometro para Horno GENERICO
               </h4>
-              <p>$250</p>
+              <p class="prodM1P">$250</p>
             </a>
           </article>
           <article
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModals"
             class="
               col-12 col-md-6 col-xl-4
               justify-content-center
@@ -958,7 +1019,6 @@
             "
           >
             <a
-              href="paginaConstruccion.html"
               class="
                 d-flex
                 align-items-center
@@ -970,13 +1030,16 @@
                 src="imagenes/Productos/Motos/MotoZanellaStyler150RS.webp"
                 alt="imgPaquete"
               />
-              <h4 class="main__sectionPromo__article--text">
+              <h4 class="main__sectionPromo__article--text prodM2T">
                 ZANELLA Styler 150RS
               </h4>
-              <p>$198.000</p>
+              <p class="prodM2P">$198.000</p>
             </a>
           </article>
           <article
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModals"
             class="
               col-12
               d-md-none d-xl-flex
@@ -986,7 +1049,6 @@
             "
           >
             <a
-              href="paginaConstruccion.html"
               class="
                 d-block
                 align-items-center
@@ -997,15 +1059,18 @@
                 src="imagenes/Productos/Construccion/espumaDePoliuretanoExpandidoAislante3M750Mlts.webp"
                 alt="imgPaquete"
               />
-              <h4 class="main__sectionPromo__article--text">
+              <h4 class="main__sectionPromo__article--text prodM3T">
                 Espuma de poliuretano expandido 3M 750Ml.
               </h4>
-              <p>$130</p>
+              <p class="prodM3P">$130</p>
             </a>
           </article>
         </div>
         <div class="row justify-content-evenly">
           <article
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModals"
             class="
               d-none d-md-flex
               col-md-6 col-xl-4
@@ -1014,7 +1079,6 @@
             "
           >
             <a
-              href="paginaConstruccion.html"
               class="
                 d-block
                 align-items-center
@@ -1025,13 +1089,16 @@
                 src="imagenes/Productos/Moda/AnteojosSolInfinitParisNegroBrillandeLenteRosa.webp"
                 alt="imgPaquete"
               />
-              <h4 class="main__sectionPromo__article--text">
+              <h4 class="main__sectionPromo__article--text prodM4T">
                 Anteojos INFINIT Paris
               </h4>
-              <p>$15.000</p>
+              <p class="prodM4P">$15.000</p>
             </a>
           </article>
           <article
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModals"
             class="
               d-none d-md-flex
               col-md-6 col-xl-4
@@ -1039,19 +1106,22 @@
               main__sectionPromo__article
             "
           >
-            <a
-              href="paginaConstruccion.html"
-              class="d-block main__sectionPromo__article--text"
+            <a class="d-block main__sectionPromo__article--text"
               ><img
                 class="main__sectionPromo__article--imgPaquete"
                 src="imagenes/Productos/Construccion/DiscoFlap115PulidoVidrioMamposteria.webp"
                 alt="imgPaquete"
               />
-              <h4 class="main__sectionPromo__article--text">Disco Flap 15"</h4>
-              <p>$200</p>
+              <h4 class="main__sectionPromo__article--text prodM5T">
+                Disco Flap 15"
+              </h4>
+              <p class="prodM5P">$200</p>
             </a>
           </article>
           <article
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModals"
             class="
               d-none d-xl-flex
               col-md-6 col-xl-4
@@ -1060,7 +1130,6 @@
             "
           >
             <a
-              href="paginaConstruccion.html"
               class="
                 d-block
                 align-items-center
@@ -1071,10 +1140,10 @@
                 src="imagenes/Productos/Tecnologia/Varios/JoystickInalambricoSonyPlayStationDualSense.webp"
                 alt="imgPaquete"
               />
-              <h4 class="main__sectionPromo__article--text">
+              <h4 class="main__sectionPromo__article--text prodM6T">
                 Joystick SONY PLAY STATION Dual Sense
               </h4>
-              <p>$7.800</p>
+              <p class="prodM6P">$7.800</p>
             </a>
           </article>
         </div>
@@ -1152,6 +1221,6 @@
     <script>
       new WOW().init();
     </script>
-    <script type="text/javascript" src="js/function.js"></script>
+    <script type="text/javascript" src="js/darkMode.js"></script>
   </body>
 </html>
