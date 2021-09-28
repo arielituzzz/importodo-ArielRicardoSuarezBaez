@@ -66,71 +66,71 @@ $dark-mode-status: off; // Para activar "Modo Oscuro", cambiar valor a "on" u "o
   border-radius: 5rem;
   background-color: $color-black-light;
 }
-@mixin dark-mode-background-black-activator {
-  @if $dark-mode-status == on {
-    @include dark-mode-background-black();
-  }
-}
-@mixin dark-mode-background-black-light-activator {
-  @if $dark-mode-status == on {
-    @include dark-mode-background-black-light();
-  }
-}
-@mixin dark-mode-text-black-activator {
-  @if $dark-mode-status == on {
-    @include dark-mode-text-black();
-  }
-}
-@mixin dark-mode-text-white-activator {
-  @if $dark-mode-status == on {
-    @include dark-mode-text-white();
-  }
-}
-@mixin dark-mode-text-yellow-activator {
-  @if $dark-mode-status == on {
-    @include dark-mode-text-yellow();
-  }
-}
-@mixin dark-mode-primary-activator {
-  @if $dark-mode-status == on {
-    @include dark-mode-primary();
-  }
-}
-@mixin dark-mode-primary-light-activator {
-  @if $dark-mode-status == on {
-    @include dark-mode-primary-light();
-  }
-}
-@mixin dark-mode-secondary-activator {
-  @if $dark-mode-status == on {
-    @include dark-mode-secondary();
-  }
-}
-@mixin dark-mode-secondary-light-activator {
-  @if $dark-mode-status == on {
-    @include dark-mode-secondary-light();
-  }
-}
-@mixin dark-mode-fx-light-activator {
-  @if $dark-mode-status == on {
-    @include dark-mode-fx-light();
-  }
-}
-@mixin dark-mode-box_shadow-none-activator {
-  @if $dark-mode-status == on {
-    @include dark-mode-box_shadow-none();
-  }
-}
+// @mixin dark-mode-background-black-activator {
+//   @if $dark-mode-status == on {
+//     @include dark-mode-background-black();
+//   }
+// }
+// @mixin dark-mode-background-black-light-activator {
+//   @if $dark-mode-status == on {
+//     @include dark-mode-background-black-light();
+//   }
+// }
+// @mixin dark-mode-text-black-activator {
+//   @if $dark-mode-status == on {
+//     @include dark-mode-text-black();
+//   }
+// }
+// @mixin dark-mode-text-white-activator {
+//   @if $dark-mode-status == on {
+//     @include dark-mode-text-white();
+//   }
+// }
+// @mixin dark-mode-text-yellow-activator {
+//   @if $dark-mode-status == on {
+//     @include dark-mode-text-yellow();
+//   }
+// }
+// @mixin dark-mode-primary-activator {
+//   @if $dark-mode-status == on {
+//     @include dark-mode-primary();
+//   }
+// }
+// @mixin dark-mode-primary-light-activator {
+//   @if $dark-mode-status == on {
+//     @include dark-mode-primary-light();
+//   }
+// }
+// @mixin dark-mode-secondary-activator {
+//   @if $dark-mode-status == on {
+//     @include dark-mode-secondary();
+//   }
+// }
+// @mixin dark-mode-secondary-light-activator {
+//   @if $dark-mode-status == on {
+//     @include dark-mode-secondary-light();
+//   }
+// }
+// @mixin dark-mode-fx-light-activator {
+//   @if $dark-mode-status == on {
+//     @include dark-mode-fx-light();
+//   }
+// }
+// @mixin dark-mode-box_shadow-none-activator {
+//   @if $dark-mode-status == on {
+//     @include dark-mode-box_shadow-none();
+//   }
+// }
 
-#body {
-  @include dark-mode-primary-activator();
-}
-#main {
-  @include dark-mode-primary-activator();
-}
-#main-random {
-  @include dark-mode-primary-light-activator();
-}
-#footer {
-  @include dark-mode-primary-activator();
-}
+// #body {
+//   @include dark-mode-primary-activator();
+// }
+// #main {
+//   @include dark-mode-primary-activator();
+// }
+// #main-random {
+//   @include dark-mode-primary-light-activator();
+// }
+// #footer {
+//   @include dark-mode-primary-activator();
+// }
