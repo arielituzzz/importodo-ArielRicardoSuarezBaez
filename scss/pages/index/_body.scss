@@ -1,5 +1,27 @@
 .main {
   grid-area: main;
+  .modalStock {
+    width: 25rem;
+
+    &__cont {
+      border-radius: 2rem;
+    }
+    &__img {
+      display: flex;
+      justify-content: center;
+      &--size {
+        width: 18rem;
+      }
+    }
+    &__title {
+      font-size: 1.6rem;
+    }
+    &__txt {
+      font-size: 1.3rem;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
 
   &__sectionPagos {
     margin: 0.5rem 2rem;
@@ -85,7 +107,6 @@
     top: 70%;
     overflow: visible;
     height: 0rem;
-    width: 4.6;
     text-align: center;
     font-size: 1.5rem;
     font-family: cursive;
@@ -93,7 +114,8 @@
 
     &__box {
       text-decoration: none;
-      margin-left: 75%;
+      margin-left: 80%;
+      width: max-content;
       &--image {
         border-radius: 5rem;
         width: 3rem;
@@ -158,19 +180,6 @@
     }
   }
 }
-.modalStock {
-  width: max-content;
-
-  &__cont {
-    border-radius: 2rem;
-  }
-  &__title {
-    font-size: 2rem;
-  }
-  &__txt {
-    font-size: 1.5rem;
-  }
-}
 
 /* MEDIA QUERIS········································································································ */
 
@@ -206,7 +215,7 @@
     &__up {
       top: 80%;
       &__box {
-        margin-left: 90%;
+        margin-left: 93%;
       }
     }
     &__sectionPromo {

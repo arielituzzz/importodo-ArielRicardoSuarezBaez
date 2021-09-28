@@ -37,6 +37,7 @@ let prodD11T = document.querySelector(".prodD11T");
 let prodD11P = document.querySelector(".prodD11P");
 let prodD12T = document.querySelector(".prodD12T");
 let prodD12P = document.querySelector(".prodD12P");
+let upTxt = document.querySelector(".main__up__box--text");
 let prodM1T = document.querySelector(".prodM1T");
 let prodM1P = document.querySelector(".prodM1P");
 let prodM2T = document.querySelector(".prodM2T");
@@ -89,6 +90,7 @@ function darkMode() {
   prodD11P.classList.toggle("dark");
   prodD12T.classList.toggle("dark");
   prodD12P.classList.toggle("dark");
+  upTxt.classList.toggle("dark");
   prodM1T.classList.toggle("dark");
   prodM1P.classList.toggle("dark");
   prodM2T.classList.toggle("dark");
@@ -102,76 +104,264 @@ function darkMode() {
   prodM6T.classList.toggle("dark");
   prodM6P.classList.toggle("dark");
 
-  //   if (main.classList.contains("dark")) {
-  //     localStorage.setItem("dark-mode", "true");
-  //   }
-  //   if (footer.classList.contains("dark")) {
-  //     localStorage.setItem("dark-mode", "true");
-  //   }
-  //   if (body.classList.contains("dark")) {
-  //     localStorage.setItem("dark-mode", "true");
-  //   }
-  //   if (pagos1.classList.contains("dark")) {
-  //     localStorage.setItem("dark-mode", "true");
-  //   }
-  //   if (pagos2.classList.contains("dark")) {
-  //     localStorage.setItem("dark-mode", "true");
-  //   }
-  //   if (pagos3.classList.contains("dark")) {
-  //     localStorage.setItem("dark-mode", "true");
-  //   }
-  //   if (pagos4.classList.contains("dark")) {
-  //     localStorage.setItem("dark-mode", "true");
-  //   }
-  //   if (pagos1Txt.classList.contains("dark")) {
-  //     localStorage.setItem("dark-mode", "true");
-  //   }
-  //   if (pagos2Txt.classList.contains("dark")) {
-  //     localStorage.setItem("dark-mode", "true");
-  //   }
-  //   if (pagos3Txt.classList.contains("dark")) {
-  //     localStorage.setItem("dark-mode", "true");
-  //   }
-  //   if (pagos4Txt.classList.contains("dark")) {
-  //     localStorage.setItem("dark-mode", "true");
-  //   } else {
-  //     localStorage.setItem("dark-mode", "false");
-  //   }
+  if (main.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (footer.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (body.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (pagos1.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (pagos2.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (pagos3.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (pagos4.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (pagos1Txt.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (pagos2Txt.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (pagos3Txt.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (pagos4Txt.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodDest.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodDestTitle.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (promociones.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodD1T.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodD1P.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodD2T.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodD2P.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodD3T.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodD3P.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodD4T.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodD4P.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodD5T.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodD5P.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodD6T.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodD6P.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodD7T.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodD7P.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodD8T.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodD8P.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodD9T.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodD9P.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodD10T.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodD10P.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodD11T.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodD11P.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodD12T.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodD12P.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (upTxt.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodM1T.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodM1P.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodM2T.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodM2P.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodM3T.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodM3P.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodM4T.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodM4P.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodM5T.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodM5P.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodM6T.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  }
+  if (prodM6P.classList.contains("dark")) {
+    localStorage.setItem("dark-mode", "true");
+  } else {
+    localStorage.setItem("dark-mode", "false");
+  }
 }
-// if (localStorage.getItem("dark-mode") === "true") {
-//   main.classList.add("dark");
-// }
-// if (localStorage.getItem("dark-mode") === "true") {
-//   footer.classList.add("dark");
-// }
-// if (localStorage.getItem("dark-mode") === "true") {
-//   body.classList.add("dark");
-// }
-// if (localStorage.getItem("dark-mode") === "true") {
-//   pagos1.classList.add("dark");
-// }
-// if (localStorage.getItem("dark-mode") === "true") {
-//   pagos2.classList.add("dark");
-// }
-// if (localStorage.getItem("dark-mode") === "true") {
-//   pagos3.classList.add("dark");
-// }
-// if (localStorage.getItem("dark-mode") === "true") {
-//   pagos4.classList.add("dark");
-// }
-// if (localStorage.getItem("dark-mode") === "true") {
-//   pagos1Txt.classList.add("dark");
-// }
-// if (localStorage.getItem("dark-mode") === "true") {
-//   pagos2Txt.classList.add("dark");
-// }
-// if (localStorage.getItem("dark-mode") === "true") {
-//   pagos3Txt.classList.add("dark");
-// }
-// if (localStorage.getItem("dark-mode") === "true") {
-//   pagos4Txt.classList.add("dark");
-// } else {
-//   main.classList.remove("dark");
-// }
 
-console.log(darkMode());
+if (localStorage.getItem("dark-mode") === "true") {
+  main.classList.add("dark");
+  footer.classList.add("dark");
+  body.classList.add("dark");
+  pagos1.classList.add("dark");
+  pagos2.classList.add("dark");
+  pagos3.classList.add("dark");
+  pagos4.classList.add("dark");
+  pagos1Txt.classList.add("dark");
+  pagos2Txt.classList.add("dark");
+  pagos3Txt.classList.add("dark");
+  pagos4Txt.classList.add("dark");
+  prodDest.classList.add("dark");
+  prodDestTitle.classList.add("dark");
+  promociones.classList.add("dark");
+  prodD1T.classList.add("dark");
+  prodD1P.classList.add("dark");
+  prodD2T.classList.add("dark");
+  prodD2P.classList.add("dark");
+  prodD3T.classList.add("dark");
+  prodD3P.classList.add("dark");
+  prodD4T.classList.add("dark");
+  prodD4P.classList.add("dark");
+  prodD5T.classList.add("dark");
+  prodD5P.classList.add("dark");
+  prodD6T.classList.add("dark");
+  prodD6P.classList.add("dark");
+  prodD7T.classList.add("dark");
+  prodD8P.classList.add("dark");
+  prodD9T.classList.add("dark");
+  prodD9P.classList.add("dark");
+  prodD10T.classList.add("dark");
+  prodD10P.classList.add("dark");
+  prodD11T.classList.add("dark");
+  prodD11P.classList.add("dark");
+  prodD12T.classList.add("dark");
+  prodD12P.classList.add("dark");
+  upTxt.classList.add("dark");
+  prodM1T.classList.add("dark");
+  prodM1P.classList.add("dark");
+  prodM2T.classList.add("dark");
+  prodM2P.classList.add("dark");
+  prodM3T.classList.add("dark");
+  prodM3P.classList.add("dark");
+  prodM4T.classList.add("dark");
+  prodM5T.classList.add("dark");
+  prodM5P.classList.add("dark");
+  prodM6T.classList.add("dark");
+  prodM6P.classList.add("dark");
+} else {
+  body.classList.remove("dark");
+  main.classList.remove("dark");
+  footer.classList.remove("dark");
+  pagos1.classList.remove("dark");
+  pagos2.classList.remove("dark");
+  pagos3.classList.remove("dark");
+  pagos4.classList.remove("dark");
+  pagos1Txt.classList.remove("dark");
+  pagos2Txt.classList.remove("dark");
+  pagos3Txt.classList.remove("dark");
+  pagos4Txt.classList.remove("dark");
+  prodDest.classList.remove("dark");
+  prodDestTitle.classList.remove("dark");
+  promociones.classList.remove("dark");
+  prodD1T.classList.remove("dark");
+  prodD1P.classList.remove("dark");
+  prodD2T.classList.remove("dark");
+  prodD2P.classList.remove("dark");
+  prodD3T.classList.remove("dark");
+  prodD3P.classList.remove("dark");
+  prodD4T.classList.remove("dark");
+  prodD4P.classList.remove("dark");
+  prodD5T.classList.remove("dark");
+  prodD5P.classList.remove("dark");
+  prodD6T.classList.remove("dark");
+  prodD6P.classList.remove("dark");
+  prodD7T.classList.remove("dark");
+  prodD7P.classList.remove("dark");
+  prodD8T.classList.remove("dark");
+  prodD8P.classList.remove("dark");
+  prodD9T.classList.remove("dark");
+  prodD9P.classList.remove("dark");
+  prodD10T.classList.remove("dark");
+  prodD10P.classList.remove("dark");
+  prodD11T.classList.remove("dark");
+  prodD11P.classList.remove("dark");
+  prodD12T.classList.remove("dark");
+  prodD12P.classList.remove("dark");
+  upTxt.classList.remove("dark");
+  prodM1T.classList.remove("dark");
+  prodM1P.classList.remove("dark");
+  prodM2T.classList.remove("dark");
+  prodM2P.classList.remove("dark");
+  prodM3T.classList.remove("dark");
+  prodM3P.classList.remove("dark");
+  prodM4T.classList.remove("dark");
+  prodM4P.classList.remove("dark");
+  prodM5T.classList.remove("dark");
+  prodM5P.classList.remove("dark");
+  prodM6T.classList.remove("dark");
+  prodM6P.classList.remove("dark");
+}
+
+console.log(darkMode);

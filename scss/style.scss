@@ -1,8 +1,9 @@
 @import "pages/variables";
+@import "pages/darkMode";
 @import "pages/templates";
-@import "pages/header";
-@import "pages/index/index";
-@import "pages/footer";
+@import "pages/index/header";
+@import "pages/index/body";
+@import "pages/index/footer";
 @import "pages/index/component/carrousel";
 @import "pages/index/component/formIngr";
 @import "pages/index/component/formReg";
