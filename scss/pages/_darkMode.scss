@@ -1,0 +1,196 @@
+body.dark {
+  @include dark-mode-background-black;
+}
+#main.dark {
+  @include dark-mode-background-black;
+}
+#pagos_1.dark {
+  @include dark-mode-primary;
+  :hover {
+    color: $color-green;
+  }
+}
+#pagos_2.dark {
+  @include dark-mode-primary;
+  :hover {
+    color: $color-green;
+  }
+}
+#pagos_3.dark {
+  @include dark-mode-primary;
+  :hover {
+    color: $color-green;
+  }
+}
+#pagos_4.dark {
+  @include dark-mode-primary;
+  :hover {
+    color: $color-green;
+  }
+}
+#pagos_1_text.dark {
+  @include dark-mode-primary;
+}
+#pagos_2_text.dark {
+  @include dark-mode-primary;
+}
+#pagos_3_text.dark {
+  @include dark-mode-primary;
+}
+#pagos_4_text.dark {
+  @include dark-mode-primary;
+}
+#productosDestacados.dark {
+  @include dark-mode-primary-light;
+}
+#prodDestTitle.dark {
+  @include dark-mode-primary-light;
+}
+.main__up__box--text.dark {
+  @include dark-mode-primary-light;
+}
+#promociones.dark {
+  @include dark-mode-primary-light;
+}
+#promoTitle.dark {
+  @include dark-mode-primary-light;
+}
+.prodD1T.dark {
+  @include dark-mode-text-yellow;
+}
+.prodD1P.dark {
+  @include dark-mode-text-yellow;
+}
+.prodD2T.dark {
+  @include dark-mode-text-yellow;
+}
+.prodD2P.dark {
+  @include dark-mode-text-yellow;
+}
+.prodD3T.dark {
+  @include dark-mode-text-yellow;
+}
+.prodD3P.dark {
+  @include dark-mode-text-yellow;
+}
+.prodD4T.dark {
+  @include dark-mode-text-yellow;
+}
+.prodD4P.dark {
+  @include dark-mode-text-yellow;
+}
+.prodD5T.dark {
+  @include dark-mode-text-yellow;
+}
+.prodD5P.dark {
+  @include dark-mode-text-yellow;
+}
+.prodD6T.dark {
+  @include dark-mode-text-yellow;
+}
+.prodD6P.dark {
+  @include dark-mode-text-yellow;
+}
+.prodD7T.dark {
+  @include dark-mode-text-yellow;
+}
+.prodD7P.dark {
+  @include dark-mode-text-yellow;
+}
+.prodD8T.dark {
+  @include dark-mode-text-yellow;
+}
+.prodD8P.dark {
+  @include dark-mode-text-yellow;
+}
+.prodD9T.dark {
+  @include dark-mode-text-yellow;
+}
+.prodD9P.dark {
+  @include dark-mode-text-yellow;
+}
+.prodD10T.dark {
+  @include dark-mode-text-yellow;
+}
+.prodD10P.dark {
+  @include dark-mode-text-yellow;
+}
+.prodD11T.dark {
+  @include dark-mode-text-yellow;
+}
+.prodD11P.dark {
+  @include dark-mode-text-yellow;
+}
+.prodD12T.dark {
+  @include dark-mode-text-yellow;
+}
+.prodD12P.dark {
+  @include dark-mode-text-yellow;
+}
+.prodM1T.dark {
+  @include dark-mode-text-yellow;
+}
+.prodM1P.dark {
+  @include dark-mode-text-yellow;
+}
+.prodM2T.dark {
+  @include dark-mode-text-yellow;
+}
+.prodM2P.dark {
+  @include dark-mode-text-yellow;
+}
+.prodM3T.dark {
+  @include dark-mode-text-yellow;
+}
+.prodM3P.dark {
+  @include dark-mode-text-yellow;
+}
+.prodM4T.dark {
+  @include dark-mode-text-yellow;
+}
+.prodM4P.dark {
+  @include dark-mode-text-yellow;
+}
+.prodM5T.dark {
+  @include dark-mode-text-yellow;
+}
+.prodM5P.dark {
+  @include dark-mode-text-yellow;
+}
+.prodM6T.dark {
+  @include dark-mode-text-yellow;
+}
+.prodM6P.dark {
+  @include dark-mode-text-yellow;
+}
+#buttonDark {
+  position: relative;
+  display: block;
+  margin-right: 2rem;
+  width: 5rem;
+  height: 2.8rem;
+  border-radius: 1.6rem;
+  background-color: $color-white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#buttonDark.active {
+  background-color: $color-black-light;
+}
+
+#buttonDark .indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: linear-gradient(to bottom, $color-white, grey);
+  border-radius: 50%;
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+#buttonDark.active .indicator {
+  left: 1.9rem;
+  background: linear-gradient(to bottom grey, $color-white);
+}

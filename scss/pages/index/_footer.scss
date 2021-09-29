@@ -1,0 +1,71 @@
+.footer {
+  grid-area: footer;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-template-areas: "footer__contact footer__contact" "footer__copyright footer__copyright";
+  justify-items: center;
+  margin: 1rem 2rem 2rem 2rem;
+  padding: 1rem 1rem;
+  flex-wrap: wrap;
+  border-top: 0.3rem solid#585F66;
+  border-radius: 3rem;
+  background-color: $color-white;
+  &__contact {
+    display: flex;
+    justify-content: center;
+    grid-area: footer__contact;
+    &__item {
+      display: flex;
+      margin: 0.5rem 0.5rem;
+      &--image {
+        width: 2rem;
+        border-radius: 3rem;
+      }
+      &--imageMail {
+        width: 2.5rem;
+      }
+    }
+    &__text {
+      width: 15rem;
+      font-size: 0.8rem;
+      font-style: italic;
+      font-weight: bold;
+      text-align: center;
+    }
+  }
+  &__copyright {
+    grid-area: footer__copyright;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+}
+#footer.dark {
+  @include dark-mode-primary-light;
+}
+/* MEDIA QUERIS········································································································ */
+
+/* TABLET························································································································ */
+@media (min-width: 768px) {
+  .footer {
+    &__contact {
+      &__item {
+        &--image {
+          width: 3rem;
+        }
+        &--imageMail {
+          width: 4rem;
+        }
+      }
+      &__text {
+        width: 25rem;
+        font-size: 1.2rem;
+      }
+    }
+    &__copyright {
+      grid-area: footer__copyright;
+      text-align: center;
+      font-size: 0.8rem;
+    }
+  }
+}

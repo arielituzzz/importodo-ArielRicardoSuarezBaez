@@ -1,0 +1,282 @@
+.main {
+  grid-area: main;
+  .modalStock {
+    width: 25rem;
+
+    &__cont {
+      border-radius: 2rem;
+    }
+    &__img {
+      display: flex;
+      justify-content: center;
+      &--size {
+        width: 18rem;
+      }
+    }
+    &__title {
+      font-size: 1.6rem;
+    }
+    &__txt {
+      font-size: 1.3rem;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+
+  &__sectionPagos {
+    margin: 0.5rem 2rem;
+    border-radius: 1rem;
+    &__nav {
+      display: flex;
+      justify-content: space-between;
+      &__botom {
+        font-size: 2.2rem;
+        font-weight: bold;
+        border-top: 0.8rem solid $color-site;
+        border-right: 0.8rem solid$color-site-secondary;
+        border-bottom: 0.8rem solid $color-site;
+        border-left: 0.8rem solid $color-site-secondary;
+        padding: 0.4rem 0.4rem;
+        background-color: $color-yellow;
+        border-radius: 1rem;
+
+        &--pay {
+          width: 3rem;
+          height: 3rem;
+          vertical-align: middle;
+        }
+        &--text {
+          text-decoration: none;
+          color: $color-black-light;
+        }
+      }
+    }
+  }
+
+  &__sectionProdDest {
+    padding: 2rem 1.5rem;
+    margin: 2rem 0rem 2rem;
+    border-radius: 1rem;
+    background-color: $color-white;
+
+    &__article {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      transition: 0.3s;
+      border: 0.2rem solid $color-borde;
+      border-radius: 3rem;
+      padding: 0.5rem;
+      width: 15rem;
+      height: 19rem;
+      margin: 0.5rem;
+      overflow: hidden;
+
+      &--text {
+        font-size: 1.5rem;
+        text-decoration: none;
+        color: $color-article-text;
+      }
+      &--imgPaquete {
+        width: 6rem;
+        height: 9rem;
+      }
+      &--text:hover {
+        text-decoration: none;
+        color: $color-green-primary;
+      }
+    }
+    &__article:hover {
+      text-align: center;
+      transform: scale(1.1, 1.1);
+    }
+    &__title {
+      margin-bottom: 0.5rem;
+      text-align: center;
+
+      &--text {
+        font-size: 2rem;
+      }
+    }
+  }
+  &__up {
+    position: sticky;
+    top: 70%;
+    overflow: visible;
+    height: 0rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: cursive;
+    z-index: 999;
+
+    &__box {
+      text-decoration: none;
+      margin-left: 80%;
+      width: max-content;
+      &--image {
+        border-radius: 5rem;
+        width: 3rem;
+        height: 3rem;
+      }
+      &--text {
+        text-decoration: none;
+        color: $color-site-secondary;
+        font-size: 1.7rem;
+        font-family: $roboto;
+      }
+    }
+  }
+
+  &__sectionPromo {
+    border-radius: 1rem;
+    background-color: $color-white;
+    padding: 2rem 1.5rem 1.5rem;
+
+    &__title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+
+      &--text {
+        font-size: 2rem;
+      }
+    }
+    &__article {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      justify-items: center;
+      text-decoration: none;
+      border: 0.2rem solid $color-borde;
+      border-radius: 3rem;
+      padding: 1rem;
+      transition: 0.3s;
+      margin: 0.7rem;
+      width: 25rem;
+      height: 26rem;
+      overflow: hidden;
+      &--text {
+        font-size: 1.8rem;
+        text-align: center;
+        text-decoration: none;
+        color: $color-article-text;
+      }
+      &--text:hover {
+        text-decoration: none;
+        color: $color-green-primary;
+      }
+      &--imgPaquete {
+        width: 13rem;
+        height: 16rem;
+      }
+    }
+    .main__sectionPromo__article:hover {
+      transform: scale(1.1, 1.1);
+    }
+  }
+}
+
+/* MEDIA QUERIS········································································································ */
+
+/* TABLET························································································································ */
+@media (min-width: 768px) {
+  .main {
+    &__chat {
+      text-align: center;
+      font-size: 1.5rem;
+      font-family: cursive;
+      z-index: 999;
+    }
+    &__sectionProdDest {
+      &__title {
+        display: inline-block;
+        justify-self: flex-start;
+        text-align: left;
+        &--text {
+          font-size: 2.5rem;
+        }
+      }
+      &__article {
+        width: 20rem;
+        height: 20rem;
+        margin: 0.7rem;
+
+        &--imgPaquete {
+          width: 8rem;
+          height: 11rem;
+        }
+      }
+    }
+    &__up {
+      top: 80%;
+      &__box {
+        margin-left: 93%;
+      }
+    }
+    &__sectionPromo {
+      padding: 2rem 2rem 1rem;
+      &__title {
+        margin-bottom: 1rem;
+        text-align: left;
+
+        &--text {
+          font-size: 2.5rem;
+        }
+      }
+      &__article {
+        width: 20rem;
+        height: 21rem;
+        &--imgPaquete {
+          width: 10rem;
+          height: 12rem;
+        }
+      }
+    }
+  }
+}
+
+/* DESKTOP ······················································································································· */
+@media (min-width: 1024px) {
+  .main {
+    &__chat {
+      text-align: center;
+      font-size: 1.5rem;
+      font-family: cursive;
+      z-index: 999;
+    }
+
+    &__sectionProdDest {
+      flex-wrap: wrap;
+      padding: 2rem 2rem;
+      padding-bottom: 2.5rem;
+      &__article {
+        width: 22rem;
+        height: 23rem;
+        &--imgPaquete {
+          width: 10rem;
+          height: 12rem;
+        }
+      }
+    }
+    &__up {
+      top: 78%;
+      &__box {
+        &--image {
+          width: 4.5rem;
+          height: 4.5rem;
+        }
+      }
+    }
+    &__sectionPromo {
+      padding: 2rem 2.5rem 3rem;
+      &__article {
+        width: 26rem;
+        height: 27rem;
+        &--imgPaquete {
+          width: 15rem;
+          height: 18rem;
+        }
+      }
+    }
+  }
+}
