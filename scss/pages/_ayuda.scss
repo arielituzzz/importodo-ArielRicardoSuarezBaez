@@ -12,7 +12,6 @@
     border-radius: 1rem;
     background-color: $color-white;
     padding: 2rem;
-    @include dark-mode-primary-light-activator;
   }
   &__cuestion {
     border-radius: 1rem;
@@ -34,7 +33,6 @@
     &__text {
       font-size: 2rem;
       line-height: 3rem;
-      @include dark-mode-text-black-activator;
     }
   }
 }
@@ -54,7 +52,6 @@
       border-radius: 1rem;
       background-color: $color-white;
       padding: 2rem;
-      @include dark-mode-primary-light-activator;
     }
   }
   .mainAyuda__cuestion {

@@ -9,7 +9,7 @@
 .mainTemplate {
   border-radius: 1rem;
   background-color: $color-white;
-  @include dark-mode-background-black-activator;
+
   &__title {
     font-size: 3rem;
   }
@@ -42,15 +42,10 @@
       &--text {
         text-align: center;
         color: $color-article-text;
-        @include dark-mode-secondary-light-activator;
-        @include dark-mode-text-white-activator;
       }
     }
   }
-  &__article:hover {
-    @include dark-mode-fx-light-activator;
-    @include dark-mode-box_shadow-none-activator;
-  }
+
   &__article:hover .mainTemplate__article__carrito {
     transform: translateX(8rem);
   }

@@ -27,9 +27,6 @@ body {
   background-color: $color-grey;
   text-decoration: none;
 }
-body.dark {
-  @include dark-mode-background-black;
-}
 
 /* GENERALES************************************************************************************ */
 

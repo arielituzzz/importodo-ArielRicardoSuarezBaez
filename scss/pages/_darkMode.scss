@@ -1,3 +1,6 @@
+body.dark {
+  @include dark-mode-background-black;
+}
 #main.dark {
   @include dark-mode-background-black;
 }
@@ -159,4 +162,35 @@
 }
 .prodM6P.dark {
   @include dark-mode-text-yellow;
+}
+#buttonDark {
+  position: relative;
+  display: block;
+  margin-right: 2rem;
+  width: 5rem;
+  height: 2.8rem;
+  border-radius: 1.6rem;
+  background-color: $color-white;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#buttonDark.active {
+  background-color: $color-black-light;
+}
+
+#buttonDark .indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: linear-gradient(to bottom, $color-white, grey);
+  border-radius: 50%;
+  transform: scale(0.9);
+  transition: 0.5s;
+}
+#buttonDark.active .indicator {
+  left: 1.9rem;
+  background: linear-gradient(to bottom grey, $color-white);
 }

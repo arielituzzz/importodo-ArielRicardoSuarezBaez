@@ -27,7 +27,6 @@
   border-radius: 1.5rem;
   background-color: $color-white;
   border: 0.3rem double rgb(15, 119, 15);
-  @include dark-mode-primary-activator;
 }
 #usuarioIng {
   width: 15rem;

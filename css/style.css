@@ -1,4 +1,8 @@
 @charset "UTF-8";
+body.dark {
+  background-color: #323232;
+}
+
 #main.dark {
   background-color: #323232;
 }
@@ -226,6 +230,44 @@
 
 .prodM6P.dark {
   color: #fdf479;
+}
+
+#buttonDark {
+  position: relative;
+  display: block;
+  margin-right: 2rem;
+  width: 5rem;
+  height: 2.8rem;
+  border-radius: 1.6rem;
+  background-color: #f8f8f8;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+#buttonDark.active {
+  background-color: #3c3c3c;
+}
+
+#buttonDark .indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(grey));
+  background: linear-gradient(to bottom, #f8f8f8, grey);
+  border-radius: 50%;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#buttonDark.active .indicator {
+  left: 1.9rem;
+  background: -webkit-gradient(linear, bottom grey, from(#f8f8f8));
+  background: linear-gradient(to bottom grey, #f8f8f8);
 }
 
 /* TEMPLATES **************************************************************************** */
@@ -470,6 +512,9 @@
   -ms-grid-column: 2;
   grid-area: header__purchase;
   justify-self: flex-end;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-item-align: center;
       align-self: center;
   margin-top: 1rem;
@@ -480,15 +525,15 @@
   font-size: 1.5rem;
   color: #323232;
   font-weight: bold;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border-bottom: 0.1rem solid #80b1e5;
 }
 
 .header__purchase--text:hover {
   text-decoration: none;
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: #323232;
+  color: #3c3c3c;
+  border-bottom: 0.1rem solid #3c3c3c;
 }
 
 .header__purchase--carrito {
@@ -1785,10 +1830,6 @@ body {
   overflow-x: hidden;
   background-color: #d8d4d4;
   text-decoration: none;
-}
-
-body.dark {
-  background-color: #323232;
 }
 
 /* GENERALES************************************************************************************ */

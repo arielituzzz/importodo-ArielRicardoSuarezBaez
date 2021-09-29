@@ -14,8 +14,6 @@
     border-radius: 1rem;
     background-color: $color-white;
     padding: 2rem;
-    @include dark-mode-primary-light-activator;
-    @include dark-mode-text-black-activator;
   }
   &__title {
     font-size: 2.5rem;
@@ -24,7 +22,6 @@
     text-align: center;
     font-size: 3rem;
     margin-bottom: 1rem;
-    @include dark-mode-text-white-activator;
   }
   &__cuestion__subTitle {
     font-size: 2rem;
