@@ -235,7 +235,6 @@ body.dark {
 #buttonDark {
   position: relative;
   display: block;
-  margin-right: 2rem;
   width: 5rem;
   height: 2.8rem;
   border-radius: 1.6rem;
@@ -522,12 +521,13 @@ body.dark {
 
 .header__purchase--text {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: #323232;
   font-weight: bold;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
   border-bottom: 0.1rem solid #80b1e5;
+  margin-left: 1rem;
 }
 
 .header__purchase--text:hover {

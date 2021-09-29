@@ -59,13 +59,15 @@
     justify-content: space-between;
     align-self: center;
     margin-top: 1rem;
+
     &--text {
       text-decoration: none;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       color: $color-black;
       font-weight: bold;
       transition: all 0.2s;
       border-bottom: 0.1rem solid $color-site;
+      margin-left: 1rem;
     }
     &--text:hover {
       text-decoration: none;
