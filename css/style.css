@@ -1644,7 +1644,7 @@ header.dark {
 }
 
 .mainInfo__container {
-  border: 0.5rem solid #80b1e5;
+  border: 0.2rem solid #80b1e5;
   border-radius: 1rem;
   background-color: #f8f8f8;
   padding: 2rem;
@@ -1764,7 +1764,7 @@ header.dark {
   margin-top: 2rem;
 }
 .mainAyuda__container {
-  border: 0.5rem solid #80b1e5;
+  border: 0.2rem solid #80b1e5;
   border-radius: 1rem;
   background-color: #f8f8f8;
   padding: 2rem;
