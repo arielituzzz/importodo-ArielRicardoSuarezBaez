@@ -976,10 +976,10 @@ header.dark {
 .main__sectionPagos__nav__botom {
   font-size: 2.2rem;
   font-weight: bold;
-  border-top: 0.8rem solid #80b1e5;
-  border-right: 0.8rem solid #466e99;
-  border-bottom: 0.8rem solid #80b1e5;
-  border-left: 0.8rem solid #466e99;
+  border-top: 0.2rem solid #80b1e5;
+  border-right: 0.2rem solid #466e99;
+  border-bottom: 0.2rem solid #80b1e5;
+  border-left: 0.2rem solid #466e99;
   padding: 0.4rem 0.4rem;
   background-color: #fdf479;
   border-radius: 1rem;

@@ -7,7 +7,7 @@
     "../scss/pages/_darkMode.scss",
     "../scss/pages/_templates.scss",
     "../scss/pages/index/_header.scss",
-    "../scss/pages/index/_body.scss",
+    "../scss/pages/index/_main.scss",
     "../scss/pages/index/_footer.scss",
     "../scss/pages/index/component/_carrousel.scss",
     "../scss/pages/index/component/_formIngr.scss",
