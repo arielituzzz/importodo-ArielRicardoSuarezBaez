@@ -64,6 +64,7 @@
             <button
               type="button"
               class="btn btn-success header__menuBurger__container__botom"
+              disabled
             >
               <a
                 class="header__menuBurger__container__botom--text"
@@ -90,7 +91,6 @@
           data-bs-toggle="modal"
           data-bs-target="#modalPurchase"
           class="header__purchase--text"
-          href="#."
           >Compras
           <img
             class="header__purchase--carrito"
@@ -161,6 +161,7 @@
                       id="nombreYApellido"
                       placeholder="Nombre y Apellido"
                       class="d-block d-sm-inline"
+                      required
                     />
                   </div>
                   <br />
@@ -170,6 +171,7 @@
                       name="sexo"
                       id="femenino"
                       value="mujer"
+                      required
                     />
                     <label for="femenino">Femenino</label>
                     <br />
@@ -178,6 +180,7 @@
                       name="sexo"
                       id="masculino"
                       value="hombre"
+                      required
                     />
                     <label for="masculino">Masculino</label>
                   </div>
@@ -190,6 +193,7 @@
                       name="password"
                       id="password"
                       placeholder="Minimo 8 caracteres"
+                      required
                     />
                   </div>
                   <br />
@@ -201,12 +205,17 @@
                       name="rePassword"
                       id="rePassword"
                       placeholder="Minimo 8 caracteres"
+                      required
                     />
                   </div>
                   <br />
                   <div>
                     <label for="pais_residencia">Pais de Residencia</label>
-                    <select name="pais_residencia" id="pais_residencia">
+                    <select
+                      name="pais_residencia"
+                      id="pais_residencia"
+                      required
+                    >
                       <option value="Argentina">Argentina</option>
                       <option value="Brasil">Brasil</option>
                       <option value="Paraguay">Paraguay</option>
@@ -227,6 +236,7 @@
                       name="email"
                       id="email"
                       placeholder="exampler@exampler.com"
+                      required
                     />
                   </div>
                   <br />
@@ -252,29 +262,29 @@
                       rows="10"
                     ></textarea>
                   </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="reset"
+                </div>
+                <div class="modal-footer">
+                <input
+                type="reset"
                   class="
-                    btn btn-outline-danger
+                  btn btn-outline-danger
                     mainIngreso__form__botomSubmit--text
-                  "
-                  data-bs-dismiss="modal"
-                >
-                  Salir
-                </button>
-                <button
-                  type="submit"
+                    "
+                  value="Limpiar"
+                  >                
+                </input>
+                <input
+                type="submit"
                   class="
-                    btn btn-outline-success
+                  btn btn-outline-success
                     mainIngreso__form__botomSubmit--text
-                  "
+                    "
+                  value="Registrarme"
                 >
-                  Registrarme
-                </button>
+                </input>
               </div>
+            </form>
+              
             </div>
           </div>
         </div>
@@ -306,13 +316,14 @@
                   Inicia Sesion
                 </h5>
                 <button
-                  type="button"
-                  class="btn-close buttonClose"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
+                type="button"
+                class="btn-close buttonClose"
+                data-bs-dismiss="modal"
+                aria-label="Close"
                 ></button>
               </div>
               <div class="modal-body">
+                <form action="">               
                 <div>
                   <label class="mainIngreso__form--text" for="usuario"
                     >Usuario</label
@@ -323,6 +334,7 @@
                     name="usuario"
                     id="usuarioIng"
                     placeholder="Ingrese Usuario"
+                    required
                   />
                 </div>
                 <div>
@@ -335,6 +347,7 @@
                     name="contrasena"
                     id="contrasenaIng"
                     placeholder="Ingrese Contraseña"
+                    required
                   />
                 </div>
                 <div class="mainIngreso__recordarContrasena">
@@ -352,27 +365,27 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <button
-                  type="button"
+                <input
+                  type="reset"
                   class="
                     btn btn-outline-danger
                     mainIngreso__form__botomSubmit--text
                   "
-                  data-bs-dismiss="modal"
+                  value="Limpiar"
                 >
-                  Salir
-                </button>
-                <button
+                </input>
+                <input
                   type="submit"
                   class="
                     btn btn-outline-success
                     mainIngreso__form__botomSubmit--text
                   "
-                >
-                  Ingresar
-                </button>
+                  value="Ingresar"
+                >               
+                </input>
               </div>
             </div>
+          </form>
           </div>
         </div>
       </nav>
@@ -556,14 +569,15 @@
                   id="nombreYApellido"
                   placeholder="Nombre y Apellido"
                   class="d-block d-sm-inline"
+                  required
                 />
               </div>
               <br />
               <div>
-                <input type="radio" name="sexo" id="femenino" value="mujer" />
+                <input type="radio" name="sexo" id="femenino" value="mujer" required/>
                 <label for="femenino">Femenino</label>
                 <br />
-                <input type="radio" name="sexo" id="masculino" value="hombre" />
+                <input type="radio" name="sexo" id="masculino" value="hombre" required/>
                 <label for="masculino">Masculino</label>
               </div>
               <br />
@@ -575,6 +589,7 @@
                   name="password"
                   id="password"
                   placeholder="Minimo 8 caracteres"
+                  required
                 />
               </div>
               <br />
@@ -586,12 +601,13 @@
                   name="rePassword"
                   id="rePassword"
                   placeholder="Minimo 8 caracteres"
+                  required
                 />
               </div>
               <br />
               <div>
                 <label for="pais_residencia">Pais de Residencia</label>
-                <select name="pais_residencia" id="pais_residencia">
+                <select name="pais_residencia" id="pais_residencia" required>
                   <option value="Argentina">Argentina</option>
                   <option value="Brasil">Brasil</option>
                   <option value="Paraguay">Paraguay</option>
@@ -612,6 +628,7 @@
                   name="email"
                   id="email"
                   placeholder="exampler@exampler.com"
+                  required
                 />
               </div>
               <br />
@@ -637,29 +654,32 @@
                   rows="10"
                 ></textarea>
               </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
+            </div>
+            <div class="modal-footer">
+            <input
               type="reset"
               class="
                 btn btn-outline-danger
                 mainIngreso__form__botomSubmit--text
               "
-              data-bs-dismiss="modal"
+              value="Limpiar"
             >
-              Salir
-            </button>
-            <button
-              type="submit"
+            
+            </input>
+            <input
+            type="submit"
               class="
-                btn btn-outline-success
+              btn btn-outline-success
                 mainIngreso__form__botomSubmit--text
-              "
-            >
-              Registrarme
-            </button>
+                "
+                value="Registrarme"
+                >
+              
+        </input>
           </div>
+        </form>
+
+
         </div>
       </div>
     </main>
@@ -667,11 +687,7 @@
     <footer id="footer" class="footer">
       <div class="footer__contact">
         <div class="footer__contact__item">
-          <a
-            rel="”noreferrer"
-            noopener”
-            href="https://www.facebook.com/"
-            target="_blank"
+          <a href="https://www.facebook.com/" target="_blank"
             ><img
               src="imagenes/iconoFacebook.png"
               alt="iconoFacebook"
@@ -680,12 +696,7 @@
           </a>
         </div>
         <div class="footer__contact__item">
-          <a
-            rel="”noreferrer"
-            noopener”
-            noopener”
-            href="https://wa.me/541162663490"
-            target="_blank"
+          <a href="https://wa.me/541162663490" target="_blank"
             ><img
               src="imagenes/iconoWhatsapp.png"
               alt="iconoWhatsapp"
@@ -694,11 +705,7 @@
           </a>
         </div>
         <div class="footer__contact__item">
-          <a
-            rel="”noreferrer"
-            noopener”
-            href="https://www.instagram.com/"
-            target="_blank"
+          <a href="https://www.instagram.com/" target="_blank"
             ><img
               src="imagenes/iconoInstagram.png"
               alt="iconoInstagram"
@@ -707,12 +714,7 @@
           </a>
         </div>
         <div class="footer__contact__item">
-          <a
-            rel="”noreferrer"
-            noopener”
-            href="https://ar.linkedin.com/"
-            target="_blank"
-          >
+          <a href="https://ar.linkedin.com/" target="_blank">
             <img
               src="imagenes/iconoLinkein.png"
               alt="iconoLinkedin"
@@ -721,7 +723,7 @@
           </a>
         </div>
         <div class="footer__contact__item">
-          <a rel="”noreferrer" noopener” href="mailto:clientes@importodo.com">
+          <a href="mailto:clientes@importodo.com">
             <img
               src="imagenes/iconoMail.jpg"
               alt="iconoMail"
