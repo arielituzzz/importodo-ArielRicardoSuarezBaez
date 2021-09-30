@@ -1,177 +1,228 @@
 @charset "UTF-8";
 body.dark {
-  background-color: #323232; }
+  background-color: #323232;
+  transition: all 1s; }
 
 #main.dark {
-  background-color: #323232; }
+  background-color: #323232;
+  transition: all 0.3s; }
 
 #pagos_1.dark {
   background-color: #323232;
-  color: #f8f8f8; }
+  color: #f8f8f8;
+  transition: all 0.3s; }
   #pagos_1.dark :hover {
     color: #89e675; }
 
 #pagos_2.dark {
   background-color: #323232;
-  color: #f8f8f8; }
+  color: #f8f8f8;
+  transition: all 0.3s; }
   #pagos_2.dark :hover {
     color: #89e675; }
 
 #pagos_3.dark {
   background-color: #323232;
-  color: #f8f8f8; }
+  color: #f8f8f8;
+  transition: all 0.3s; }
   #pagos_3.dark :hover {
     color: #89e675; }
 
 #pagos_4.dark {
   background-color: #323232;
-  color: #f8f8f8; }
+  color: #f8f8f8;
+  transition: all 0.3s; }
   #pagos_4.dark :hover {
     color: #89e675; }
 
 #pagos_1_text.dark {
   background-color: #323232;
-  color: #f8f8f8; }
+  color: #f8f8f8;
+  transition: all 0.3s; }
 
 #pagos_2_text.dark {
   background-color: #323232;
-  color: #f8f8f8; }
+  color: #f8f8f8;
+  transition: all 0.3s; }
 
 #pagos_3_text.dark {
   background-color: #323232;
-  color: #f8f8f8; }
+  color: #f8f8f8;
+  transition: all 0.3s; }
 
 #pagos_4_text.dark {
   background-color: #323232;
-  color: #f8f8f8; }
+  color: #f8f8f8;
+  transition: all 0.3s; }
 
 #productosDestacados.dark {
   background-color: #3c3c3c;
-  color: #f8f8f8; }
+  color: #f8f8f8;
+  transition: all 0.3s; }
 
 #prodDestTitle.dark {
   background-color: #3c3c3c;
-  color: #f8f8f8; }
+  color: #f8f8f8;
+  transition: all 0.3s; }
 
 .main__up__box--text.dark {
   background-color: #3c3c3c;
-  color: #f8f8f8; }
+  color: #f8f8f8;
+  transition: all 0.3s; }
 
 #promociones.dark {
   background-color: #3c3c3c;
-  color: #f8f8f8; }
+  color: #f8f8f8;
+  transition: all 0.3s; }
 
 #promoTitle.dark {
   background-color: #3c3c3c;
-  color: #f8f8f8; }
+  color: #f8f8f8;
+  transition: all 0.3s; }
 
 .prodD1T.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodD1P.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodD2T.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodD2P.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodD3T.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodD3P.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodD4T.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodD4P.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodD5T.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodD5P.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodD6T.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodD6P.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodD7T.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodD7P.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodD8T.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodD8P.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodD9T.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodD9P.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodD10T.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodD10P.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodD11T.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodD11P.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodD12T.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodD12P.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodM1T.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodM1P.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodM2T.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodM2P.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodM3T.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodM3P.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodM4T.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodM4P.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodM5T.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodM5P.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodM6T.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 .prodM6P.dark {
-  color: #fdf479; }
+  color: #fdf479;
+  transition: all 0.3s; }
 
 #buttonDark {
   position: relative;
@@ -192,14 +243,13 @@ body.dark {
   left: 0;
   width: 2.5rem;
   height: 2.5rem;
-  background: linear-gradient(to bottom, #f8f8f8, grey);
+  background: linear-gradient(to bottom, #f8f8f8, #3c3c3c);
   border-radius: 50%;
   transform: scale(0.9);
   transition: 0.5s; }
 
 #buttonDark.active .indicator {
-  left: 1.9rem;
-  background: linear-gradient(to bottom grey, #f8f8f8); }
+  left: 1.9rem; }
 
 /* TEMPLATES **************************************************************************** */
 .bodyTemplate {

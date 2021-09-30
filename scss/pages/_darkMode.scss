@@ -1,167 +1,218 @@
 body.dark {
   @include dark-mode-background-black;
+  transition: all 1s;
 }
 #main.dark {
   @include dark-mode-background-black;
+  transition: all 0.3s;
 }
 #pagos_1.dark {
   @include dark-mode-primary;
+  transition: all 0.3s;
   :hover {
     color: $color-green;
   }
 }
 #pagos_2.dark {
   @include dark-mode-primary;
+  transition: all 0.3s;
   :hover {
     color: $color-green;
   }
 }
 #pagos_3.dark {
   @include dark-mode-primary;
+  transition: all 0.3s;
   :hover {
     color: $color-green;
   }
 }
 #pagos_4.dark {
   @include dark-mode-primary;
+  transition: all 0.3s;
   :hover {
     color: $color-green;
   }
 }
 #pagos_1_text.dark {
   @include dark-mode-primary;
+  transition: all 0.3s;
 }
 #pagos_2_text.dark {
   @include dark-mode-primary;
+  transition: all 0.3s;
 }
 #pagos_3_text.dark {
   @include dark-mode-primary;
+  transition: all 0.3s;
 }
 #pagos_4_text.dark {
   @include dark-mode-primary;
+  transition: all 0.3s;
 }
 #productosDestacados.dark {
   @include dark-mode-primary-light;
+  transition: all 0.3s;
 }
 #prodDestTitle.dark {
   @include dark-mode-primary-light;
+  transition: all 0.3s;
 }
 .main__up__box--text.dark {
   @include dark-mode-primary-light;
+  transition: all 0.3s;
 }
 #promociones.dark {
   @include dark-mode-primary-light;
+  transition: all 0.3s;
 }
 #promoTitle.dark {
   @include dark-mode-primary-light;
+  transition: all 0.3s;
 }
 .prodD1T.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodD1P.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodD2T.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodD2P.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodD3T.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodD3P.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodD4T.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodD4P.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodD5T.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodD5P.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodD6T.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodD6P.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodD7T.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodD7P.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodD8T.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodD8P.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodD9T.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodD9P.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodD10T.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodD10P.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodD11T.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodD11P.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodD12T.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodD12P.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodM1T.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodM1P.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodM2T.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodM2P.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodM3T.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodM3P.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodM4T.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodM4P.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodM5T.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodM5P.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodM6T.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 .prodM6P.dark {
   @include dark-mode-text-yellow;
+  transition: all 0.3s;
 }
 #buttonDark {
   position: relative;
@@ -185,12 +236,11 @@ body.dark {
   left: 0;
   width: 2.5rem;
   height: 2.5rem;
-  background: linear-gradient(to bottom, $color-white, grey);
+  background: linear-gradient(to bottom, $color-white, $color-black-light);
   border-radius: 50%;
   transform: scale(0.9);
   transition: 0.5s;
 }
 #buttonDark.active .indicator {
   left: 1.9rem;
-  background: linear-gradient(to bottom grey, $color-white);
 }
