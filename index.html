@@ -95,7 +95,11 @@
         <button id="buttonDark" onclick="darkMode();">
           <i class="indicator"></i>
         </button>
-        <a href="paginaConstruccion.html" class="header__purchase--text"
+        <a
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#modalPurchase"
+          class="header__purchase--text"
           >Compras
           <img
             class="header__purchase--carrito"
@@ -494,6 +498,52 @@
           </li>
         </ul>
       </nav>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="modalPurchase"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog header__modalCarrito">
+          <div class="modal-content header__modalCarrito__cont">
+            <div class="modal-header">
+              <h5
+                class="modal-title header__modalCarrito__cont__title"
+                id="exampleModalLabe"
+              >
+                IMPORTODO.COM
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="header__modalCarrito__cont__img">
+              <img
+                src="imagenes/carrito_vacio.png"
+                alt="carrito_vacio"
+                class="header__modalCarrito__cont__img--size"
+              />
+            </div>
+            <div class="modal-body header__modalCarrito__cont__txt">
+              Tu carrito aun esta vacio!
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- FIN NAV-BAR********************************************************** -->
     </header>
     <!-- FIN DEL ENCABEZADO******************************************************************************************** -->
@@ -501,7 +551,7 @@
       <!-- Modal -->
       <div
         class="modal fade"
-        id="exampleModals"
+        id="modalProducts"
         tabindex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
@@ -509,7 +559,7 @@
         <div class="modal-dialog modal-dialog-centered modalStock">
           <div class="modal-content modalStock__cont">
             <div class="modal-header">
-              <h5 class="modal-title modalStock__title" id="exampleModalLabel">
+              <h5 class="modal-title modalStock__title" id="exampleModalLabels">
                 IMPORTODO.COM
               </h5>
               <button
@@ -535,7 +585,7 @@
                 class="btn btn-secondary"
                 data-bs-dismiss="modal"
               >
-                Close
+                Cerrar
               </button>
             </div>
           </div>
@@ -687,7 +737,7 @@
           <article
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModals"
+            data-bs-target="#modalProducts"
             class="
               col-6 col-md-4 col-xl-3
               justify-content-center
@@ -709,7 +759,7 @@
           <article
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModals"
+            data-bs-target="#modalProducts"
             class="
               col-6 col-md-4 col-xl-3
               justify-content-center
@@ -731,7 +781,7 @@
           <article
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModals"
+            data-bs-target="#modalProducts"
             class="
               col-6 col-md-4 col-xl-3
               justify-content-center
@@ -754,7 +804,7 @@
           <article
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModals"
+            data-bs-target="#modalProducts"
             class="
               col-6 col-md-4 col-xl-3
               justify-content-center
@@ -777,7 +827,7 @@
           <article
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModals"
+            data-bs-target="#modalProducts"
             class="
               col-6 col-md-4 col-xl-3
               justify-content-center
@@ -799,7 +849,7 @@
           <article
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModals"
+            data-bs-target="#modalProducts"
             class="
               col-6 col-md-4 col-xl-3
               justify-content-center
@@ -821,7 +871,7 @@
           <article
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModals"
+            data-bs-target="#modalProducts"
             class="
               col-6 col-md-4 col-xl-3
               justify-content-center
@@ -843,7 +893,7 @@
           <article
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModals"
+            data-bs-target="#modalProducts"
             class="
               col-6 col-md-4 col-xl-3
               justify-content-center
@@ -866,7 +916,7 @@
           <article
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModals"
+            data-bs-target="#modalProducts"
             class="
               col-6 col-md-4 col-xl-3
               justify-content-center
@@ -888,7 +938,7 @@
           <article
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModals"
+            data-bs-target="#modalProducts"
             class="
               col-6 col-md-4 col-xl-3
               justify-content-center
@@ -910,7 +960,7 @@
           <article
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModals"
+            data-bs-target="#modalProducts"
             class="
               col-6 col-md-4 col-xl-3
               justify-content-center
@@ -932,7 +982,7 @@
           <article
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModals"
+            data-bs-target="#modalProducts"
             class="
               col-6 col-md-4 col-xl-3
               justify-content-center
@@ -994,7 +1044,7 @@
           <article
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModals"
+            data-bs-target="#modalProducts"
             class="
               col-12 col-md-6 col-xl-4
               justify-content-center
@@ -1022,7 +1072,7 @@
           <article
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModals"
+            data-bs-target="#modalProducts"
             class="
               col-12 col-md-6 col-xl-4
               justify-content-center
@@ -1051,7 +1101,7 @@
           <article
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModals"
+            data-bs-target="#modalProducts"
             class="
               col-12
               d-md-none d-xl-flex
@@ -1083,7 +1133,7 @@
           <article
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModals"
+            data-bs-target="#modalProducts"
             class="
               d-none d-md-flex
               col-md-6 col-xl-4
@@ -1112,7 +1162,7 @@
           <article
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModals"
+            data-bs-target="#modalProducts"
             class="
               d-none d-md-flex
               col-md-6 col-xl-4
@@ -1135,7 +1185,7 @@
           <article
             type="button"
             data-bs-toggle="modal"
-            data-bs-target="#exampleModals"
+            data-bs-target="#modalProducts"
             class="
               d-none d-xl-flex
               col-md-6 col-xl-4

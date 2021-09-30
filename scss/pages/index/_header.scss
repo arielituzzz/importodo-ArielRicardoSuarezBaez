@@ -80,6 +80,28 @@
       border-radius: 3rem;
     }
   }
+  &__modalCarrito {
+    width: 25rem;
+    &__cont {
+      border-radius: 2rem;
+      &__title {
+        font-size: 1.6rem;
+      }
+      &__img {
+        display: flex;
+        justify-content: center;
+
+        &--size {
+          width: 18rem;
+        }
+      }
+      &__txt {
+        font-size: 1.3rem;
+        text-align: center;
+        font-weight: 600;
+      }
+    }
+  }
 
   &__title {
     display: flex;

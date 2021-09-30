@@ -85,7 +85,11 @@
         </div>
       </div>
       <nav class="header__purchase">
-        <a href="paginaConstruccion.html" class="header__purchase--text"
+        <a
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#modalPurchase"
+          class="header__purchase--text"
           >Compras
           <img
             class="header__purchase--carrito"
@@ -484,6 +488,52 @@
           </li>
         </ul>
       </nav>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="modalPurchase"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog header__modalCarrito">
+          <div class="modal-content header__modalCarrito__cont">
+            <div class="modal-header">
+              <h5
+                class="modal-title header__modalCarrito__cont__title"
+                id="exampleModalLabe"
+              >
+                IMPORTODO.COM
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="header__modalCarrito__cont__img">
+              <img
+                src="imagenes/carrito_vacio.png"
+                alt="carrito_vacio"
+                class="header__modalCarrito__cont__img--size"
+              />
+            </div>
+            <div class="modal-body header__modalCarrito__cont__txt">
+              Tu carrito aun esta vacio!
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- FIN NAV-BAR********************************************************** -->
     </header>
     <!-- FIN DEL ENCABEZADO************************************************************************************************** -->
