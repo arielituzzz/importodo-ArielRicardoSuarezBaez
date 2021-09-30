@@ -53,7 +53,7 @@ let prodM6P = document.querySelector(".prodM6P");
 let button = document.querySelector("#buttonDark");
 
 function darkMode() {
-  if (confirm("Estas Seguro?")) {
+  if (confirm("Dark-Mode Dialog" + "\nEstas Seguro?")) {
     main.classList.toggle("dark");
     footer.classList.toggle("dark");
     body.classList.toggle("dark");
