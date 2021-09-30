@@ -525,6 +525,27 @@ header.dark {
   vertical-align: middle;
   border-radius: 3rem;
 }
+.header__modalCarrito {
+  width: 25rem;
+}
+.header__modalCarrito__cont {
+  border-radius: 2rem;
+}
+.header__modalCarrito__cont__title {
+  font-size: 1.6rem;
+}
+.header__modalCarrito__cont__img {
+  display: flex;
+  justify-content: center;
+}
+.header__modalCarrito__cont__img--size {
+  width: 18rem;
+}
+.header__modalCarrito__cont__txt {
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 600;
+}
 .header__title {
   display: flex;
   grid-area: header__title;

@@ -90,7 +90,11 @@
         </div>
       </div>
       <nav class="header__purchase">
-        <a href="paginaConstruccion.html" class="header__purchase--text"
+        <a
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#modalPurchase"
+          class="header__purchase--text"
           >Compras
           <img
             class="header__purchase--carrito"
@@ -489,10 +493,99 @@
           </li>
         </ul>
       </nav>
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="modalPurchase"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog header__modalCarrito">
+          <div class="modal-content header__modalCarrito__cont">
+            <div class="modal-header">
+              <h5
+                class="modal-title header__modalCarrito__cont__title"
+                id="exampleModalLabe"
+              >
+                IMPORTODO.COM
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="header__modalCarrito__cont__img">
+              <img
+                src="imagenes/carrito_vacio.png"
+                alt="carrito_vacio"
+                class="header__modalCarrito__cont__img--size"
+              />
+            </div>
+            <div class="modal-body header__modalCarrito__cont__txt">
+              Tu carrito aun esta vacio!
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- FIN NAV-BAR********************************************************** -->
     </header>
     <!-- FIN DEL ENCABEZADO********************************************************************************************** -->
     <main id="main-random" class="container my-3 main mainTemplate">
+      <!-- Modal -->
+      <div
+        class="modal fade"
+        id="modalProducts"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered modalStock">
+          <div class="modal-content modalStock__cont">
+            <div class="modal-header">
+              <h5 class="modal-title modalStock__title" id="exampleModalLabels">
+                IMPORTODO.COM
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modalStock__img">
+              <img
+                class="modalStock__img--size"
+                src="imagenes/descarga.png"
+                alt="sin_stock"
+              />
+            </div>
+            <div class="modal-body modalStock__txt">
+              Lo sentimos! El producto seleccionado se encuentra fuera de Stock!
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="row">
         <div>
           <h3
@@ -508,6 +601,9 @@
           </h3>
         </div>
         <article
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#modalProducts"
           class="
             col-6 col-md-4 col-xl-3
             wow
@@ -515,10 +611,7 @@
             mainTemplate__article
           "
         >
-          <a
-            href="paginaConstruccion.html"
-            class="d-flex align-items-center flex-column"
-          >
+          <a href="#." class="d-flex align-items-center flex-column">
             <div class="mainTemplate__article__carrito">
               <img
                 class="mainTemplate__article__carrito--img"
@@ -540,6 +633,9 @@
           </a>
         </article>
         <article
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#modalProducts"
           class="
             col-6 col-md-4 col-xl-3
             wow
@@ -547,10 +643,7 @@
             mainTemplate__article
           "
         >
-          <a
-            href="paginaConstruccion.html"
-            class="d-flex align-items-center flex-column"
-          >
+          <a href="#." class="d-flex align-items-center flex-column">
             <div class="mainTemplate__article__carrito">
               <img
                 class="mainTemplate__article__carrito--img"
@@ -570,6 +663,9 @@
           </a>
         </article>
         <article
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#modalProducts"
           class="
             col-6 col-md-4 col-xl-3
             wow
@@ -577,10 +673,7 @@
             mainTemplate__article
           "
         >
-          <a
-            href="paginaConstruccion.html"
-            class="d-flex align-items-center flex-column"
-          >
+          <a href="#." class="d-flex align-items-center flex-column">
             <div class="mainTemplate__article__carrito">
               <img
                 class="mainTemplate__article__carrito--img"
@@ -602,6 +695,9 @@
           </a>
         </article>
         <article
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#modalProducts"
           class="
             col-6 col-md-4 col-xl-3
             wow
@@ -609,10 +705,7 @@
             mainTemplate__article
           "
         >
-          <a
-            href="paginaConstruccion.html"
-            class="d-flex align-items-center flex-column"
-          >
+          <a href="#." class="d-flex align-items-center flex-column">
             <div class="mainTemplate__article__carrito">
               <img
                 class="mainTemplate__article__carrito--img"
@@ -634,6 +727,9 @@
           </a>
         </article>
         <article
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#modalProducts"
           class="
             col-6 col-md-4 col-xl-3
             wow
@@ -641,10 +737,7 @@
             mainTemplate__article
           "
         >
-          <a
-            href="paginaConstruccion.html"
-            class="d-flex align-items-center flex-column"
-          >
+          <a href="#." class="d-flex align-items-center flex-column">
             <div class="mainTemplate__article__carrito">
               <img
                 class="mainTemplate__article__carrito--img"
@@ -666,6 +759,9 @@
           </a>
         </article>
         <article
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#modalProducts"
           class="
             col-6 col-md-4 col-xl-3
             wow
@@ -673,10 +769,7 @@
             mainTemplate__article
           "
         >
-          <a
-            href="paginaConstruccion.html"
-            class="d-flex align-items-center flex-column"
-          >
+          <a href="#." class="d-flex align-items-center flex-column">
             <div class="mainTemplate__article__carrito">
               <img
                 class="mainTemplate__article__carrito--img"
@@ -698,6 +791,9 @@
           </a>
         </article>
         <article
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#modalProducts"
           class="
             col-6 col-md-4 col-xl-3
             wow
@@ -705,10 +801,7 @@
             mainTemplate__article
           "
         >
-          <a
-            href="paginaConstruccion.html"
-            class="d-flex align-items-center flex-column"
-          >
+          <a href="#." class="d-flex align-items-center flex-column">
             <div class="mainTemplate__article__carrito">
               <img
                 class="mainTemplate__article__carrito--img"
@@ -730,6 +823,9 @@
           </a>
         </article>
         <article
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#modalProducts"
           class="
             col-6 col-md-4 col-xl-3
             wow
@@ -737,10 +833,7 @@
             mainTemplate__article
           "
         >
-          <a
-            href="paginaConstruccion.html"
-            class="d-flex align-items-center flex-column"
-          >
+          <a href="#." class="d-flex align-items-center flex-column">
             <div class="mainTemplate__article__carrito">
               <img
                 class="mainTemplate__article__carrito--img"
@@ -762,6 +855,9 @@
           </a>
         </article>
         <article
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#modalProducts"
           class="
             col-6 col-md-4 col-xl-3
             wow
@@ -769,10 +865,7 @@
             mainTemplate__article
           "
         >
-          <a
-            href="paginaConstruccion.html"
-            class="d-flex align-items-center flex-column"
-          >
+          <a href="#." class="d-flex align-items-center flex-column">
             <div class="mainTemplate__article__carrito">
               <img
                 class="mainTemplate__article__carrito--img"
@@ -794,6 +887,9 @@
           </a>
         </article>
         <article
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#modalProducts"
           class="
             col-6 col-md-4 col-xl-3
             wow
@@ -801,10 +897,7 @@
             mainTemplate__article
           "
         >
-          <a
-            href="paginaConstruccion.html"
-            class="d-flex align-items-center flex-column"
-          >
+          <a href="#." class="d-flex align-items-center flex-column">
             <div class="mainTemplate__article__carrito">
               <img
                 class="mainTemplate__article__carrito--img"
@@ -826,6 +919,9 @@
           </a>
         </article>
         <article
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#modalProducts"
           class="
             col-6 col-md-4 col-xl-3
             wow
@@ -833,10 +929,7 @@
             mainTemplate__article
           "
         >
-          <a
-            href="paginaConstruccion.html"
-            class="d-flex align-items-center flex-column"
-          >
+          <a href="#." class="d-flex align-items-center flex-column">
             <div class="mainTemplate__article__carrito">
               <img
                 class="mainTemplate__article__carrito--img"
@@ -858,6 +951,9 @@
           </a>
         </article>
         <article
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#modalProducts"
           class="
             col-6 col-md-4 col-xl-3
             wow
@@ -865,10 +961,7 @@
             mainTemplate__article
           "
         >
-          <a
-            href="paginaConstruccion.html"
-            class="d-flex align-items-center flex-column"
-          >
+          <a href="#." class="d-flex align-items-center flex-column">
             <div class="mainTemplate__article__carrito">
               <img
                 class="mainTemplate__article__carrito--img"
@@ -890,6 +983,9 @@
           </a>
         </article>
         <article
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#modalProducts"
           class="
             col-6 col-md-4 col-xl-3
             wow
@@ -897,10 +993,7 @@
             mainTemplate__article
           "
         >
-          <a
-            href="paginaConstruccion.html"
-            class="d-flex align-items-center flex-column"
-          >
+          <a href="#." class="d-flex align-items-center flex-column">
             <div class="mainTemplate__article__carrito">
               <img
                 class="mainTemplate__article__carrito--img"
@@ -922,6 +1015,9 @@
           </a>
         </article>
         <article
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#modalProducts"
           class="
             col-6 col-md-4 col-xl-3
             wow
@@ -929,10 +1025,7 @@
             mainTemplate__article
           "
         >
-          <a
-            href="paginaConstruccion.html"
-            class="d-flex align-items-center flex-column"
-          >
+          <a href="#." class="d-flex align-items-center flex-column">
             <div class="mainTemplate__article__carrito">
               <img
                 class="mainTemplate__article__carrito--img"
@@ -954,6 +1047,9 @@
           </a>
         </article>
         <article
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#modalProducts"
           class="
             col-6 col-md-4 col-xl-3
             wow
@@ -961,10 +1057,7 @@
             mainTemplate__article
           "
         >
-          <a
-            href="paginaConstruccion.html"
-            class="d-flex align-items-center flex-column"
-          >
+          <a href="#." class="d-flex align-items-center flex-column">
             <div class="mainTemplate__article__carrito">
               <img
                 class="mainTemplate__article__carrito--img"
@@ -986,6 +1079,9 @@
           </a>
         </article>
         <article
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#modalProducts"
           class="
             col-6 col-md-4 col-xl-3
             wow
@@ -994,7 +1090,7 @@
           "
         >
           <a
-            href="paginaConstruccion.html"
+            href="#."
             class="d-flex d-md-none d-xl-flex align-items-center flex-column"
           >
             <div class="mainTemplate__article__carrito">
