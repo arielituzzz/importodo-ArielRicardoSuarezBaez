@@ -31,6 +31,7 @@
 #usuarioIng {
   width: 15rem;
   height: 2.2rem;
+  font-size: 1.5rem;
   transition: all 1s;
 }
 #usuarioIng:focus {
@@ -41,12 +42,13 @@
 #contrasenaIng {
   width: 17rem;
   height: 2.2rem;
+  font-size: 1.5rem;
   transition: all 1s;
 }
 #contrasenaIng:focus {
   width: 22rem;
   height: 2.7rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 .mainIngreso__submit {
   font-size: 2rem;

@@ -169,6 +169,7 @@
                       id="nombreYApellido"
                       placeholder="Nombre y Apellido"
                       class="d-block d-sm-inline"
+                      required
                     />
                   </div>
                   <br />
@@ -178,6 +179,7 @@
                       name="sexo"
                       id="femenino"
                       value="mujer"
+                      required
                     />
                     <label for="femenino">Femenino</label>
                     <br />
@@ -186,6 +188,7 @@
                       name="sexo"
                       id="masculino"
                       value="hombre"
+                      required
                     />
                     <label for="masculino">Masculino</label>
                   </div>
@@ -198,6 +201,7 @@
                       name="password"
                       id="password"
                       placeholder="Minimo 8 caracteres"
+                      required
                     />
                   </div>
                   <br />
@@ -209,12 +213,17 @@
                       name="rePassword"
                       id="rePassword"
                       placeholder="Minimo 8 caracteres"
+                      required
                     />
                   </div>
                   <br />
                   <div>
                     <label for="pais_residencia">Pais de Residencia</label>
-                    <select name="pais_residencia" id="pais_residencia">
+                    <select
+                      name="pais_residencia"
+                      id="pais_residencia"
+                      required
+                    >
                       <option value="Argentina">Argentina</option>
                       <option value="Brasil">Brasil</option>
                       <option value="Paraguay">Paraguay</option>
@@ -235,6 +244,7 @@
                       name="email"
                       id="email"
                       placeholder="exampler@exampler.com"
+                      required
                     />
                   </div>
                   <br />
@@ -260,29 +270,29 @@
                       rows="10"
                     ></textarea>
                   </div>
-                </form>
-              </div>
-              <div class="modal-footer">
-                <button
-                  type="reset"
+                </div>
+                <div class="modal-footer">
+                <input
+                type="reset"
                   class="
-                    btn btn-outline-danger
+                  btn btn-outline-danger
                     mainIngreso__form__botomSubmit--text
-                  "
-                  data-bs-dismiss="modal"
-                >
-                  Salir
-                </button>
-                <button
-                  type="submit"
+                    "
+                  value="Limpiar"
+                  >                
+                </input>
+                <input
+                type="submit"
                   class="
-                    btn btn-outline-success
+                  btn btn-outline-success
                     mainIngreso__form__botomSubmit--text
-                  "
+                    "
+                  value="Registrarme"
                 >
-                  Registrarme
-                </button>
+                </input>
               </div>
+            </form>
+              
             </div>
           </div>
         </div>
@@ -314,13 +324,14 @@
                   Inicia Sesion
                 </h5>
                 <button
-                  type="button"
-                  class="btn-close buttonClose"
-                  data-bs-dismiss="modal"
-                  aria-label="Close"
+                type="button"
+                class="btn-close buttonClose"
+                data-bs-dismiss="modal"
+                aria-label="Close"
                 ></button>
               </div>
               <div class="modal-body">
+                <form action="">               
                 <div>
                   <label class="mainIngreso__form--text" for="usuario"
                     >Usuario</label
@@ -331,6 +342,7 @@
                     name="usuario"
                     id="usuarioIng"
                     placeholder="Ingrese Usuario"
+                    required
                   />
                 </div>
                 <div>
@@ -343,6 +355,7 @@
                     name="contrasena"
                     id="contrasenaIng"
                     placeholder="Ingrese Contraseña"
+                    required
                   />
                 </div>
                 <div class="mainIngreso__recordarContrasena">
@@ -360,27 +373,27 @@
                 </div>
               </div>
               <div class="modal-footer">
-                <button
-                  type="button"
+                <input
+                  type="reset"
                   class="
                     btn btn-outline-danger
                     mainIngreso__form__botomSubmit--text
                   "
-                  data-bs-dismiss="modal"
+                  value="Limpiar"
                 >
-                  Salir
-                </button>
-                <button
+                </input>
+                <input
                   type="submit"
                   class="
                     btn btn-outline-success
                     mainIngreso__form__botomSubmit--text
                   "
-                >
-                  Ingresar
-                </button>
+                  value="Ingresar"
+                >               
+                </input>
               </div>
             </div>
+          </form>
           </div>
         </div>
       </nav>

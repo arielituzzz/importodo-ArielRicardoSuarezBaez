@@ -1405,6 +1405,7 @@ header.dark {
 #usuarioIng {
   width: 15rem;
   height: 2.2rem;
+  font-size: 1.5rem;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -1418,6 +1419,7 @@ header.dark {
 #contrasenaIng {
   width: 17rem;
   height: 2.2rem;
+  font-size: 1.5rem;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -1425,7 +1427,7 @@ header.dark {
 #contrasenaIng:focus {
   width: 22rem;
   height: 2.7rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .mainIngreso__submit {
@@ -1486,7 +1488,7 @@ header.dark {
 
 #nombreYApellido {
   height: 2.2rem;
-  width: 14rem;
+  width: 15rem;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -1499,7 +1501,7 @@ header.dark {
 
 #password {
   height: 2.2rem;
-  width: 15rem;
+  width: 16rem;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -1512,7 +1514,7 @@ header.dark {
 
 #rePassword {
   height: 2.2rem;
-  width: 15rem;
+  width: 16rem;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -1525,7 +1527,7 @@ header.dark {
 
 #email {
   height: 2.2rem;
-  width: 18.5rem;
+  width: 19rem;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -1611,23 +1613,29 @@ header.dark {
     font-size: 1.9rem;
     border-radius: 1.5rem;
   }
+  #password {
+    width: 19rem;
+  }
+  #rePassword {
+    width: 19rem;
+  }
+  #email {
+    width: 23rem;
+  }
   #nombreYApellido:focus {
     /* height: 2.7rem; */
     width: 26.5rem;
     font-size: 2.1rem;
   }
   #password:focus {
-    /* height: 2rem; */
     width: 23rem;
     font-size: 2.1rem;
   }
   #rePassword:focus {
-    /* height: 2rem; */
     width: 23rem;
     font-size: 2.1rem;
   }
   #email:focus {
-    /* height: 2rem; */
     width: 26rem;
     font-size: 2.1rem;
   }
